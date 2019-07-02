@@ -1,0 +1,579 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header": {
+    "languages": [
+      "en",
+      "undefined"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://w3id.org/sepses/vocab/ref/cpe",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://w3id.org/sepses/vocab/ref/cve"
+    ],
+    "title": {
+      "undefined": "SEPSES CPE Ontology"
+    },
+    "iri": "http://w3id.org/sepses/vocab/ref/cpe",
+    "author": [
+      "SEPSES team"
+    ],
+    "description": {
+      "en": "An ontology to describe CPE resources extracted from NVD databases."
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "SEPSES team",
+          "type": "label"
+        }
+      ],
+      "rights": [
+        {
+          "identifier": "rights",
+          "language": "undefined",
+          "value": "http://creativecommons.org/licenses/by/4.0/",
+          "type": "label"
+        }
+      ],
+      "preferredNamespacePrefix": [
+        {
+          "identifier": "preferredNamespacePrefix",
+          "language": "undefined",
+          "value": "cpe",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "undefined",
+          "value": "SEPSES CPE Ontology",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "metrics": {
+    "classCount": 5,
+    "objectPropertyCount": 4,
+    "datatypePropertyCount": 12,
+    "individualCount": 0
+  },
+  "class": [
+    {
+      "id": "2",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "13",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "12",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "14",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "9",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "16",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "17",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "18",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "5",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "7",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "20",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:Datatype"
+    }
+  ],
+  "classAttribute": [
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "2",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "13",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "12",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "14",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "9",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "16",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "17",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "18",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "5",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "7",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#Product",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Product",
+        "undefined": "Product"
+      },
+      "id": "1"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#Vendor",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Vendor",
+        "undefined": "Vendor"
+      },
+      "id": "20"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#LogicalTest",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "instances": 0,
+      "label": {
+        "IRI-based": "LogicalTest",
+        "undefined": "LogicalTest"
+      },
+      "id": "25"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#CPE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CPE",
+        "undefined": "CPE"
+      },
+      "id": "4"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#CVE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVE"
+      },
+      "attributes": [
+        "external"
+      ],
+      "id": "24"
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "22",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "29",
+      "label": {
+        "IRI-based": "string"
+      }
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "3",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "6",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "8",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "10",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "11",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "15",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "23",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "26",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "27",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "28",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "30",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "31",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "32",
+      "type": "owl:datatypeProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#language",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "2",
+      "label": {
+        "IRI-based": "language",
+        "undefined": "language"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "0"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#CPEVersion",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "5",
+      "label": {
+        "IRI-based": "CPEVersion",
+        "undefined": "CPEVersion"
+      },
+      "domain": "4",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "3"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#edition",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "7",
+      "label": {
+        "IRI-based": "edition",
+        "undefined": "edition"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "6"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#softwareEdition",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "9",
+      "label": {
+        "IRI-based": "softwareEdition",
+        "undefined": "softwareEdition"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "8"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#hasProduct",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "1",
+      "label": {
+        "IRI-based": "hasProduct",
+        "undefined": "hasProduct"
+      },
+      "domain": "4",
+      "attributes": [
+        "object"
+      ],
+      "id": "10"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#part",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "12",
+      "label": {
+        "IRI-based": "part",
+        "undefined": "part"
+      },
+      "domain": "4",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "11"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#other",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "13",
+      "label": {
+        "IRI-based": "other",
+        "undefined": "other"
+      },
+      "domain": "4",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "15"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#hasVendor",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "20",
+      "label": {
+        "IRI-based": "hasVendor",
+        "undefined": "hasVendor"
+      },
+      "domain": "1",
+      "attributes": [
+        "object"
+      ],
+      "id": "19"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#vendorName",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "22",
+      "label": {
+        "IRI-based": "vendorName",
+        "undefined": "vendorName"
+      },
+      "domain": "20",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "21"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "25",
+      "label": {
+        "IRI-based": "hasLogicalTest",
+        "undefined": "hasLogicalTest"
+      },
+      "domain": "24",
+      "attributes": [
+        "object"
+      ],
+      "id": "23"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#update",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "18",
+      "label": {
+        "IRI-based": "update",
+        "undefined": "update"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "26"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#targetSoftware",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "17",
+      "label": {
+        "IRI-based": "targetSoftware",
+        "undefined": "targetSoftware"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "27"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#version",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "29",
+      "label": {
+        "IRI-based": "version",
+        "undefined": "version"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "28"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "1",
+      "label": {
+        "IRI-based": "hasLogicalTestFactRef",
+        "undefined": "hasLogicalTestFactRef"
+      },
+      "domain": "25",
+      "attributes": [
+        "object"
+      ],
+      "id": "30"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#targetHardware",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "16",
+      "label": {
+        "IRI-based": "targetHardware",
+        "undefined": "targetHardware"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "31"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#productName",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "range": "14",
+      "label": {
+        "IRI-based": "productName",
+        "undefined": "productName"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "32"
+    }
+  ]
+}

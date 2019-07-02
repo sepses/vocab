@@ -1,0 +1,189 @@
+@prefix : <http://w3id.org/sepses/vocab/ref/cpe#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/sepses/vocab/ref/cpe> .
+
+<http://w3id.org/sepses/vocab/ref/cpe> rdf:type owl:Ontology ;
+                                        owl:versionIRI <http://w3id.org/sepses/vocab/ref/cpe/1.0.0> ;
+                                        <http://purl.org/dc/elements/1.1/creator> "SEPSES team" ;
+                                        <http://purl.org/dc/elements/1.1/description> "An ontology to describe CPE resources extracted from NVD databases."@en ;
+                                        <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                        <http://purl.org/dc/elements/1.1/title> "SEPSES CPE Ontology" ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "cpe" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest
+:hasLogicalTest rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://w3id.org/sepses/vocab/ref/cve#CVE> ;
+                rdfs:range :LogicalTest ;
+                rdfs:label "hasLogicalTest" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef
+:hasLogicalTestFactRef rdf:type owl:ObjectProperty ;
+                       rdfs:domain :LogicalTest ;
+                       rdfs:range :Product ;
+                       rdfs:label "hasLogicalTestFactRef" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#hasProduct
+:hasProduct rdf:type owl:ObjectProperty ;
+            rdfs:domain :CPE ;
+            rdfs:range :Product ;
+            rdfs:label "hasProduct" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#hasVendor
+:hasVendor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Product ;
+           rdfs:range :Vendor ;
+           rdfs:label "hasVendor" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/cpe#CPEVersion
+:CPEVersion rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CPE ;
+            rdfs:range xsd:string ;
+            rdfs:label "CPEVersion" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#edition
+:edition rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Product ;
+         rdfs:range xsd:string ;
+         rdfs:label "edition" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#language
+:language rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Product ;
+          rdfs:range xsd:string ;
+          rdfs:label "language" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#other
+:other rdf:type owl:DatatypeProperty ;
+       rdfs:domain :CPE ;
+       rdfs:range xsd:string ;
+       rdfs:label "other" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#part
+:part rdf:type owl:DatatypeProperty ;
+      rdfs:domain :CPE ;
+      rdfs:range xsd:string ;
+      rdfs:label "part" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#productName
+:productName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Product ;
+             rdfs:range xsd:string ;
+             rdfs:label "productName" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#softwareEdition
+:softwareEdition rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Product ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "softwareEdition" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#targetHardware
+:targetHardware rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Product ;
+                rdfs:range xsd:string ;
+                rdfs:label "targetHardware" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#targetSoftware
+:targetSoftware rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Product ;
+                rdfs:range xsd:string ;
+                rdfs:label "targetSoftware" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#update
+:update rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Product ;
+        rdfs:range xsd:string ;
+        rdfs:label "update" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#vendorName
+:vendorName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Vendor ;
+            rdfs:range xsd:string ;
+            rdfs:label "vendorName" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Product ;
+         rdfs:range xsd:string ;
+         rdfs:label "version" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/cpe#CPE
+:CPE rdf:type owl:Class ;
+     rdfs:label "CPE" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#LogicalTest
+:LogicalTest rdf:type owl:Class ;
+             rdfs:label "LogicalTest" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#Product
+:Product rdf:type owl:Class ;
+         rdfs:label "Product" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#Vendor
+:Vendor rdf:type owl:Class ;
+        rdfs:label "Vendor" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#CVE
+<http://w3id.org/sepses/vocab/ref/cve#CVE> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

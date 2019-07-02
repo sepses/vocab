@@ -1,0 +1,174 @@
+<http://w3id.org/sepses/vocab/ref/cpe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/sepses/vocab/ref/cpe> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/sepses/vocab/ref/cpe/1.0.0> .
+<http://w3id.org/sepses/vocab/ref/cpe> <http://purl.org/dc/elements/1.1/creator> "SEPSES team" .
+<http://w3id.org/sepses/vocab/ref/cpe> <http://purl.org/dc/elements/1.1/description> "An ontology to describe CPE resources extracted from NVD databases."@en .
+<http://w3id.org/sepses/vocab/ref/cpe> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/sepses/vocab/ref/cpe> <http://purl.org/dc/elements/1.1/title> "SEPSES CPE Ontology" .
+<http://w3id.org/sepses/vocab/ref/cpe> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cpe" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
+<http://w3id.org/sepses/vocab/ref/cve#CVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest> <http://www.w3.org/2000/01/rdf-schema#label> "hasLogicalTest" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef> <http://www.w3.org/2000/01/rdf-schema#label> "hasLogicalTestFactRef" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#hasProduct
+<http://w3id.org/sepses/vocab/ref/cpe#hasProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#CPE> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasProduct> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasProduct> <http://www.w3.org/2000/01/rdf-schema#label> "hasProduct" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#hasVendor
+<http://w3id.org/sepses/vocab/ref/cpe#hasVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasVendor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasVendor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cpe#Vendor> .
+<http://w3id.org/sepses/vocab/ref/cpe#hasVendor> <http://www.w3.org/2000/01/rdf-schema#label> "hasVendor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#CPEVersion
+<http://w3id.org/sepses/vocab/ref/cpe#CPEVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#CPEVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#CPE> .
+<http://w3id.org/sepses/vocab/ref/cpe#CPEVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#CPEVersion> <http://www.w3.org/2000/01/rdf-schema#label> "CPEVersion" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#edition
+<http://w3id.org/sepses/vocab/ref/cpe#edition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#edition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#edition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#edition> <http://www.w3.org/2000/01/rdf-schema#label> "edition" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#language
+<http://w3id.org/sepses/vocab/ref/cpe#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#other
+<http://w3id.org/sepses/vocab/ref/cpe#other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#other> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#CPE> .
+<http://w3id.org/sepses/vocab/ref/cpe#other> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#other> <http://www.w3.org/2000/01/rdf-schema#label> "other" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#part
+<http://w3id.org/sepses/vocab/ref/cpe#part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#part> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#CPE> .
+<http://w3id.org/sepses/vocab/ref/cpe#part> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#part> <http://www.w3.org/2000/01/rdf-schema#label> "part" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#productName
+<http://w3id.org/sepses/vocab/ref/cpe#productName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#productName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#productName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#productName> <http://www.w3.org/2000/01/rdf-schema#label> "productName" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#softwareEdition
+<http://w3id.org/sepses/vocab/ref/cpe#softwareEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#softwareEdition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#softwareEdition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#softwareEdition> <http://www.w3.org/2000/01/rdf-schema#label> "softwareEdition" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#targetHardware
+<http://w3id.org/sepses/vocab/ref/cpe#targetHardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#targetHardware> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#targetHardware> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#targetHardware> <http://www.w3.org/2000/01/rdf-schema#label> "targetHardware" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#targetSoftware
+<http://w3id.org/sepses/vocab/ref/cpe#targetSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#targetSoftware> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#targetSoftware> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#targetSoftware> <http://www.w3.org/2000/01/rdf-schema#label> "targetSoftware" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#update
+<http://w3id.org/sepses/vocab/ref/cpe#update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#update> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#update> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#update> <http://www.w3.org/2000/01/rdf-schema#label> "update" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#vendorName
+<http://w3id.org/sepses/vocab/ref/cpe#vendorName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#vendorName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Vendor> .
+<http://w3id.org/sepses/vocab/ref/cpe#vendorName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#vendorName> <http://www.w3.org/2000/01/rdf-schema#label> "vendorName" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#version
+<http://w3id.org/sepses/vocab/ref/cpe#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cpe#version> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cpe#Product> .
+<http://w3id.org/sepses/vocab/ref/cpe#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cpe#version> <http://www.w3.org/2000/01/rdf-schema#label> "version" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#CPE
+<http://w3id.org/sepses/vocab/ref/cpe#CPE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cpe#CPE> <http://www.w3.org/2000/01/rdf-schema#label> "CPE" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#LogicalTest
+<http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> <http://www.w3.org/2000/01/rdf-schema#label> "LogicalTest" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#Product
+<http://w3id.org/sepses/vocab/ref/cpe#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cpe#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product" .
+# 
+# http://w3id.org/sepses/vocab/ref/cpe#Vendor
+<http://w3id.org/sepses/vocab/ref/cpe#Vendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cpe#Vendor> <http://www.w3.org/2000/01/rdf-schema#label> "Vendor" .
+# 
+# http://w3id.org/sepses/vocab/ref/cve#CVE
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
