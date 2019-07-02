@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/log/core#"
+     xml:base="http://w3id.org/sepses/vocab/log/core"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/log/core">
+        <owl:versionIRI rdf:resource="http://w3id.org/sepses/vocab/log/core/1.0.0"/>
+        <dc:creator>SEPSES team</dc:creator>
+        <dc:description xml:lang="en">An ontology to describe core log structure</dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>SEPSES Core Log Ontology</dc:title>
+        <vann:preferredNamespacePrefix>core-log</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#originatesFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/log/core#originatesFrom">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/log/core#Host"/>
+        <rdfs:comment>
+                        This object property points out where did the :LogEntry was generated.
+                    </rdfs:comment>
+        <rdfs:label>originatesFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#hostName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#hostName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hostName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#ip4Address -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#ip4Address">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/log/core#ipAddress"/>
+        <rdfs:label>ip4Address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#ip6Address -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#ip6Address">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/log/core#ipAddress"/>
+        <rdfs:label>ip6Address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#ipAddress -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#ipAddress">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ipAddress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#logFilePath -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#logFilePath">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>logFilePath</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#logMessage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#logMessage">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>logMessage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#logType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#logType">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>logType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#messageCount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#messageCount">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>messageCount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#timestamp -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/core#timestamp">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#Host -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/log/core#Host">
+        <rdfs:label>Host</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#LogEntry -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/log/core#LogEntry">
+        <rdfs:label>Log Entry</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

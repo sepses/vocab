@@ -1,0 +1,313 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/log/core" ],
+    "title" : {
+      "undefined" : "SEPSES Core Log Ontology"
+    },
+    "iri" : "http://w3id.org/sepses/vocab/log/core",
+    "author" : [ "SEPSES team" ],
+    "description" : {
+      "en" : "An ontology to describe core log structure"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "SEPSES team",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "core-log",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "SEPSES Core Log Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#LogEntry",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogEntry",
+      "undefined" : "Log Entry"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#Host",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Host",
+      "undefined" : "Host"
+    },
+    "id" : "12"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#timestamp",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "timestamp",
+      "undefined" : "timestamp"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#messageCount",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "messageCount",
+      "undefined" : "messageCount"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#hostName",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hostName",
+      "undefined" : "hostName"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#ip6Address",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "ip6Address",
+      "undefined" : "ip6Address"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#ip4Address",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "ip4Address",
+      "undefined" : "ip4Address"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#ipAddress",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "ipAddress",
+      "undefined" : "ipAddress"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#originatesFrom",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "originatesFrom",
+      "undefined" : "originatesFrom"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "\n                        This object property points out where did the :LogEntry was generated.\n                    "
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#logType",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "logType",
+      "undefined" : "logType"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#logMessage",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "logMessage",
+      "undefined" : "logMessage"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#logFilePath",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "logFilePath",
+      "undefined" : "logFilePath"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  } ]
+}

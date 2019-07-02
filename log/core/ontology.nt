@@ -1,0 +1,126 @@
+<http://w3id.org/sepses/vocab/log/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/sepses/vocab/log/core> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/sepses/vocab/log/core/1.0.0> .
+<http://w3id.org/sepses/vocab/log/core> <http://purl.org/dc/elements/1.1/creator> "SEPSES team" .
+<http://w3id.org/sepses/vocab/log/core> <http://purl.org/dc/elements/1.1/description> "An ontology to describe core log structure"@en .
+<http://w3id.org/sepses/vocab/log/core> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/sepses/vocab/log/core> <http://purl.org/dc/elements/1.1/title> "SEPSES Core Log Ontology" .
+<http://w3id.org/sepses/vocab/log/core> <http://purl.org/vocab/vann/preferredNamespacePrefix> "core-log" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/log/core#originatesFrom
+<http://w3id.org/sepses/vocab/log/core#originatesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/log/core#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#LogEntry> .
+<http://w3id.org/sepses/vocab/log/core#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/log/core#Host> .
+<http://w3id.org/sepses/vocab/log/core#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "\n                        This object property points out where did the :LogEntry was generated.\n                    " .
+<http://w3id.org/sepses/vocab/log/core#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#label> "originatesFrom" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/log/core#hostName
+<http://w3id.org/sepses/vocab/log/core#hostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#hostName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#Host> .
+<http://w3id.org/sepses/vocab/log/core#hostName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/log/core#hostName> <http://www.w3.org/2000/01/rdf-schema#label> "hostName" .
+# 
+# http://w3id.org/sepses/vocab/log/core#ip4Address
+<http://w3id.org/sepses/vocab/log/core#ip4Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#ip4Address> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/log/core#ipAddress> .
+<http://w3id.org/sepses/vocab/log/core#ip4Address> <http://www.w3.org/2000/01/rdf-schema#label> "ip4Address" .
+# 
+# http://w3id.org/sepses/vocab/log/core#ip6Address
+<http://w3id.org/sepses/vocab/log/core#ip6Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#ip6Address> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/log/core#ipAddress> .
+<http://w3id.org/sepses/vocab/log/core#ip6Address> <http://www.w3.org/2000/01/rdf-schema#label> "ip6Address" .
+# 
+# http://w3id.org/sepses/vocab/log/core#ipAddress
+<http://w3id.org/sepses/vocab/log/core#ipAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#ipAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#Host> .
+<http://w3id.org/sepses/vocab/log/core#ipAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/log/core#ipAddress> <http://www.w3.org/2000/01/rdf-schema#label> "ipAddress" .
+# 
+# http://w3id.org/sepses/vocab/log/core#logFilePath
+<http://w3id.org/sepses/vocab/log/core#logFilePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#logFilePath> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#LogEntry> .
+<http://w3id.org/sepses/vocab/log/core#logFilePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/log/core#logFilePath> <http://www.w3.org/2000/01/rdf-schema#label> "logFilePath" .
+# 
+# http://w3id.org/sepses/vocab/log/core#logMessage
+<http://w3id.org/sepses/vocab/log/core#logMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#logMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#LogEntry> .
+<http://w3id.org/sepses/vocab/log/core#logMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/log/core#logMessage> <http://www.w3.org/2000/01/rdf-schema#label> "logMessage" .
+# 
+# http://w3id.org/sepses/vocab/log/core#logType
+<http://w3id.org/sepses/vocab/log/core#logType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#logType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#LogEntry> .
+<http://w3id.org/sepses/vocab/log/core#logType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/log/core#logType> <http://www.w3.org/2000/01/rdf-schema#label> "logType" .
+# 
+# http://w3id.org/sepses/vocab/log/core#messageCount
+<http://w3id.org/sepses/vocab/log/core#messageCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#messageCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#LogEntry> .
+<http://w3id.org/sepses/vocab/log/core#messageCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/log/core#messageCount> <http://www.w3.org/2000/01/rdf-schema#label> "messageCount" .
+# 
+# http://w3id.org/sepses/vocab/log/core#timestamp
+<http://w3id.org/sepses/vocab/log/core#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/log/core#timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/log/core#LogEntry> .
+<http://w3id.org/sepses/vocab/log/core#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/sepses/vocab/log/core#timestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/log/core#Host
+<http://w3id.org/sepses/vocab/log/core#Host> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/log/core#Host> <http://www.w3.org/2000/01/rdf-schema#label> "Host" .
+# 
+# http://w3id.org/sepses/vocab/log/core#LogEntry
+<http://w3id.org/sepses/vocab/log/core#LogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/log/core#LogEntry> <http://www.w3.org/2000/01/rdf-schema#label> "Log Entry" .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
