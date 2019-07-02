@@ -1,0 +1,923 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/rule/snort#"
+     xml:base="http://w3id.org/sepses/vocab/rule/snort"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/rule/snort">
+        <owl:versionIRI rdf:resource="http://w3id.org/sepses/vocab/rule/snort/1.0.0"/>
+        <owl:imports rdf:resource="http://w3id.org/sepses/vocab/ref/snort"/>
+        <dc:creator>SEPSES team</dc:creator>
+        <dc:description>An ontology to describe SNORT rule information</dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>SEPSES SNORT rule ontology</dc:title>
+        <vann:preferredNamespacePrefix>snort-rule</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hasAction -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hasAction">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleHeader"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/rule/snort#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hasCveReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hasCveReference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hasMetadata -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hasMetadata">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/rule/snort#Metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hasReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hasReference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/rule/snort#Reference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hasRuleHeader -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hasRuleHeader">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#SnortRule"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleHeader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hasRuleOption -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hasRuleOption">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#SnortRule"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#asn1 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#asn1">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#base64_data -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#base64_data">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#base64_decode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#base64_decode">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#bugtraqId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#bugtraqId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#byte_extract -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#byte_extract">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#byte_jump -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#byte_jump">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#byte_math -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#byte_math">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#byte_test -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#byte_test">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#content -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#content">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#cvs -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#cvs">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#dce_iface -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#dce_iface">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#dce_opnum -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#dce_opnum">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#dce_stub_data -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#dce_stub_data">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#depth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#depth">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#distance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#distance">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#dsize -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#dsize">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#fast_pattern -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#fast_pattern">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#file_data -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#file_data">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#flow -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#flow">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#flowbits -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#flowbits">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#fragbits -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#fragbits">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#fragoffset -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#fragoffset">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#ftpbounce -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#ftpbounce">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#gid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#gid">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#gtp_info -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#gtp_info">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#gtp_type -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#gtp_type">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#gtp_version -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#gtp_version">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hasCveReference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hasCveReference">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#hash -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#hash">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_client_body -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_client_body">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_cookie -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_cookie">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_encode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_encode">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_header -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_header">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_method -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_method">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_raw_cookie -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_raw_cookie">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_raw_header -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_raw_header">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_raw_uri -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_raw_uri">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_stat_code -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_stat_code">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_stat_msg -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_stat_msg">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#http_uri -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#http_uri">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#ip_proto -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#ip_proto">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#ipopts -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#ipopts">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#isdataat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#isdataat">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#metadata -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#metadata">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#nessusId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#nessusId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#nocase -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#nocase">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#offset -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#offset">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#operator -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#operator">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleHeader"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#pcre -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#pcre">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#pkt_data -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#pkt_data">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#protected_content -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#protected_content">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#rawbytes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#rawbytes">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#rev -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#rev">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#rpc -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#rpc">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#sameip -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#sameip">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#sip_body -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#sip_body">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#sip_header -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#sip_header">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#sip_method -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#sip_method">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#sip_stat_code -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#sip_stat_code">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#ssl_state -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#ssl_state">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#ssl_version -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#ssl_version">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#stream_reassemble -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#stream_reassemble">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#stream_size -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#stream_size">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#uricontent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#uricontent">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#urilen -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#urilen">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#url -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#url">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#within -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/snort#within">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/snort#RuleOption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#CVE -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#SnortHeader -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#SnortHeader"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#SnortOption -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#SnortOption"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#Action -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/snort#Action">
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#Metadata -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/snort#Metadata">
+        <rdfs:label>Metadata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#Protocol -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/snort#Protocol">
+        <rdfs:label>Protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#Reference -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/snort#Reference">
+        <rdfs:label>Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#RuleHeader -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/snort#RuleHeader">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/ref/snort#SnortHeader"/>
+        <rdfs:label>RuleHeader</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#RuleOption -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/snort#RuleOption">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/ref/snort#SnortOption"/>
+        <rdfs:label>RuleOption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/snort#SnortRule -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/snort#SnortRule">
+        <rdfs:label>SnortRule</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

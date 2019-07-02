@@ -1,0 +1,539 @@
+@prefix : <http://w3id.org/sepses/vocab/rule/snort#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/sepses/vocab/rule/snort> .
+
+<http://w3id.org/sepses/vocab/rule/snort> rdf:type owl:Ontology ;
+                                           owl:versionIRI <http://w3id.org/sepses/vocab/rule/snort/1.0.0> ;
+                                           owl:imports <http://w3id.org/sepses/vocab/ref/snort> ;
+                                           <http://purl.org/dc/elements/1.1/creator> "SEPSES team" ;
+                                           <http://purl.org/dc/elements/1.1/description> "An ontology to describe SNORT rule information" ;
+                                           <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                           <http://purl.org/dc/elements/1.1/title> "SEPSES SNORT rule ontology" ;
+                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "snort-rule" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/rule/snort#hasAction
+:hasAction rdf:type owl:ObjectProperty ;
+           rdfs:domain :RuleHeader ;
+           rdfs:range :Action .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#hasCveReference
+:hasCveReference rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://w3id.org/sepses/vocab/ref/cve#CVE> .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#hasMetadata
+:hasMetadata rdf:type owl:ObjectProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range :Metadata .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#hasReference
+:hasReference rdf:type owl:ObjectProperty ;
+              rdfs:domain :RuleOption ;
+              rdfs:range :Reference .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#hasRuleHeader
+:hasRuleHeader rdf:type owl:ObjectProperty ;
+               rdfs:domain :SnortRule ;
+               rdfs:range :RuleHeader .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#hasRuleOption
+:hasRuleOption rdf:type owl:ObjectProperty ;
+               rdfs:domain :SnortRule ;
+               rdfs:range :RuleOption .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/rule/snort#asn1
+:asn1 rdf:type owl:DatatypeProperty ;
+      rdfs:domain :RuleOption ;
+      rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#base64_data
+:base64_data rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#base64_decode
+:base64_decode rdf:type owl:DatatypeProperty ;
+               rdfs:domain :RuleOption ;
+               rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#bugtraqId
+:bugtraqId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Reference ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#byte_extract
+:byte_extract rdf:type owl:DatatypeProperty ;
+              rdfs:domain :RuleOption ;
+              rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#byte_jump
+:byte_jump rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#byte_math
+:byte_math rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#byte_test
+:byte_test rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#content
+:content rdf:type owl:DatatypeProperty ;
+         rdfs:domain :RuleOption ;
+         rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#cvs
+:cvs rdf:type owl:DatatypeProperty ;
+     rdfs:domain :RuleOption ;
+     rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#dce_iface
+:dce_iface rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#dce_opnum
+:dce_opnum rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#dce_stub_data
+:dce_stub_data rdf:type owl:DatatypeProperty ;
+               rdfs:domain :RuleOption ;
+               rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#depth
+:depth rdf:type owl:DatatypeProperty ;
+       rdfs:domain :RuleOption ;
+       rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#distance
+:distance rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#dsize
+:dsize rdf:type owl:DatatypeProperty ;
+       rdfs:domain :RuleOption ;
+       rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#fast_pattern
+:fast_pattern rdf:type owl:DatatypeProperty ;
+              rdfs:domain :RuleOption ;
+              rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#file_data
+:file_data rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#flow
+:flow rdf:type owl:DatatypeProperty ;
+      rdfs:domain :RuleOption ;
+      rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#flowbits
+:flowbits rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#fragbits
+:fragbits rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#fragoffset
+:fragoffset rdf:type owl:DatatypeProperty ;
+            rdfs:domain :RuleOption ;
+            rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#ftpbounce
+:ftpbounce rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#gid
+:gid rdf:type owl:DatatypeProperty ;
+     rdfs:domain :RuleOption ;
+     rdfs:range xsd:integer .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#gtp_info
+:gtp_info rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#gtp_type
+:gtp_type rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#gtp_version
+:gtp_version rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#hasCveReference
+:hasCveReference rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#hash
+:hash rdf:type owl:DatatypeProperty ;
+      rdfs:domain :RuleOption ;
+      rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_client_body
+:http_client_body rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :RuleOption ;
+                  rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_cookie
+:http_cookie rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_encode
+:http_encode rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_header
+:http_header rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_method
+:http_method rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_raw_cookie
+:http_raw_cookie rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RuleOption ;
+                 rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_raw_header
+:http_raw_header rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RuleOption ;
+                 rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_raw_uri
+:http_raw_uri rdf:type owl:DatatypeProperty ;
+              rdfs:domain :RuleOption ;
+              rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_stat_code
+:http_stat_code rdf:type owl:DatatypeProperty ;
+                rdfs:domain :RuleOption ;
+                rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_stat_msg
+:http_stat_msg rdf:type owl:DatatypeProperty ;
+               rdfs:domain :RuleOption ;
+               rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#http_uri
+:http_uri rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#ip_proto
+:ip_proto rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#ipopts
+:ipopts rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RuleOption ;
+        rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#isdataat
+:isdataat rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#metadata
+:metadata rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#nessusId
+:nessusId rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Reference ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#nocase
+:nocase rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RuleOption ;
+        rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#offset
+:offset rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RuleOption ;
+        rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#operator
+:operator rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleHeader ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#pcre
+:pcre rdf:type owl:DatatypeProperty ;
+      rdfs:domain :RuleOption ;
+      rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#pkt_data
+:pkt_data rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#protected_content
+:protected_content rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :RuleOption ;
+                   rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#rawbytes
+:rawbytes rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#rev
+:rev rdf:type owl:DatatypeProperty ;
+     rdfs:domain :RuleOption ;
+     rdfs:range xsd:integer .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#rpc
+:rpc rdf:type owl:DatatypeProperty ;
+     rdfs:domain :RuleOption ;
+     rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#sameip
+:sameip rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RuleOption ;
+        rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#sip_body
+:sip_body rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RuleOption ;
+          rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#sip_header
+:sip_header rdf:type owl:DatatypeProperty ;
+            rdfs:domain :RuleOption ;
+            rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#sip_method
+:sip_method rdf:type owl:DatatypeProperty ;
+            rdfs:domain :RuleOption ;
+            rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#sip_stat_code
+:sip_stat_code rdf:type owl:DatatypeProperty ;
+               rdfs:domain :RuleOption ;
+               rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#ssl_state
+:ssl_state rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RuleOption ;
+           rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#ssl_version
+:ssl_version rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#stream_reassemble
+:stream_reassemble rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :RuleOption ;
+                   rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#stream_size
+:stream_size rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RuleOption ;
+             rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#uricontent
+:uricontent rdf:type owl:DatatypeProperty ;
+            rdfs:domain :RuleOption ;
+            rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#urilen
+:urilen rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RuleOption ;
+        rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Reference ;
+     rdfs:range xsd:string .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#within
+:within rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RuleOption ;
+        rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/cve#CVE
+<http://w3id.org/sepses/vocab/ref/cve#CVE> rdf:type owl:Class .
+
+
+###  http://w3id.org/sepses/vocab/ref/snort#SnortHeader
+<http://w3id.org/sepses/vocab/ref/snort#SnortHeader> rdf:type owl:Class .
+
+
+###  http://w3id.org/sepses/vocab/ref/snort#SnortOption
+<http://w3id.org/sepses/vocab/ref/snort#SnortOption> rdf:type owl:Class .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#Action
+:Action rdf:type owl:Class ;
+        rdfs:label "Action" .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#Metadata
+:Metadata rdf:type owl:Class ;
+          rdfs:label "Metadata" .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:label "Protocol" .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#Reference
+:Reference rdf:type owl:Class ;
+           rdfs:label "Reference" .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#RuleHeader
+:RuleHeader rdf:type owl:Class ;
+            rdfs:subClassOf <http://w3id.org/sepses/vocab/ref/snort#SnortHeader> ;
+            rdfs:label "RuleHeader" .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#RuleOption
+:RuleOption rdf:type owl:Class ;
+            rdfs:subClassOf <http://w3id.org/sepses/vocab/ref/snort#SnortOption> ;
+            rdfs:label "RuleOption" .
+
+
+###  http://w3id.org/sepses/vocab/rule/snort#SnortRule
+:SnortRule rdf:type owl:Class ;
+           rdfs:label "SnortRule" .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
