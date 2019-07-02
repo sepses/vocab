@@ -1,0 +1,152 @@
+@prefix : <http://w3id.org/sepses/vocab/ref/cve#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/sepses/vocab/ref/cve> .
+
+<http://w3id.org/sepses/vocab/ref/cve> rdf:type owl:Ontology ;
+                                        owl:versionIRI <http://w3id.org/sepses/vocab/ref/cve/1.0.0> ;
+                                        <http://purl.org/dc/elements/1.1/creator> "SEPSES team" ;
+                                        <http://purl.org/dc/elements/1.1/description> "An ontology to describe CVE resources extracted from NVD databases."@en ;
+                                        <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                        <http://purl.org/dc/elements/1.1/title> "SEPSES CVE Ontology" ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "cve" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/cve#hasCPE
+:hasCPE rdf:type owl:ObjectProperty ;
+        rdfs:domain :CVE ;
+        rdfs:range <http://w3id.org/sepses/vocab/ref/cpe#CPE> ;
+        rdfs:label "hasCPE" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#hasCWE
+:hasCWE rdf:type owl:ObjectProperty ;
+        rdfs:domain :CVE ;
+        rdfs:range <http://w3id.org/sepses/vocab/ref/cwe#CWE> ;
+        rdfs:label "hasCWE" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#hasReference
+:hasReference rdf:type owl:ObjectProperty ;
+              rdfs:domain :CVE ;
+              rdfs:range :Reference ;
+              rdfs:label "hasReference" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration
+:hasVulnerableConfiguration rdf:type owl:ObjectProperty ;
+                            rdfs:domain :CVE ;
+                            rdfs:range <http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> ;
+                            rdfs:label "hasVulnerableConfiguration" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/cve#datePublished
+:datePublished rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CVE ;
+               rdfs:range xsd:dateTime ;
+               rdfs:label "datePublished" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CVE ;
+             rdfs:range xsd:string ;
+             rdfs:label "description" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :CVE ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#reference
+:reference rdf:type owl:DatatypeProperty ;
+           rdfs:domain :CVE ;
+           rdfs:range xsd:string ;
+           rdfs:label "reference" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#referenceSource
+:referenceSource rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Reference ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "referenceSource" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#referenceType
+:referenceType rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Reference ;
+               rdfs:range xsd:string ;
+               rdfs:label "referenceType" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#referenceUrl
+:referenceUrl rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Reference ;
+              rdfs:range xsd:string ;
+              rdfs:label "referenceUrl" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/cpe#CPE
+<http://w3id.org/sepses/vocab/ref/cpe#CPE> rdf:type owl:Class .
+
+
+###  http://w3id.org/sepses/vocab/ref/cpe#LogicalTest
+<http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> rdf:type owl:Class .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#CVE
+:CVE rdf:type owl:Class ;
+     rdfs:label "CVE" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cve#Reference
+:Reference rdf:type owl:Class ;
+           rdfs:label "Reference" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cwe#CWE
+<http://w3id.org/sepses/vocab/ref/cwe#CWE> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

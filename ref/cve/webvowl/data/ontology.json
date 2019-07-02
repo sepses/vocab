@@ -1,0 +1,434 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header": {
+    "languages": [
+      "en",
+      "undefined"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://w3id.org/sepses/vocab/ref/cpe",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://w3id.org/sepses/vocab/ref/cwe",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://w3id.org/sepses/vocab/ref/cve"
+    ],
+    "title": {
+      "undefined": "SEPSES CVE Ontology"
+    },
+    "iri": "http://w3id.org/sepses/vocab/ref/cve",
+    "author": [
+      "SEPSES team"
+    ],
+    "description": {
+      "en": "An ontology to describe CVE resources extracted from NVD databases."
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "SEPSES team",
+          "type": "label"
+        }
+      ],
+      "rights": [
+        {
+          "identifier": "rights",
+          "language": "undefined",
+          "value": "http://creativecommons.org/licenses/by/4.0/",
+          "type": "label"
+        }
+      ],
+      "preferredNamespacePrefix": [
+        {
+          "identifier": "preferredNamespacePrefix",
+          "language": "undefined",
+          "value": "cve",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "undefined",
+          "value": "SEPSES CVE Ontology",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "metrics": {
+    "classCount": 5,
+    "objectPropertyCount": 4,
+    "datatypePropertyCount": 7,
+    "individualCount": 0
+  },
+  "class": [
+    {
+      "id": "3",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "7",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "8",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "2",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "9",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "13",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "17",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "3",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "7",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "8",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "2",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "9",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cwe#CWE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CWE"
+      },
+      "attributes": [
+        "external"
+      ],
+      "id": "6"
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "12",
+      "label": {
+        "IRI-based": "dateTime"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "13",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#Reference",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Reference",
+        "undefined": "Reference"
+      },
+      "id": "1"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#LogicalTest",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "instances": 0,
+      "label": {
+        "IRI-based": "LogicalTest"
+      },
+      "attributes": [
+        "external"
+      ],
+      "id": "11"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#CVE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVE",
+        "undefined": "CVE"
+      },
+      "id": "5"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cpe#CPE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cpe",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CPE"
+      },
+      "attributes": [
+        "external"
+      ],
+      "id": "17"
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "4",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "10",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "14",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "15",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "20",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "22",
+      "type": "owl:datatypeProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#referenceType",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "2",
+      "label": {
+        "IRI-based": "referenceType",
+        "undefined": "referenceType"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "0"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#hasCWE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "6",
+      "label": {
+        "IRI-based": "hasCWE",
+        "undefined": "hasCWE"
+      },
+      "domain": "5",
+      "attributes": [
+        "object"
+      ],
+      "id": "4"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "11",
+      "label": {
+        "IRI-based": "hasVulnerableConfiguration",
+        "undefined": "hasVulnerableConfiguration"
+      },
+      "domain": "5",
+      "attributes": [
+        "object"
+      ],
+      "id": "10"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#id",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "3",
+      "label": {
+        "IRI-based": "id",
+        "undefined": "id"
+      },
+      "domain": "5",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "14"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#referenceUrl",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "9",
+      "label": {
+        "IRI-based": "referenceUrl",
+        "undefined": "referenceUrl"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "15"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#hasCPE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "17",
+      "label": {
+        "IRI-based": "hasCPE",
+        "undefined": "hasCPE"
+      },
+      "domain": "5",
+      "attributes": [
+        "object"
+      ],
+      "id": "16"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#referenceSource",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "8",
+      "label": {
+        "IRI-based": "referenceSource",
+        "undefined": "referenceSource"
+      },
+      "domain": "1",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "18"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#datePublished",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "12",
+      "label": {
+        "IRI-based": "datePublished",
+        "undefined": "datePublished"
+      },
+      "domain": "5",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "19"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#description",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "13",
+      "label": {
+        "IRI-based": "description",
+        "undefined": "description"
+      },
+      "domain": "5",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "20"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#hasReference",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "1",
+      "label": {
+        "IRI-based": "hasReference",
+        "undefined": "hasReference"
+      },
+      "domain": "5",
+      "attributes": [
+        "object"
+      ],
+      "id": "21"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#reference",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "range": "7",
+      "label": {
+        "IRI-based": "reference",
+        "undefined": "reference"
+      },
+      "domain": "5",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "22"
+    }
+  ]
+}
