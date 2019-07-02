@@ -21,13 +21,13 @@
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "An upper ontology to describe common terms related to SNORT."
+    "@value" : "A reference ontology to describe common terms related to SNORT."
   } ],
   "http://purl.org/dc/elements/1.1/rights" : [ {
     "@value" : "http://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "SEPSES SNORT Ontology"
+    "@value" : "SNORT Ontology"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "snort"
@@ -40,51 +40,30 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Class Type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#IPAddress",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "IP Address"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#Protocol",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Protocol"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#Reference",
+  "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Reference"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@value" : "Snort Header"
   } ]
 }, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort",
+  "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Snort"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@value" : "Snort Option"
   } ]
 }, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#acknowledge",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "acknowledge"
@@ -93,22 +72,34 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
+  "@id" : "http://w3id.org/sepses/vocab/ref/snort#destinationIp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "destinationIp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#destinationPort",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "destinationPort"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#flag",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "flag"
@@ -117,22 +108,10 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#generatorId",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "generatorId"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ]
-}, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#hasClassType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasClassType"
@@ -141,22 +120,10 @@
     "@id" : "http://w3id.org/sepses/vocab/ref/snort#ClassType"
   } ]
 }, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasDestinationIP"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#IPAddress"
-  } ]
-}, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#hasProtocol",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasProtocol"
@@ -165,34 +132,10 @@
     "@id" : "http://w3id.org/sepses/vocab/ref/snort#Protocol"
   } ]
 }, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#hasReference",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasReference"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Reference"
-  } ]
-}, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#hasSourceIP",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasSourceIP"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#IPAddress"
-  } ]
-}, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#icmpCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "icmpCode"
@@ -204,7 +147,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#icmpId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "icmpId"
@@ -216,7 +159,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#icmpSequence",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "icmpSequence"
@@ -228,7 +171,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#icmpType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "icmpType"
@@ -240,7 +183,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#identification",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "identification"
@@ -252,7 +195,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#length",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "length"
@@ -264,7 +207,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#message",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "message"
@@ -276,7 +219,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#priority",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "priority"
@@ -288,7 +231,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#sequence",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "sequence"
@@ -300,7 +243,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#signatureId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "signatureId"
@@ -309,34 +252,34 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://w3id.org/sepses/vocab/ref/snort#signatureRevision",
+  "@id" : "http://w3id.org/sepses/vocab/ref/snort#sourceIp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "signatureRevision"
+    "@value" : "sourceIp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#sourcePort",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "sourcePort"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#timeToLive",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "timeToLive"
@@ -348,7 +291,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#typeOfService",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "typeOfService"
@@ -360,7 +303,7 @@
   "@id" : "http://w3id.org/sepses/vocab/ref/snort#window",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/sepses/vocab/ref/snort#Snort"
+    "@id" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "window"

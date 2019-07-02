@@ -4,12 +4,12 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/ref/snort" ],
     "title" : {
-      "undefined" : "SEPSES SNORT Ontology"
+      "undefined" : "SNORT Ontology"
     },
     "iri" : "http://w3id.org/sepses/vocab/ref/snort",
     "author" : [ "SEPSES team" ],
     "description" : {
-      "en" : "An upper ontology to describe common terms related to SNORT."
+      "en" : "A reference ontology to describe common terms related to SNORT."
     },
     "other" : {
       "creator" : [ {
@@ -33,18 +33,48 @@
       "title" : [ {
         "identifier" : "title",
         "language" : "undefined",
-        "value" : "SEPSES SNORT Ontology",
+        "value" : "SNORT Ontology",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "7",
-    "type" : "owl:Class"
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
     "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "1",
     "type" : "owl:Class"
@@ -52,75 +82,101 @@
     "id" : "4",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "27",
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "28",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "13",
+    "id" : "39",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "26",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "29",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "30",
+    "id" : "36",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "24",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "31",
+    "id" : "32",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "34",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "15",
+    "id" : "24",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "6",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "9",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "33",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "41",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#Reference",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Reference",
-      "undefined" : "Reference"
+      "IRI-based" : "SnortHeader",
+      "undefined" : "Snort Header"
     },
-    "id" : "7"
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "integer"
+    }
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#Protocol",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
@@ -129,14 +185,28 @@
       "IRI-based" : "Protocol",
       "undefined" : "Protocol"
     },
-    "id" : "11"
+    "id" : "21"
   }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#Snort",
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Snort",
-      "undefined" : "Snort"
+      "IRI-based" : "SnortOption",
+      "undefined" : "Snort Option"
     },
     "id" : "1"
   }, {
@@ -148,64 +218,58 @@
       "undefined" : "Literal"
     }
   }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#ClassType",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassType",
+      "undefined" : "Class Type"
+    },
+    "id" : "42"
+  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "27",
+    "id" : "41",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "28",
+    "id" : "39",
     "label" : {
-      "IRI-based" : "integer"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "13",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
     "id" : "26",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
-    "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "30",
+    "id" : "36",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "24",
+    "id" : "13",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
-    "label" : {
-      "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -218,86 +282,10 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
+    "id" : "24",
     "label" : {
       "IRI-based" : "integer"
     }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "35",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "6",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "22",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "9",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "41",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#IPAddress",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IPAddress",
-      "undefined" : "IP Address"
-    },
-    "id" : "17"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#ClassType",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassType",
-      "undefined" : "Class Type"
-    },
-    "id" : "46"
   } ],
   "property" : [ {
     "id" : "0",
@@ -309,11 +297,8 @@
     "id" : "5",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "8",
+    "id" : "7",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "10",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "12",
     "type" : "owl:datatypeProperty"
@@ -321,16 +306,13 @@
     "id" : "14",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "16",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "18",
+    "id" : "19",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "21",
+    "id" : "22",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "23",
@@ -339,37 +321,34 @@
     "id" : "25",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "32",
+    "id" : "28",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "36",
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "37",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "38",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "39",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "40",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "42",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "43",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "44",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "45",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "47",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -395,246 +374,213 @@
     "attributes" : [ "datatype" ],
     "id" : "3"
   }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#icmpType",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "icmpType",
-      "undefined" : "icmpType"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "5"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#length",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "length",
-      "undefined" : "length"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "8"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#hasProtocol",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "11",
-    "label" : {
-      "IRI-based" : "hasProtocol",
-      "undefined" : "hasProtocol"
-    },
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "10"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#signatureId",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "signatureId",
-      "undefined" : "signatureId"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#generatorId",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "generatorId",
-      "undefined" : "generatorId"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "14"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "hasDestinationIP",
-      "undefined" : "hasDestinationIP"
-    },
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "16"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#icmpSequence",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "icmpSequence",
-      "undefined" : "icmpSequence"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "18"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#hasSourceIP",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "hasSourceIP",
-      "undefined" : "hasSourceIP"
-    },
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "20"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#identification",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "22",
-    "label" : {
-      "IRI-based" : "identification",
-      "undefined" : "identification"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "21"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#sequence",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "sequence",
-      "undefined" : "sequence"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "23"
-  }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#timeToLive",
-    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "timeToLive",
-      "undefined" : "timeToLive"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "25"
-  }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#acknowledge",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "33",
+    "range" : "6",
     "label" : {
       "IRI-based" : "acknowledge",
       "undefined" : "acknowledge"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "32"
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#icmpType",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "icmpType",
+      "undefined" : "icmpType"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#message",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "30",
+    "range" : "13",
     "label" : {
       "IRI-based" : "message",
       "undefined" : "message"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "36"
+    "id" : "12"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#icmpCode",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "35",
+    "range" : "11",
     "label" : {
       "IRI-based" : "icmpCode",
       "undefined" : "icmpCode"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "37"
+    "id" : "14"
   }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#hasReference",
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#length",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "7",
+    "range" : "18",
     "label" : {
-      "IRI-based" : "hasReference",
-      "undefined" : "hasReference"
+      "IRI-based" : "length",
+      "undefined" : "length"
     },
     "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#hasProtocol",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasProtocol",
+      "undefined" : "hasProtocol"
+    },
+    "domain" : "17",
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "20"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#flag",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "34",
+    "range" : "10",
     "label" : {
       "IRI-based" : "flag",
       "undefined" : "flag"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "39"
+    "id" : "22"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#priority",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "31",
+    "range" : "24",
     "label" : {
       "IRI-based" : "priority",
       "undefined" : "priority"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "40"
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#signatureId",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "signatureId",
+      "undefined" : "signatureId"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#destinationPort",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "41",
+    "range" : "9",
     "label" : {
       "IRI-based" : "destinationPort",
       "undefined" : "destinationPort"
     },
-    "domain" : "1",
+    "domain" : "17",
     "attributes" : [ "datatype" ],
-    "id" : "42"
+    "id" : "28"
   }, {
-    "iri" : "http://w3id.org/sepses/vocab/ref/snort#signatureRevision",
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#icmpSequence",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "28",
+    "range" : "15",
     "label" : {
-      "IRI-based" : "signatureRevision",
-      "undefined" : "signatureRevision"
+      "IRI-based" : "icmpSequence",
+      "undefined" : "icmpSequence"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "43"
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#identification",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "identification",
+      "undefined" : "identification"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "30"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#sourcePort",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "29",
+    "range" : "32",
     "label" : {
       "IRI-based" : "sourcePort",
       "undefined" : "sourcePort"
     },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#sequence",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "sequence",
+      "undefined" : "sequence"
+    },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "44"
+    "id" : "33"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#timeToLive",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "timeToLive",
+      "undefined" : "timeToLive"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#destinationIp",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "destinationIp",
+      "undefined" : "destinationIp"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#sourceIp",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "sourceIp",
+      "undefined" : "sourceIp"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "38"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#typeOfService",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "27",
+    "range" : "41",
     "label" : {
       "IRI-based" : "typeOfService",
       "undefined" : "typeOfService"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "45"
+    "id" : "40"
   }, {
     "iri" : "http://w3id.org/sepses/vocab/ref/snort#hasClassType",
     "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
-    "range" : "46",
+    "range" : "42",
     "label" : {
       "IRI-based" : "hasClassType",
       "undefined" : "hasClassType"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "47"
+    "id" : "43"
   } ]
 }

@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <http://w3id.org/sepses/vocab/ref/snort/1.0.0> a prov:Entity;
-	 dc:title "SEPSES SNORT Ontology";
+	 dc:title "SNORT Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
