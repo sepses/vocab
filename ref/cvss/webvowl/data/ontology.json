@@ -1,0 +1,758 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header": {
+    "languages": [
+      "en",
+      "undefined"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://w3id.org/sepses/vocab/ref/cvss",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://w3id.org/sepses/vocab/ref/cve"
+    ],
+    "title": {
+      "undefined": "SEPSES CVSS Ontology"
+    },
+    "iri": "http://w3id.org/sepses/vocab/ref/cvss",
+    "author": [
+      "SEPSES team"
+    ],
+    "description": {
+      "en": "An ontology to describe CVSS resources extracted from NVD databases."
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "SEPSES team",
+          "type": "label"
+        }
+      ],
+      "rights": [
+        {
+          "identifier": "rights",
+          "language": "undefined",
+          "value": "http://creativecommons.org/licenses/by/4.0/",
+          "type": "label"
+        }
+      ],
+      "preferredNamespacePrefix": [
+        {
+          "identifier": "preferredNamespacePrefix",
+          "language": "undefined",
+          "value": "cvss",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "undefined",
+          "value": "SEPSES CVSS Ontology",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "metrics": {
+    "classCount": 7,
+    "objectPropertyCount": 2,
+    "datatypePropertyCount": 15,
+    "individualCount": 0
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "8",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "9",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "10",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "11",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "12",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "6",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "4",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "20",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "18",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    },
+    {
+      "id": "16",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "25",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "27",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "32",
+      "type": "rdfs:Datatype"
+    }
+  ],
+  "classAttribute": [
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#CVSSTemporalMetric",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVSSTemporalMetric",
+        "undefined": "CVSSTemporalMetric"
+      },
+      "id": "0",
+      "superClasses": [
+        "1"
+      ]
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "7",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "8",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "9",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "10",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "11",
+      "label": {
+        "IRI-based": "decimal"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "12",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "6",
+      "label": {
+        "IRI-based": "decimal"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "4",
+      "label": {
+        "IRI-based": "decimal"
+      }
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#CVSSEnvironmentalMetric",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVSSEnvironmentalMetric",
+        "undefined": "CVSSEnvironmentalMetric"
+      },
+      "id": "13",
+      "superClasses": [
+        "1"
+      ]
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "19",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "20",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVSS3BaseMetric",
+        "undefined": "CVSS3BaseMetric"
+      },
+      "id": "22",
+      "superClasses": [
+        "3"
+      ]
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#CVSSBaseMetric",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVSSBaseMetric",
+        "undefined": "CVSSBaseMetric"
+      },
+      "subClasses": [
+        "18",
+        "22"
+      ],
+      "id": "3",
+      "superClasses": [
+        "1"
+      ]
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVSS2BaseMetric",
+        "undefined": "CVSS2BaseMetric"
+      },
+      "id": "18",
+      "superClasses": [
+        "3"
+      ]
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#CVSS",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVSS",
+        "undefined": "CVSS"
+      },
+      "subClasses": [
+        "13",
+        "0",
+        "3"
+      ],
+      "id": "1"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cve#CVE",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cve",
+      "instances": 0,
+      "label": {
+        "IRI-based": "CVE"
+      },
+      "attributes": [
+        "external"
+      ],
+      "id": "35"
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "16",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "29",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "25",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "27",
+      "label": {
+        "IRI-based": "string"
+      }
+    },
+    {
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "id": "32",
+      "label": {
+        "IRI-based": "string"
+      }
+    }
+  ],
+  "property": [
+    {
+      "id": "2",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "5",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "14",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "15",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "17",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "23",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "24",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "26",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "28",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "30",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "31",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "33",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "34",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "37",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "36",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "38",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "39",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "40",
+      "type": "owl:datatypeProperty"
+    },
+    {
+      "id": "41",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "42",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "43",
+      "type": "rdfs:SubClassOf"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#impactScore",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "4",
+      "label": {
+        "IRI-based": "impactScore",
+        "undefined": "impactScore"
+      },
+      "domain": "3",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "2"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#exploitabilityScore",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "6",
+      "label": {
+        "IRI-based": "exploitabilityScore",
+        "undefined": "exploitabilityScore"
+      },
+      "domain": "3",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "5"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#confidentialityImpact",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "12",
+      "label": {
+        "IRI-based": "confidentialityImpact",
+        "undefined": "confidentialityImpact"
+      },
+      "domain": "3",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "14"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#vectorString",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "16",
+      "label": {
+        "IRI-based": "vectorString",
+        "undefined": "vectorString"
+      },
+      "domain": "3",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "15"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#authentication",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "9",
+      "label": {
+        "IRI-based": "authentication",
+        "undefined": "authentication"
+      },
+      "domain": "18",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "17"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#attackVector",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "8",
+      "label": {
+        "IRI-based": "attackVector",
+        "undefined": "attackVector"
+      },
+      "domain": "22",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "21"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#attackComplexity",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "7",
+      "label": {
+        "IRI-based": "attackComplexity",
+        "undefined": "attackComplexity"
+      },
+      "domain": "22",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "23"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#integrityImpact",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "25",
+      "label": {
+        "IRI-based": "integrityImpact",
+        "undefined": "integrityImpact"
+      },
+      "domain": "3",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "24"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#scope",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "27",
+      "label": {
+        "IRI-based": "scope",
+        "undefined": "scope"
+      },
+      "domain": "22",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "26"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#userInteraction",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "29",
+      "label": {
+        "IRI-based": "userInteraction",
+        "undefined": "userInteraction"
+      },
+      "domain": "22",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "28"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#baseScore",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "11",
+      "label": {
+        "IRI-based": "baseScore",
+        "undefined": "baseScore"
+      },
+      "domain": "3",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "30"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#privilegesRequired",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "32",
+      "label": {
+        "IRI-based": "privilegesRequired",
+        "undefined": "privilegesRequired"
+      },
+      "domain": "22",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "31"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#availabilityImpact",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "10",
+      "label": {
+        "IRI-based": "availabilityImpact",
+        "undefined": "availabilityImpact"
+      },
+      "domain": "3",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "33"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#hasCVSS2BaseMetric",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "18",
+      "label": {
+        "IRI-based": "hasCVSS2BaseMetric",
+        "undefined": "hasCVSS2BaseMetric"
+      },
+      "superproperty": [
+        "36"
+      ],
+      "domain": "35",
+      "attributes": [
+        "object"
+      ],
+      "id": "34"
+    },
+    {
+      "range": "1",
+      "domain": "0",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "37"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#hasCVSS",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "1",
+      "label": {
+        "IRI-based": "hasCVSS"
+      },
+      "domain": "35",
+      "subproperty": [
+        "34"
+      ],
+      "comment": {
+        "undefined": "hasCVSS"
+      },
+      "attributes": [
+        "object"
+      ],
+      "id": "36"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#accessComplexity",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "19",
+      "label": {
+        "IRI-based": "accessComplexity",
+        "undefined": "accessComplexity"
+      },
+      "domain": "18",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "38"
+    },
+    {
+      "range": "1",
+      "domain": "13",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "39"
+    },
+    {
+      "iri": "http://w3id.org/sepses/vocab/ref/cvss#accessVector",
+      "baseIri": "http://w3id.org/sepses/vocab/ref/cvss",
+      "range": "20",
+      "label": {
+        "IRI-based": "accessVector",
+        "undefined": "accessVector"
+      },
+      "domain": "18",
+      "attributes": [
+        "datatype"
+      ],
+      "id": "40"
+    },
+    {
+      "range": "1",
+      "domain": "3",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "41"
+    },
+    {
+      "range": "3",
+      "domain": "22",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "42"
+    },
+    {
+      "range": "3",
+      "domain": "18",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "id": "43"
+    }
+  ]
+}
