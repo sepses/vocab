@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/ref/snort#"
+     xml:base="http://w3id.org/sepses/vocab/ref/snort"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/ref/snort">
+        <owl:versionIRI rdf:resource="http://w3id.org/sepses/vocab/ref/snort/1.0.0"/>
+        <dc:creator>SEPSES team</dc:creator>
+        <dc:description xml:lang="en">An upper ontology to describe common terms related to SNORT.</dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>SEPSES SNORT Ontology</dc:title>
+        <vann:preferredNamespacePrefix>snort</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#hasClassType -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#hasClassType">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/snort#ClassType"/>
+        <rdfs:label>hasClassType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/snort#IPAddress"/>
+        <rdfs:label>hasDestinationIP</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#hasProtocol -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#hasProtocol">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Protocol"/>
+        <rdfs:label>hasProtocol</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#hasReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#hasReference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Reference"/>
+        <rdfs:label>hasReference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#hasSourceIP -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#hasSourceIP">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/snort#IPAddress"/>
+        <rdfs:label>hasSourceIP</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#acknowledge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#acknowledge">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>acknowledge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#destinationPort -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#destinationPort">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>destinationPort</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#flag -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#flag">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#generatorId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#generatorId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>generatorId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#icmpCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#icmpCode">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>icmpCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#icmpId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#icmpId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>icmpId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#icmpSequence -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#icmpSequence">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>icmpSequence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#icmpType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#icmpType">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>icmpType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#identification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#identification">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>identification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#length -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#length">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>length</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#message -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#message">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>message</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#priority -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#priority">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#sequence -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#sequence">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>sequence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#signatureId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#signatureId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>signatureId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#signatureRevision -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#signatureRevision">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>signatureRevision</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#sourcePort -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#sourcePort">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>sourcePort</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#timeToLive -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#timeToLive">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>timeToLive</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#typeOfService -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#typeOfService">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>typeOfService</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#window -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/snort#window">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/snort#Snort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>window</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#ClassType -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#ClassType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Class Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#IPAddress -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#IPAddress">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>IP Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#Protocol -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#Protocol">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#Reference -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#Reference">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#Snort -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#Snort">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Snort</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

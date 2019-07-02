@@ -1,0 +1,228 @@
+<http://w3id.org/sepses/vocab/ref/snort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/sepses/vocab/ref/snort> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/sepses/vocab/ref/snort/1.0.0> .
+<http://w3id.org/sepses/vocab/ref/snort> <http://purl.org/dc/elements/1.1/creator> "SEPSES team" .
+<http://w3id.org/sepses/vocab/ref/snort> <http://purl.org/dc/elements/1.1/description> "An upper ontology to describe common terms related to SNORT."@en .
+<http://w3id.org/sepses/vocab/ref/snort> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/sepses/vocab/ref/snort> <http://purl.org/dc/elements/1.1/title> "SEPSES SNORT Ontology" .
+<http://w3id.org/sepses/vocab/ref/snort> <http://purl.org/vocab/vann/preferredNamespacePrefix> "snort" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/snort#hasClassType
+<http://w3id.org/sepses/vocab/ref/snort#hasClassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#hasClassType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#hasClassType> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/snort#ClassType> .
+<http://w3id.org/sepses/vocab/ref/snort#hasClassType> <http://www.w3.org/2000/01/rdf-schema#label> "hasClassType" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP
+<http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/snort#IPAddress> .
+<http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestinationIP" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#hasProtocol
+<http://w3id.org/sepses/vocab/ref/snort#hasProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/snort#Protocol> .
+<http://w3id.org/sepses/vocab/ref/snort#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "hasProtocol" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#hasReference
+<http://w3id.org/sepses/vocab/ref/snort#hasReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#hasReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#hasReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/snort#Reference> .
+<http://w3id.org/sepses/vocab/ref/snort#hasReference> <http://www.w3.org/2000/01/rdf-schema#label> "hasReference" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#hasSourceIP
+<http://w3id.org/sepses/vocab/ref/snort#hasSourceIP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#hasSourceIP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#hasSourceIP> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/snort#IPAddress> .
+<http://w3id.org/sepses/vocab/ref/snort#hasSourceIP> <http://www.w3.org/2000/01/rdf-schema#label> "hasSourceIP" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/snort#acknowledge
+<http://w3id.org/sepses/vocab/ref/snort#acknowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#acknowledge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#acknowledge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#acknowledge> <http://www.w3.org/2000/01/rdf-schema#label> "acknowledge" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#destinationPort
+<http://w3id.org/sepses/vocab/ref/snort#destinationPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#destinationPort> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#destinationPort> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#destinationPort> <http://www.w3.org/2000/01/rdf-schema#label> "destinationPort" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#flag
+<http://w3id.org/sepses/vocab/ref/snort#flag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#flag> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#flag> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#flag> <http://www.w3.org/2000/01/rdf-schema#label> "flag" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#generatorId
+<http://w3id.org/sepses/vocab/ref/snort#generatorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#generatorId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#generatorId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#generatorId> <http://www.w3.org/2000/01/rdf-schema#label> "generatorId" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#icmpCode
+<http://w3id.org/sepses/vocab/ref/snort#icmpCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpCode> <http://www.w3.org/2000/01/rdf-schema#label> "icmpCode" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#icmpId
+<http://w3id.org/sepses/vocab/ref/snort#icmpId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpId> <http://www.w3.org/2000/01/rdf-schema#label> "icmpId" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#icmpSequence
+<http://w3id.org/sepses/vocab/ref/snort#icmpSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpSequence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpSequence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpSequence> <http://www.w3.org/2000/01/rdf-schema#label> "icmpSequence" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#icmpType
+<http://w3id.org/sepses/vocab/ref/snort#icmpType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#icmpType> <http://www.w3.org/2000/01/rdf-schema#label> "icmpType" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#identification
+<http://w3id.org/sepses/vocab/ref/snort#identification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#identification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#identification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#identification> <http://www.w3.org/2000/01/rdf-schema#label> "identification" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#length
+<http://w3id.org/sepses/vocab/ref/snort#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#length> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#length> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#length> <http://www.w3.org/2000/01/rdf-schema#label> "length" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#message
+<http://w3id.org/sepses/vocab/ref/snort#message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#message> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#message> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#message> <http://www.w3.org/2000/01/rdf-schema#label> "message" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#priority
+<http://w3id.org/sepses/vocab/ref/snort#priority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#priority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#priority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#priority> <http://www.w3.org/2000/01/rdf-schema#label> "priority" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#sequence
+<http://w3id.org/sepses/vocab/ref/snort#sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#sequence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#sequence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#sequence> <http://www.w3.org/2000/01/rdf-schema#label> "sequence" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#signatureId
+<http://w3id.org/sepses/vocab/ref/snort#signatureId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#signatureId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#signatureId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#signatureId> <http://www.w3.org/2000/01/rdf-schema#label> "signatureId" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#signatureRevision
+<http://w3id.org/sepses/vocab/ref/snort#signatureRevision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#signatureRevision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#signatureRevision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#signatureRevision> <http://www.w3.org/2000/01/rdf-schema#label> "signatureRevision" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#sourcePort
+<http://w3id.org/sepses/vocab/ref/snort#sourcePort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#sourcePort> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#sourcePort> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/snort#sourcePort> <http://www.w3.org/2000/01/rdf-schema#label> "sourcePort" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#timeToLive
+<http://w3id.org/sepses/vocab/ref/snort#timeToLive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#timeToLive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#timeToLive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#timeToLive> <http://www.w3.org/2000/01/rdf-schema#label> "timeToLive" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#typeOfService
+<http://w3id.org/sepses/vocab/ref/snort#typeOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#typeOfService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#typeOfService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#typeOfService> <http://www.w3.org/2000/01/rdf-schema#label> "typeOfService" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#window
+<http://w3id.org/sepses/vocab/ref/snort#window> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/snort#window> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/snort#Snort> .
+<http://w3id.org/sepses/vocab/ref/snort#window> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/sepses/vocab/ref/snort#window> <http://www.w3.org/2000/01/rdf-schema#label> "window" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/snort#ClassType
+<http://w3id.org/sepses/vocab/ref/snort#ClassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/snort#ClassType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/snort#ClassType> <http://www.w3.org/2000/01/rdf-schema#label> "Class Type" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#IPAddress
+<http://w3id.org/sepses/vocab/ref/snort#IPAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/snort#IPAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/snort#IPAddress> <http://www.w3.org/2000/01/rdf-schema#label> "IP Address" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#Protocol
+<http://w3id.org/sepses/vocab/ref/snort#Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/snort#Protocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/snort#Protocol> <http://www.w3.org/2000/01/rdf-schema#label> "Protocol" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#Reference
+<http://w3id.org/sepses/vocab/ref/snort#Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/snort#Reference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/snort#Reference> <http://www.w3.org/2000/01/rdf-schema#label> "Reference" .
+# 
+# http://w3id.org/sepses/vocab/ref/snort#Snort
+<http://w3id.org/sepses/vocab/ref/snort#Snort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/snort#Snort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/snort#Snort> <http://www.w3.org/2000/01/rdf-schema#label> "Snort" .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
