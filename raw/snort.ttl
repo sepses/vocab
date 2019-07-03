@@ -1,0 +1,179 @@
+@prefix : <http://w3id.org/sepses/vocab/ref/snort#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://w3id.org/sepses/vocab/ref/snort> .
+
+<http://w3id.org/sepses/vocab/ref/snort> rdf:type owl:Ontology  ;
+   owl:versionIRI <http://w3id.org/sepses/vocab/ref/snort/1.0.0> ;
+   dc:description "A reference ontology to describe common terms related to SNORT."@en ;
+   dc:title "SEPSES SNORT Ontology" ;
+   dc:rights "http://creativecommons.org/licenses/by/4.0/" ;
+   dc:creator "SEPSES team" ;
+   vann:preferredNamespacePrefix "snort" ;
+.
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/snort#hasProtocol
+:hasProtocol rdf:type owl:ObjectProperty ;
+             rdfs:domain :SnortHeader ;
+             rdfs:range :Protocol ;
+             rdfs:label "hasProtocol" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#hasClassType
+:hasClassType rdf:type owl:ObjectProperty ;
+              rdfs:domain :SnortOption ;
+              rdfs:range :ClassType ;
+              rdfs:label "hasClassType" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+
+###  http://w3id.org/sepses/vocab/ref/snort#hasSourceIP
+:sourceIp rdf:type owl:DatatypeProperty ;
+             rdfs:domain :SnortHeader ;
+             rdfs:range xsd:string ;
+             rdfs:label "sourceIp" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP
+:destinationIp rdf:type owl:DatatypeProperty ;
+             rdfs:domain :SnortHeader ;
+             rdfs:range xsd:string ;
+             rdfs:label "destinationIp" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#hasSourceIP
+:sourcePort rdf:type owl:DatatypeProperty ;
+             rdfs:domain :SnortHeader ;
+             rdfs:range xsd:string ;
+             rdfs:label "sourcePort" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#hasDestinationIP
+:destinationPort rdf:type owl:DatatypeProperty ;
+             rdfs:domain :SnortHeader ;
+             rdfs:range xsd:string ;
+             rdfs:label "destinationPort" .
+
+
+
+###  http://w3id.org/sepses/vocab/ref/snort#acknowledge
+:acknowledge rdf:type owl:DatatypeProperty ;
+             rdfs:domain :SnortOption ;
+             rdfs:range xsd:integer ;
+             rdfs:label "acknowledge" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#flag
+:flag rdf:type owl:DatatypeProperty ;
+      rdfs:domain :SnortOption ;
+      rdfs:range xsd:string ;
+      rdfs:label "flag" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#icmpCode
+:icmpCode rdf:type owl:DatatypeProperty ;
+          rdfs:domain :SnortOption ;
+          rdfs:range xsd:string ;
+          rdfs:label "icmpCode" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#icmpId
+:icmpId rdf:type owl:DatatypeProperty ;
+        rdfs:domain :SnortOption ;
+        rdfs:range xsd:integer ;
+        rdfs:label "icmpId" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#icmpSequence
+:icmpSequence rdf:type owl:DatatypeProperty ;
+              rdfs:domain :SnortOption ;
+              rdfs:range xsd:integer ;
+              rdfs:label "icmpSequence" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#icmpType
+:icmpType rdf:type owl:DatatypeProperty ;
+          rdfs:domain :SnortOption ;
+          rdfs:range xsd:string ;
+          rdfs:label "icmpType" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#identification
+:identification rdf:type owl:DatatypeProperty ;
+                rdfs:domain :SnortOption ;
+                rdfs:range xsd:integer ;
+                rdfs:label "identification" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:domain :SnortOption ;
+        rdfs:range xsd:integer ;
+        rdfs:label "length" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#message
+:message rdf:type owl:DatatypeProperty ;
+         rdfs:domain :SnortOption ;
+         rdfs:range xsd:string ;
+         rdfs:label "message" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#priority
+:priority rdf:type owl:DatatypeProperty ;
+          rdfs:domain :SnortOption ;
+          rdfs:range xsd:integer ;
+          rdfs:label "priority" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#sequence
+:sequence rdf:type owl:DatatypeProperty ;
+          rdfs:domain :SnortOption ;
+          rdfs:range xsd:string ;
+          rdfs:label "sequence" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#signatureId
+:signatureId rdf:type owl:DatatypeProperty ;
+             rdfs:domain :SnortOption ;
+             rdfs:range xsd:integer ;
+             rdfs:label "signatureId" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#timeToLive
+:timeToLive rdf:type owl:DatatypeProperty ;
+            rdfs:domain :SnortOption ;
+            rdfs:range xsd:string ;
+            rdfs:label "timeToLive" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#typeOfService
+:typeOfService rdf:type owl:DatatypeProperty ;
+               rdfs:domain :SnortOption ;
+               rdfs:range xsd:string ;
+               rdfs:label "typeOfService" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#window
+:window rdf:type owl:DatatypeProperty ;
+        rdfs:domain :SnortOption ;
+        rdfs:range xsd:string ;
+        rdfs:label "window" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/snort#ClassType
+:ClassType rdf:type owl:Class ;
+           rdfs:label "Class Type" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:label "Protocol" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#Snort
+:SnortHeader rdf:type owl:Class ;
+       rdfs:label "Snort Header" .
+
+###  http://w3id.org/sepses/vocab/ref/snort#Snort
+:SnortOption rdf:type owl:Class ;
+       rdfs:label "Snort Option" .
+
+###  Generated by the OWL API (version 4.3.1) https://github.com/owlcs/owlapi

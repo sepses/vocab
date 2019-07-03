@@ -1,0 +1,17 @@
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/capec.ttl -outFolder ref/capec -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/cpe.ttl -outFolder ref/cpe -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/cve.ttl -outFolder ref/cve -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/cwe.ttl -outFolder ref/cwe -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/cvss.ttl -outFolder ref/cvss -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/core.ttl -outFolder log/core -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/snort.ttl -outFolder ref/snort -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/snortrule.ttl -outFolder rule/snort -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -rewriteAll
+
+java -jar widoco-1.4.11-jar-with-dependencies.jar -ontFile raw/snortalert.ttl -outFolder log/snort-alert -getOntologyMetadata -htaccess -webVowl -includeAnnotationProperties -includeImportedOntologies -rewriteAll

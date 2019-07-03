@@ -1,0 +1,244 @@
+@prefix : <http://w3id.org/sepses/vocab/ref/capec#> .
+@prefix cwe: <http://w3id.org/sepses/vocab/ref/cwe#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://w3id.org/sepses/vocab/ref/capec> .
+
+<http://w3id.org/sepses/vocab/ref/capec> rdf:type owl:Ontology ;
+                                          owl:versionIRI <http://w3id.org/sepses/vocab/ref/capec/1.0.0> ;
+                                          dc:description "An ontology to describe CAPEC resources extracted from MITRE."@en ;
+                                          dc:title "SEPSES CAPEC Ontology" ;
+                                          dc:rights "http://creativecommons.org/licenses/by/4.0/" ;
+                                          dc:creator "SEPSES team" ;
+                                          vann:preferredNamespacePrefix "capec" ;
+.
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/capec#hasConsequence
+:hasConsequence rdf:type owl:ObjectProperty ;
+                rdfs:domain :CAPEC ;
+                rdfs:range :Consequence ;
+                rdfs:label "hasConsequence" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#hasExecutionFlow
+:hasExecutionFlow rdf:type owl:ObjectProperty ;
+                  rdfs:domain :CAPEC ;
+                  rdfs:range :ExecutionFlow ;
+                  rdfs:label "hasExecutionFlow" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#hasReference
+:hasReference rdf:type owl:ObjectProperty ;
+              rdfs:domain :CAPEC ;
+              rdfs:range :Reference ;
+              rdfs:label "hasCAPECReference" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#hasRelatedAttackPattern
+:hasRelatedAttackPattern rdf:type owl:ObjectProperty ;
+                         rdfs:domain :CAPEC ;
+                         rdfs:range :RelatedAttackPattern ;
+                         rdfs:label "hasRelatedAttackPattern" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#hasRelatedWeakness
+:hasRelatedWeakness rdf:type owl:ObjectProperty ;
+                    rdfs:domain :CAPEC ;
+                    rdfs:range cwe:CWE ;
+                    rdfs:label "hasRelatedWeakness" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#hasSkillRequired
+:hasSkillRequired rdf:type owl:ObjectProperty ;
+                  rdfs:domain :CAPEC ;
+                  rdfs:range :SkillRequired ;
+                  rdfs:label "hasSkillRequired" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/capec#abstraction
+:abstraction rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CAPEC ;
+             rdfs:range xsd:string ;
+             rdfs:label "abstraction" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#attackStep
+:attackStep rdf:type owl:DatatypeProperty ;
+            rdfs:domain :ExecutionFlow ;
+            rdfs:range xsd:string ;
+            rdfs:label "attackStep" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#attackStepDescription
+:attackStepDescription rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :ExecutionFlow ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "attackStepDescription" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#attackStepPhase
+:attackStepPhase rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ExecutionFlow ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "attackStepPhase" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#attackStepTechnique
+:attackStepTechnique rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ExecutionFlow ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "attackStepTechnique" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#consequenceImpact
+:consequenceImpact rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Consequence ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "consequenceImpact" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#consequenceScope
+:consequenceScope rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Consequence ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "consequenceScope" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CAPEC ;
+             rdfs:range xsd:string ;
+             rdfs:label "description" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :CAPEC ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#likelihoodOfAttack
+:likelihoodOfAttack rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :CAPEC ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "likelihoodOfAttack" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#mitigation
+:mitigation rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CAPEC ;
+            rdfs:range xsd:string ;
+            rdfs:label "mitigation" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :CAPEC ;
+      rdfs:range xsd:string ;
+      rdfs:label "name" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#prerequisites
+:prerequisites rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CAPEC ;
+               rdfs:range xsd:string ;
+               rdfs:label "prerequisites" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#relatedAttackPatternNature
+:relatedAttackPatternNature rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :RelatedAttackPattern ;
+                            rdfs:range xsd:string ;
+                            rdfs:label "relatedAttackPatternNature" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#relatedAttackPatternViewId
+:relatedAttackPatternViewId rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :RelatedAttackPattern ;
+                            rdfs:range xsd:string ;
+                            rdfs:label "relatedAttackPatternViewId" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#resourceRequired
+:resourceRequired rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :CAPEC ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "resourceRequired" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#skillDescription
+:skillDescription rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :SkillRequired ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "skillDescription" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#skillLevel
+:skillLevel rdf:type owl:DatatypeProperty ;
+            rdfs:domain :SkillRequired ;
+            rdfs:range xsd:string ;
+            rdfs:label "skillLevel" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :CAPEC ;
+        rdfs:range xsd:string ;
+        rdfs:label "status" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#typicalSeverity
+:typicalSeverity rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :CAPEC ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "typicalSeverity" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/sepses/vocab/ref/capec#CAPEC
+:CAPEC rdf:type owl:Class ;
+       rdfs:label "CAPEC" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#Consequence
+:Consequence rdf:type owl:Class ;
+             rdfs:label "Consequence" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#ExecutionFlow
+:ExecutionFlow rdf:type owl:Class ;
+               rdfs:label "ExecutionFlow" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#Reference
+:Reference rdf:type owl:Class ;
+           rdfs:label "Reference" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#RelatedAttackPattern
+:RelatedAttackPattern rdf:type owl:Class ;
+                      rdfs:label "RelatedAttackPattern" .
+
+
+###  http://w3id.org/sepses/vocab/ref/capec#SkillRequired
+:SkillRequired rdf:type owl:Class ;
+               rdfs:label "SkillRequired" .
+
+
+###  Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi
