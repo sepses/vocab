@@ -1,0 +1,269 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/sepses/vocab/log/snort-alert", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/ref/snort", "http://w3id.org/sepses/vocab/log/core" ],
+    "title" : {
+      "undefined" : "SEPSES IDS Snort Alert Log Ontology"
+    },
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "author" : [ "SEPSES team" ],
+    "description" : {
+      "en" : "An ontology to describe IDS Snort Alert log structure"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "SEPSES team",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "snort-alert",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "SEPSES IDS Snort Alert Log Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IDSSnortAlertLogEntry",
+      "undefined" : "IDSSnortAlertLogEntry"
+    },
+    "comment" : {
+      "undefined" : "\n                          This class is a subclass of core-log:LogEntry, snort:SnortObject, and snort:SnortOption\n                      "
+    },
+    "id" : "1",
+    "superClasses" : [ "10", "11", "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#SnortOption",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SnortOption"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/snort#SnortHeader",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/snort",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SnortHeader"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/core#LogEntry",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogEntry"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert#datagramLength",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "datagramLength",
+      "undefined" : "datagramLength"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert#signatureRevision",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "signatureRevision",
+      "undefined" : "signatureRevision"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert#ethernetLength",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "ethernetLength",
+      "undefined" : "ethernetLength"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert#ethernetSource",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "ethernetSource",
+      "undefined" : "ethernetSource"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "10",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert#ethernetDestination",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "ethernetDestination",
+      "undefined" : "ethernetDestination"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/log/snort-alert#generatorId",
+    "baseIri" : "http://w3id.org/sepses/vocab/log/snort-alert",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "generatorId",
+      "undefined" : "generatorId"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  } ]
+}

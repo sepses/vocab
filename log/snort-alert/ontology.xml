@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/log/snort-alert#"
+     xml:base="http://w3id.org/sepses/vocab/log/snort-alert"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/log/snort-alert">
+        <owl:versionIRI rdf:resource="http://w3id.org/sepses/vocab/log/snort-alert/1.0.0"/>
+        <owl:imports rdf:resource="http://w3id.org/sepses/vocab/ref/snort"/>
+        <dc:creator>SEPSES team</dc:creator>
+        <dc:description xml:lang="en">An ontology to describe IDS Snort Alert log structure</dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>SEPSES IDS Snort Alert Log Ontology</dc:title>
+        <vann:preferredNamespacePrefix>snort-alert</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/snort-alert#datagramLength -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/snort-alert#datagramLength">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>datagramLength</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/snort-alert#ethernetDestination -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/snort-alert#ethernetDestination">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ethernetDestination</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/snort-alert#ethernetLength -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/snort-alert#ethernetLength">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>ethernetLength</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/snort-alert#ethernetSource -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/snort-alert#ethernetSource">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ethernetSource</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/snort-alert#generatorId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/snort-alert#generatorId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>generatorId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/snort-alert#signatureRevision -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/log/snort-alert#signatureRevision">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>signatureRevision</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/core#LogEntry -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/log/snort-alert#IDSSnortAlertLogEntry">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/log/core#LogEntry"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/ref/snort#SnortHeader"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/ref/snort#SnortOption"/>
+        <rdfs:comment>
+                          This class is a subclass of core-log:LogEntry, snort:SnortObject, and snort:SnortOption
+                      </rdfs:comment>
+        <rdfs:label>IDSSnortAlertLogEntry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#SnortHeader -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#SnortHeader"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/snort#SnortOption -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/snort#SnortOption"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
