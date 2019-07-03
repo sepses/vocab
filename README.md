@@ -2,3 +2,5 @@
 
 # SEPSES Vocabularies
 A set of vocabularies used in the SEPSES project
+
+The WIDOCO binary is gratefully downloaded from its [latest release](https://github.com/sepses/vocab) for generating the documentaion for the vocabularies.
