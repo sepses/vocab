@@ -1,33 +1,37 @@
 @prefix : <http://w3id.org/sepses/vocab/ref/cvss#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix cve: <http://w3id.org/sepses/vocab/ref/cve#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cvss: <http://w3id.org/sepses/vocab/ref/cvss#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://w3id.org/sepses/vocab/ref/cvss> .
 
 <http://w3id.org/sepses/vocab/ref/cvss> rdf:type owl:Ontology ;
-                                         owl:versionIRI <http://w3id.org/sepses/vocab/ref/cvss/1.0.0> ;
-                                         dc:description "An ontology to describe CVSS resources extracted from NVD databases."@en ;
-                                         dc:title "SEPSES CVSS Ontology" ;
-                                         dc:rights "http://creativecommons.org/licenses/by/4.0/" ;
-                                         dc:creator "SEPSES team" ;
-                                         vann:preferredNamespacePrefix "cvss" ;
-.
+                                           owl:versionIRI <https://w3id.org/sepses/vocab/ref/cvss/2.0.0> ;
+                                           <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" ,
+                                                                                     "Fajar J. Ekaputra",
+                                                                                     "Elmar Kiesling" ,
+                                                                                     "Andreas Ekelhart" ;
+                                           <http://purl.org/dc/elements/1.1/description> """An ontology to represent CVSS
+This ontology is developed based on the CVSS resources extracted from NVD (https://nvd.nist.gov/vuln/) """@en ;
+                                           <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                           <http://purl.org/dc/elements/1.1/title> "CVSS Ontology" ;
+                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "cvss" .
+
+
+
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://w3id.org/sepses/vocab/ref/cvss#hasCVSS
-:hasCVSS rdf:type owl:ObjectProperty ;
-         rdfs:domain cve:CVE ;
-         rdfs:range :CVSS ;
-         rdfs:comment "hasCVSS" .
 
+###  http://w3id.org/sepses/vocab/ref/cvss#hasCVSS
+cvss:hasCVSS rdf:type owl:ObjectProperty ;
+             rdfs:domain cve:CVE ;
+             rdfs:range cvss:CVSS .
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#hasCVSS2BaseMetric
 :hasCVSS2BaseMetric rdf:type owl:ObjectProperty ;
@@ -36,154 +40,181 @@
                     rdfs:range :CVSS2BaseMetric ;
                     rdfs:label "hasCVSS2BaseMetric" .
 
+###  http://w3id.org/sepses/vocab/ref/cvss#hasCVSS3BaseMetric
+:hasCVSS3BaseMetric rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasCVSS ;
+                    rdfs:domain cve:CVE ;
+                    rdfs:range :CVSS3BaseMetric ;
+                    rdfs:label "hasCVSS3BaseMetric" .    
+
 
 #################################################################
 #    Data properties
 #################################################################
 
+###  http://w3id.org/sepses/vocab/ref/cvss#version
+cvss:version rdf:type owl:DatatypeProperty ;
+                      rdfs:domain cvss:CVSS ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "version" .
+
+
 ###  http://w3id.org/sepses/vocab/ref/cvss#accessComplexity
-:accessComplexity rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :CVSS2BaseMetric ;
-                  rdfs:range xsd:string ;
-                  rdfs:label "accessComplexity" .
+cvss:accessComplexity rdf:type owl:DatatypeProperty ;
+                      rdfs:domain cvss:CVSS2BaseMetric ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "accessComplexity" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#accessVector
-:accessVector rdf:type owl:DatatypeProperty ;
-              rdfs:domain :CVSS2BaseMetric ;
-              rdfs:range xsd:string ;
-              rdfs:label "accessVector" .
+cvss:accessVector rdf:type owl:DatatypeProperty ;
+                  rdfs:domain cvss:CVSS2BaseMetric ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "accessVector" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#attackComplexity
-:attackComplexity rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :CVSS3BaseMetric ;
-                  rdfs:range xsd:string ;
-                  rdfs:label "attackComplexity" .
+cvss:attackComplexity rdf:type owl:DatatypeProperty ;
+                      rdfs:domain cvss:CVSS3BaseMetric ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "attackComplexity" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#attackVector
-:attackVector rdf:type owl:DatatypeProperty ;
-              rdfs:domain :CVSS3BaseMetric ;
-              rdfs:range xsd:string ;
-              rdfs:label "attackVector" .
+cvss:attackVector rdf:type owl:DatatypeProperty ;
+                  rdfs:domain cvss:CVSS3BaseMetric ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "attackVector" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#authentication
-:authentication rdf:type owl:DatatypeProperty ;
-                rdfs:domain :CVSS2BaseMetric ;
-                rdfs:range xsd:string ;
-                rdfs:label "authentication" .
+cvss:authentication rdf:type owl:DatatypeProperty ;
+                    rdfs:domain cvss:CVSS2BaseMetric ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "authentication" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#availabilityImpact
-:availabilityImpact rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :CVSSBaseMetric ;
-                    rdfs:range xsd:string ;
-                    rdfs:label "availabilityImpact" .
+cvss:availabilityImpact rdf:type owl:DatatypeProperty ;
+                        rdfs:domain cvss:CVSSBaseMetric ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "availabilityImpact" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#baseScore
-:baseScore rdf:type owl:DatatypeProperty ;
-           rdfs:domain :CVSSBaseMetric ;
-           rdfs:range xsd:decimal ;
-           rdfs:label "baseScore" .
+cvss:baseScore rdf:type owl:DatatypeProperty ;
+               rdfs:domain cvss:CVSSBaseMetric ;
+               rdfs:range xsd:decimal ;
+               rdfs:label "baseScore" .
+
+###  http://w3id.org/sepses/vocab/ref/cvss#baseSeverity
+cvss:baseSeverity rdf:type owl:DatatypeProperty ;
+               rdfs:domain cvss:CVSS3BaseMetric ;
+               rdfs:range xsd:string ;
+               rdfs:label "baseSeverity" .
+
+###  http://w3id.org/sepses/vocab/ref/cvss#severity
+cvss:severity rdf:type owl:DatatypeProperty ;
+               rdfs:domain cvss:CVSS2BaseMetric ;
+               rdfs:range xsd:string ;
+               rdfs:label "severity" .
+
+
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#confidentialityImpact
-:confidentialityImpact rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :CVSSBaseMetric ;
-                       rdfs:range xsd:string ;
-                       rdfs:label "confidentialityImpact" .
+cvss:confidentialityImpact rdf:type owl:DatatypeProperty ;
+                           rdfs:domain cvss:CVSSBaseMetric ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "confidentialityImpact" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#exploitabilityScore
-:exploitabilityScore rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :CVSSBaseMetric ;
-                     rdfs:range xsd:decimal ;
-                     rdfs:label "exploitabilityScore" .
+cvss:exploitabilityScore rdf:type owl:DatatypeProperty ;
+                         rdfs:domain cvss:CVSSBaseMetric ;
+                         rdfs:range xsd:decimal ;
+                         rdfs:label "exploitabilityScore" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#impactScore
-:impactScore rdf:type owl:DatatypeProperty ;
-             rdfs:domain :CVSSBaseMetric ;
-             rdfs:range xsd:decimal ;
-             rdfs:label "impactScore" .
+cvss:impactScore rdf:type owl:DatatypeProperty ;
+                 rdfs:domain cvss:CVSSBaseMetric ;
+                 rdfs:range xsd:decimal ;
+                 rdfs:label "impactScore" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#integrityImpact
-:integrityImpact rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :CVSSBaseMetric ;
-                 rdfs:range xsd:string ;
-                 rdfs:label "integrityImpact" .
+cvss:integrityImpact rdf:type owl:DatatypeProperty ;
+                     rdfs:domain cvss:CVSSBaseMetric ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "integrityImpact" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#privilegesRequired
-:privilegesRequired rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :CVSS3BaseMetric ;
-                    rdfs:range xsd:string ;
-                    rdfs:label "privilegesRequired" .
+cvss:privilegesRequired rdf:type owl:DatatypeProperty ;
+                        rdfs:domain cvss:CVSS3BaseMetric ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "privilegesRequired" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#scope
-:scope rdf:type owl:DatatypeProperty ;
-       rdfs:domain :CVSS3BaseMetric ;
-       rdfs:range xsd:string ;
-       rdfs:label "scope" .
+cvss:scope rdf:type owl:DatatypeProperty ;
+           rdfs:domain cvss:CVSS3BaseMetric ;
+           rdfs:range xsd:string ;
+           rdfs:label "scope" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#userInteraction
-:userInteraction rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :CVSS3BaseMetric ;
-                 rdfs:range xsd:string ;
-                 rdfs:label "userInteraction" .
+cvss:userInteraction rdf:type owl:DatatypeProperty ;
+                     rdfs:domain cvss:CVSS3BaseMetric ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "userInteraction" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#vectorString
-:vectorString rdf:type owl:DatatypeProperty ;
-              rdfs:domain :CVSSBaseMetric ;
-              rdfs:range xsd:string ;
-              rdfs:label "vectorString" .
+cvss:vectorString rdf:type owl:DatatypeProperty ;
+                  rdfs:domain cvss:CVSSBaseMetric ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "vectorString" .
+
+
 
 
 #################################################################
 #    Classes
 #################################################################
 
-
 ###  http://w3id.org/sepses/vocab/ref/cvss#CVSS
-:CVSS rdf:type owl:Class ;
-      rdfs:label "CVSS" .
-
-
-###  http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric
-:CVSS2BaseMetric rdf:type owl:Class ;
-                 rdfs:subClassOf :CVSSBaseMetric ;
-                 rdfs:label "CVSS2BaseMetric" .
-
-
-###  http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric
-:CVSS3BaseMetric rdf:type owl:Class ;
-                 rdfs:subClassOf :CVSSBaseMetric ;
-                 rdfs:label "CVSS3BaseMetric" .
+cvss:CVSS rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          rdfs:label "CVSS" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#CVSSBaseMetric
-:CVSSBaseMetric rdf:type owl:Class ;
-                rdfs:subClassOf :CVSS ;
-                rdfs:label "CVSSBaseMetric" .
+cvss:CVSSBaseMetric rdf:type owl:Class ;
+                    rdfs:subClassOf cvss:CVSS .
 
 
-###  http://w3id.org/sepses/vocab/ref/cvss#CVSSEnvironmentalMetric
-:CVSSEnvironmentalMetric rdf:type owl:Class ;
-                         rdfs:subClassOf :CVSS ;
-                         rdfs:label "CVSSEnvironmentalMetric" .
+###  http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric
+cvss:CVSS2BaseMetric rdf:type owl:Class ;
+                      rdfs:subClassOf cvss:CVSSBaseMetric ;
+                      rdfs:label "CVSS2BaseMetric" .
+
+
+###  http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric
+cvss:CVSS3BaseMetric rdf:type owl:Class ;
+                      rdfs:subClassOf cvss:CVSSBaseMetric ;
+                      rdfs:label "CVSS3BaseMetric" .
 
 
 ###  http://w3id.org/sepses/vocab/ref/cvss#CVSSTemporalMetric
-:CVSSTemporalMetric rdf:type owl:Class ;
-                    rdfs:subClassOf :CVSS ;
-                    rdfs:label "CVSSTemporalMetric" .
+cvss:CVSSTemporalMetric rdf:type owl:Class ;
+                      rdfs:subClassOf cvss:CVSS ;
+                      rdfs:label "CVSSTemporalMetric" .
 
+###  http://w3id.org/sepses/vocab/ref/cvss#CVSSEnvironmentalMetric
+cvss:CVSSEnvironmentalMetric rdf:type owl:Class ;
+                      rdfs:subClassOf cvss:CVSS ;
+                      rdfs:label "CVSSEnvironmentalMetric" .
 
 ###  Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi
