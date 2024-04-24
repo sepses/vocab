@@ -1,0 +1,384 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/sepses/vocab/ref/cwe", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/ref/cve", "http://w3id.org/sepses/vocab/ref/icsa" ],
+    "title" : {
+      "undefined" : "ICS Adversary Ontology"
+    },
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "author" : [ "Kabul Kurniawan" ],
+    "description" : {
+      "en" : "An ontology to represent ICS Advisory.\nThis ontology is developed based on the ICSA SCAF v.2  (https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html)"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Kabul Kurniawan",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "icsa",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "ICS Adversary Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductDistribution",
+      "undefined" : "ProductDistribution"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#Vendor",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vendor",
+      "undefined" : "Vendor"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#CWE",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CWE"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#ICSA",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ICSA",
+      "undefined" : "ICS Advisory"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#Product",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product",
+      "undefined" : "Product"
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CompanyHeadquarter",
+      "undefined" : "CompanyHeadquarter"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CriticalInfrastructureSector",
+      "undefined" : "CriticalInfrastructureSector"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cve#CVE",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cve",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CVE"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "CVSSSeverity",
+      "undefined" : "CVSSSeverity"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#CVSSScore",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "CVSSScore",
+      "undefined" : "CVSSScore"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#hasCWE",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasCWE",
+      "undefined" : "hasCWE"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasCompanyHeadquarter",
+      "undefined" : "hasCompanyHeadquarter"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#publisher",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "publisher",
+      "undefined" : "publisher"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasProductDistribution",
+      "undefined" : "hasProductDistribution"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#year",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "year",
+      "undefined" : "year"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#hasVendor",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasVendor",
+      "undefined" : "hasVendor"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#reference",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "reference",
+      "undefined" : "reference"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasCriticalInfrastructureSector",
+      "undefined" : "hasCriticalInfrastructureSector"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#hasCVE",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasCVE",
+      "undefined" : "hasCVE"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#remediation",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "remediation",
+      "undefined" : "remediation"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/icsa#hasProduct",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/icsa",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasProduct",
+      "undefined" : "hasProduct"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  } ]
+}

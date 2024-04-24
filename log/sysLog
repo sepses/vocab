@@ -1,0 +1,53 @@
+@prefix : <http://purl.org/sepses/vocab/log/sysLog#> .
+@prefix cl: <http://purl.org/sepses/vocab/log/coreLog#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/sepses/vocab/log/sysLog> a owl:Ontology .
+
+:sysLogEntry a rdfs:Class ;
+      rdfs:subClassOf cl:LogEntry .
+
+:Facility a rdfs:Class .
+
+:Severity a rdfs:Class .
+	 
+:Program a rdfs:Class .
+
+:facilityCode a rdf:Property ;
+    rdfs:domain :Facility ;
+    rdfs:range xsd:int .
+
+:facilityName a rdf:Property ;
+    rdfs:domain :Facility ;
+    rdfs:range rdfs:Literal .
+
+:hasFacility a rdf:Property ;
+    rdfs:domain :sysLogEntry ;
+    rdfs:range :Facility .
+
+:hasSeverity a rdf:Property ;
+    rdfs:domain :sysLogEntry ;
+    rdfs:range :Severity .
+
+:hasProcessId a rdf:Property ;
+    rdfs:domain :sysLogEntry ;
+    rdfs:range xsd:int .
+
+:programName a rdf:Property ;
+    rdfs:domain :Program ;
+    rdfs:range rdfs:Literal .
+	
+:hasProgram a rdf:Property ;
+    rdfs:domain :sysLogEntry ;
+    rdfs:range :Program .
+
+:severityCode a rdf:Property ;
+    rdfs:domain :Severity ;
+    rdfs:range xsd:int .
+
+:severityName a rdf:Property ;
+    rdfs:domain :Severity ;
+    rdfs:range rdfs:Literal .

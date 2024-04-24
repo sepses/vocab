@@ -1,1065 +1,1511 @@
 {
-  "_comment": "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
-  "header": {
-    "languages": [
-      "en",
-      "undefined"
-    ],
-    "baseIris": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-      "http://www.w3.org/2000/01/rdf-schema",
-      "http://w3id.org/sepses/vocab/ref/cwe",
-      "http://www.w3.org/2001/XMLSchema",
-      "http://w3id.org/sepses/vocab/ref/capec"
-    ],
-    "title": {
-      "undefined": "SEPSES CWE Ontology"
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/sepses/vocab/ref/cwe", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/ref/capec" ],
+    "title" : {
+      "undefined" : "CWE Ontology"
     },
-    "iri": "http://w3id.org/sepses/vocab/ref/cwe",
-    "author": [
-      "SEPSES team"
-    ],
-    "description": {
-      "en": "An ontology to describe CWE resources extracted from MITRE."
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "author" : [ "Andreas Ekelhart", "Kabul Kurniawan", "Fajar J. Ekaputra", "Elmar Kiesling" ],
+    "description" : {
+      "en" : "An ontology to represent CWE \nThis ontology is developed based on the CWE resources extracted from MITRE CWE (https://cwe.mitre.org/) "
     },
-    "other": {
-      "creator": [
-        {
-          "identifier": "creator",
-          "language": "undefined",
-          "value": "SEPSES team",
-          "type": "label"
-        }
-      ],
-      "rights": [
-        {
-          "identifier": "rights",
-          "language": "undefined",
-          "value": "http://creativecommons.org/licenses/by/4.0/",
-          "type": "label"
-        }
-      ],
-      "preferredNamespacePrefix": [
-        {
-          "identifier": "preferredNamespacePrefix",
-          "language": "undefined",
-          "value": "cwe",
-          "type": "label"
-        }
-      ],
-      "title": [
-        {
-          "identifier": "title",
-          "language": "undefined",
-          "value": "SEPSES CWE Ontology",
-          "type": "label"
-        }
-      ]
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Andreas Ekelhart",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Fajar J. Ekaputra",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Kabul Kurniawan",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Elmar Kiesling",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "cwe",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "CWE Ontology",
+        "type" : "label"
+      } ]
     }
   },
-  "namespace": [],
-  "metrics": {
-    "classCount": 8,
-    "objectPropertyCount": 7,
-    "datatypePropertyCount": 25,
-    "individualCount": 0
-  },
-  "class": [
-    {
-      "id": "6",
-      "type": "owl:Class"
-    },
-    {
-      "id": "1",
-      "type": "owl:Class"
-    },
-    {
-      "id": "19",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "21",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "5",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "22",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "14",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "16",
-      "type": "owl:Class"
-    },
-    {
-      "id": "26",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "35",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "8",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "36",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "2",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "32",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "37",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "38",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "4",
-      "type": "owl:Class"
-    },
-    {
-      "id": "24",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "18",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "12",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "41",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "42",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "43",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "44",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "34",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "47",
-      "type": "owl:Class"
-    },
-    {
-      "id": "48",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "49",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "31",
-      "type": "owl:Class"
-    },
-    {
-      "id": "52",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "40",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "10",
-      "type": "owl:Class"
-    },
-    {
-      "id": "29",
-      "type": "owl:Class"
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "integer"
     }
-  ],
-  "classAttribute": [
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "instances": 0,
-      "label": {
-        "IRI-based": "AplicablePlatform",
-        "undefined": "AplicablePlatform"
-      },
-      "id": "6"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#CWE",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "instances": 0,
-      "label": {
-        "IRI-based": "CWE",
-        "undefined": "CWE"
-      },
-      "id": "1"
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "19",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "21",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "5",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "22",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "14",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "instances": 0,
-      "label": {
-        "IRI-based": "PotentialMitigation",
-        "undefined": "PotentialMitigation"
-      },
-      "id": "16"
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "26",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "35",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "8",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "36",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "2",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "32",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "37",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "38",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "instances": 0,
-      "label": {
-        "IRI-based": "RelatedWeakness",
-        "undefined": "RelatedWeakness"
-      },
-      "id": "4"
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "24",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "18",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "12",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "41",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "42",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "43",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "44",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "34",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "instances": 0,
-      "label": {
-        "IRI-based": "CommonConsequence",
-        "undefined": "CommonConsequence"
-      },
-      "id": "47"
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "48",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "49",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "instances": 0,
-      "label": {
-        "IRI-based": "ModeOfIntroduction",
-        "undefined": "ModeOfIntroduction"
-      },
-      "id": "31"
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "52",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://www.w3.org/2001/XMLSchema#string",
-      "baseIri": "http://www.w3.org/2001/XMLSchema",
-      "id": "40",
-      "label": {
-        "IRI-based": "string"
-      }
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/capec#CAPEC",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/capec",
-      "instances": 0,
-      "label": {
-        "IRI-based": "CAPEC"
-      },
-      "attributes": [
-        "external"
-      ],
-      "id": "10"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "instances": 0,
-      "label": {
-        "IRI-based": "DetectionMethod",
-        "undefined": "DetectionMethod"
-      },
-      "id": "29"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "integer"
     }
-  ],
-  "property": [
-    {
-      "id": "0",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "3",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "7",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "9",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "11",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "13",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "15",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "17",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "20",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "23",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "25",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "27",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "28",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "30",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "33",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "39",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "45",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "46",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "50",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "51",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "53",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "54",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "55",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "56",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "57",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "58",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "59",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "60",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "61",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "62",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "63",
-      "type": "owl:datatypeProperty"
-    },
-    {
-      "id": "64",
-      "type": "owl:datatypeProperty"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "integer"
     }
-  ],
-  "propertyAttribute": [
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "2",
-      "label": {
-        "IRI-based": "likelihoodOfExploit",
-        "undefined": "likelihoodOfExploit"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "0"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#CWE",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CWE",
+      "undefined" : "CWE"
     },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessOrdinal",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "5",
-      "label": {
-        "IRI-based": "relatedWeaknessOrdinal",
-        "undefined": "relatedWeaknessOrdinal"
-      },
-      "domain": "4",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "3"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessNature",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "8",
-      "label": {
-        "IRI-based": "relatedWeaknessNature",
-        "undefined": "relatedWeaknessNature"
-      },
-      "domain": "4",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "7"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "10",
-      "label": {
-        "IRI-based": "hasCAPEC",
-        "undefined": "hasCAPEC"
-      },
-      "domain": "1",
-      "attributes": [
-        "object"
-      ],
-      "id": "9"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "12",
-      "label": {
-        "IRI-based": "applicablePlatformParadigm",
-        "undefined": "applicablePlatformParadigm"
-      },
-      "domain": "6",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "11"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#status",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "14",
-      "label": {
-        "IRI-based": "status",
-        "undefined": "status"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "13"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "16",
-      "label": {
-        "IRI-based": "hasPotentialMitigation",
-        "undefined": "hasPotentialMitigation"
-      },
-      "domain": "1",
-      "attributes": [
-        "object"
-      ],
-      "id": "15"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#extendedDescription",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "18",
-      "label": {
-        "IRI-based": "extendedDescription",
-        "undefined": "extendedDescription"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "17"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessViewId",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "21",
-      "label": {
-        "IRI-based": "relatedWeaknessViewId",
-        "undefined": "relatedWeaknessViewId"
-      },
-      "domain": "4",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "20"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#id",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "24",
-      "label": {
-        "IRI-based": "id",
-        "undefined": "id"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "23"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#name",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "26",
-      "label": {
-        "IRI-based": "name",
-        "undefined": "name"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "25"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#structure",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "22",
-      "label": {
-        "IRI-based": "structure",
-        "undefined": "structure"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "27"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "29",
-      "label": {
-        "IRI-based": "hasDetectionMethod",
-        "undefined": "hasDetectionMethod"
-      },
-      "domain": "1",
-      "attributes": [
-        "object"
-      ],
-      "id": "28"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNote",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "32",
-      "label": {
-        "IRI-based": "modeOfIntroductionNote",
-        "undefined": "modeOfIntroductionNote"
-      },
-      "domain": "31",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "30"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#description",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "34",
-      "label": {
-        "IRI-based": "description",
-        "undefined": "description"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "33"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "40",
-      "label": {
-        "IRI-based": "applicablePlatformLanguage",
-        "undefined": "applicablePlatformLanguage"
-      },
-      "domain": "6",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "39"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#hasAplicablePlatform",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "6",
-      "label": {
-        "IRI-based": "hasAplicablePlatform",
-        "undefined": "hasAplicablePlatform"
-      },
-      "domain": "1",
-      "attributes": [
-        "object"
-      ],
-      "id": "45"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "31",
-      "label": {
-        "IRI-based": "hasModeOfIntroduction",
-        "undefined": "hasModeOfIntroduction"
-      },
-      "domain": "1",
-      "attributes": [
-        "object"
-      ],
-      "id": "46"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "36",
-      "label": {
-        "IRI-based": "mitigationDescription",
-        "undefined": "mitigationDescription"
-      },
-      "domain": "16",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "50"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNotePhase",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "35",
-      "label": {
-        "IRI-based": "modeOfIntroductionNotePhase",
-        "undefined": "modeOfIntroductionNotePhase"
-      },
-      "domain": "31",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "51"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#detectionEffectiveness",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "49",
-      "label": {
-        "IRI-based": "detectionEffectiveness",
-        "undefined": "detectionEffectiveness"
-      },
-      "domain": "29",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "53"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#consequenceNote",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "43",
-      "label": {
-        "IRI-based": "consequenceNote",
-        "undefined": "consequenceNote"
-      },
-      "domain": "47",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "54"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#consequenceImpact",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "42",
-      "label": {
-        "IRI-based": "consequenceImpact",
-        "undefined": "consequenceImpact"
-      },
-      "domain": "47",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "55"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "41",
-      "label": {
-        "IRI-based": "applicablePlatformTechnology",
-        "undefined": "applicablePlatformTechnology"
-      },
-      "domain": "6",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "56"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#consequenceScope",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "44",
-      "label": {
-        "IRI-based": "consequenceScope",
-        "undefined": "consequenceScope"
-      },
-      "domain": "47",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "57"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#detectionMethod",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "38",
-      "label": {
-        "IRI-based": "detectionMethod",
-        "undefined": "detectionMethod"
-      },
-      "domain": "29",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "58"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#detectionDescription",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "48",
-      "label": {
-        "IRI-based": "detectionDescription",
-        "undefined": "detectionDescription"
-      },
-      "domain": "29",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "59"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "4",
-      "label": {
-        "IRI-based": "hasRelatedWeakness",
-        "undefined": "hasRelatedWeakness"
-      },
-      "domain": "1",
-      "attributes": [
-        "object"
-      ],
-      "id": "60"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "47",
-      "label": {
-        "IRI-based": "hasCommonConsequence",
-        "undefined": "hasCommonConsequence"
-      },
-      "domain": "1",
-      "attributes": [
-        "object"
-      ],
-      "id": "61"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#mitigationPhase",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "37",
-      "label": {
-        "IRI-based": "mitigationPhase",
-        "undefined": "mitigationPhase"
-      },
-      "domain": "16",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "62"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#abstraction",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "52",
-      "label": {
-        "IRI-based": "abstraction",
-        "undefined": "abstraction"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "63"
-    },
-    {
-      "iri": "http://w3id.org/sepses/vocab/ref/cwe#weaknessOrdinality",
-      "baseIri": "http://w3id.org/sepses/vocab/ref/cwe",
-      "range": "19",
-      "label": {
-        "IRI-based": "weaknessOrdinality",
-        "undefined": "weaknessOrdinality"
-      },
-      "domain": "1",
-      "attributes": [
-        "datatype"
-      ],
-      "id": "64"
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
     }
-  ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RelatedWeakness",
+      "undefined" : "RelatedWeakness"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommonConsequence",
+      "undefined" : "CommonConsequence"
+    },
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModeOfIntroduction",
+      "undefined" : "ModeOfIntroduction"
+    },
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "57",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#Reference",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference",
+      "undefined" : "Reference"
+    },
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DetectionMethod",
+      "undefined" : "DetectionMethod"
+    },
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PotentialMitigation",
+      "undefined" : "PotentialMitigation"
+    },
+    "id" : "51"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicablePlatform",
+      "undefined" : "ApplicablePlatform"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubmissionHistory",
+      "undefined" : "SubmissionHistory"
+    },
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/capec#CAPEC",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/capec",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CAPEC",
+      "undefined" : "CAPEC"
+    },
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModificationHistory",
+      "undefined" : "ModificationHistory"
+    },
+    "id" : "78"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "likelihoodOfExploit",
+      "undefined" : "likelihoodOfExploit"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessNature",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "relatedWeaknessNature",
+      "undefined" : "relatedWeaknessNature"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#submissionDate",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "submissionDate",
+      "undefined" : "submissionDate"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "applicablePlatformParadigm",
+      "undefined" : "applicablePlatformParadigm"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#mappingUsage",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "mappingUsage",
+      "undefined" : "mappingUsage"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#status",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "status",
+      "undefined" : "status"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#extendedDescription",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "extendedDescription",
+      "undefined" : "extendedDescription"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessViewId",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "relatedWeaknessViewId",
+      "undefined" : "relatedWeaknessViewId"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referencePublisher",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "referencePublisher",
+      "undefined" : "referencePublisher"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referenceUrl",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "referenceUrl",
+      "undefined" : "referenceUrl"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "referencePublicationYear",
+      "undefined" : "referencePublicationYear"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "detectionEffectivenessNote",
+      "undefined" : "detectionEffectiveness"
+    },
+    "domain" : "38",
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referenceEdition",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "referenceEdition",
+      "undefined" : "referenceEdition"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction",
+    "inverse" : "49",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasModeOfIntroduction",
+      "undefined" : "hasModeOfIntroduction"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isModeOfIntroductionOf",
+      "undefined" : "isModeOfIntroductionOf"
+    },
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "mitigationDescription",
+      "undefined" : "mitigationDescription"
+    },
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNotePhase",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "modeOfIntroductionNotePhase",
+      "undefined" : "modeOfIntroductionNotePhase"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#consequenceNote",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "consequenceNote",
+      "undefined" : "consequenceNote"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "submissionOrganization",
+      "undefined" : "submissionOrganization"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasSubmissionHistory",
+      "undefined" : "hasSubmissionHistory"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#detectionDescription",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "detectionDescription",
+      "undefined" : "detectionDescription"
+    },
+    "domain" : "38",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "mitigationEffectiveness",
+      "undefined" : "mitigationEffectiveness"
+    },
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#mitigationPhase",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "mitigationPhase",
+      "undefined" : "mitigationPhase"
+    },
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "referencePublicationDay",
+      "undefined" : "referencePublicationDay"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessOrdinal",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "relatedWeaknessOrdinal",
+      "undefined" : "relatedWeaknessOrdinal"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "hasCAPEC",
+      "undefined" : "hasCAPEC"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isPotentialMitigationOf",
+      "undefined" : "isPotentialMitigationOf "
+    },
+    "domain" : "51",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasModificationHistory",
+      "undefined" : "hasModificationHistory"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "backgroundDetail",
+      "undefined" : "backgroundDetail"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation",
+    "inverse" : "76",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasPotentialMitigation",
+      "undefined" : "hasPotentialMitigation"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#modificationDate",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "modificationDate",
+      "undefined" : "modificationDate"
+    },
+    "domain" : "78",
+    "attributes" : [ "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#modificationComment",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "modificationComment",
+      "undefined" : "modificationComment"
+    },
+    "domain" : "78",
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isRelatedWeaknessOf",
+      "undefined" : "isRelatedWeaknessOf "
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasApplicablePlatform",
+      "undefined" : "hasApplicablePlatform"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCommonConsequenceOf",
+      "undefined" : "isCommonConsequenceOf "
+    },
+    "domain" : "46",
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#structure",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "structure",
+      "undefined" : "structure"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod",
+    "inverse" : "89",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasDetectionMethod",
+      "undefined" : "hasDetectionMethod"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNote",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "modeOfIntroductionNote",
+      "undefined" : "modeOfIntroductionNote"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "applicablePlatformLanguage",
+      "undefined" : "applicablePlatformLanguage"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "modeOfIntroductionPhase",
+      "undefined" : "modeOfIntroductionPhase"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "modificationOrganization",
+      "undefined" : "modificationName"
+    },
+    "domain" : "78",
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "mitigationEffectivenessNote",
+      "undefined" : "mitigationEffectivenessNote"
+    },
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#detectionEffectiveness",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "detectionEffectiveness",
+      "undefined" : "detectionEffectiveness"
+    },
+    "domain" : "38",
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "referencePublicationMonth",
+      "undefined" : "referencePublicationMonth"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#consequenceImpact",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "consequenceImpact",
+      "undefined" : "consequenceImpact"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "applicablePlatformTechnology",
+      "undefined" : "applicablePlatformTechnology"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#consequenceScope",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "consequenceScope",
+      "undefined" : "consequenceScope"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#detectionMethod",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "detectionMethod",
+      "undefined" : "detectionMethod"
+    },
+    "domain" : "38",
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#modificationName",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "modificationName",
+      "undefined" : "modificationName"
+    },
+    "domain" : "78",
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness",
+    "inverse" : "84",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasRelatedWeakness",
+      "undefined" : "hasRelatedWeakness"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence",
+    "inverse" : "86",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasCommonConsequence",
+      "undefined" : "hasCommonConsequence"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referenceTitle",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "referenceTitle",
+      "undefined" : "referenceTitle"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isDetectionMethodOf",
+      "undefined" : "isDetectionMethodOf "
+    },
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#submissionName",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "submissionName",
+      "undefined" : "submissionName"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#hasReference",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasReference",
+      "undefined" : "hasReference"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isModificationHistoryOf",
+      "undefined" : "isModificationHistoryOf"
+    },
+    "domain" : "78",
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "referenceAuthor",
+      "undefined" : "referenceAuthor"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#relatedCWE",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "relatedCWE"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#abstraction",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "abstraction",
+      "undefined" : "abstraction"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/cwe#weaknessOrdinality",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/cwe",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "weaknessOrdinality",
+      "undefined" : "weaknessOrdinality"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  } ]
 }

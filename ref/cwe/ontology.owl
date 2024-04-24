@@ -1,0 +1,895 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/ref/cwe#"
+     xml:base="http://w3id.org/sepses/vocab/ref/cwe"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/ref/cwe">
+        <owl:versionIRI rdf:resource="https://w3id.org/sepses/vocab/ref/cwe/2.0.0"/>
+        <dc:creator>Andreas Ekelhart</dc:creator>
+        <dc:creator>Elmar Kiesling</dc:creator>
+        <dc:creator>Fajar J. Ekaputra</dc:creator>
+        <dc:creator>Kabul Kurniawan</dc:creator>
+        <dc:description xml:lang="en">An ontology to represent CWE 
+This ontology is developed based on the CWE resources extracted from MITRE CWE (https://cwe.mitre.org/) </dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>CWE Ontology</dc:title>
+        <vann:preferredNamespacePrefix>cwe</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform"/>
+        <rdfs:label>hasApplicablePlatform</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/capec#CAPEC"/>
+        <rdfs:label>hasCAPEC</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence">
+        <owl:inverseOf rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence"/>
+        <rdfs:label>hasCommonConsequence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod">
+        <owl:inverseOf rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod"/>
+        <rdfs:label>hasDetectionMethod</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction">
+        <owl:inverseOf rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction"/>
+        <rdfs:label>hasModeOfIntroduction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory"/>
+        <rdfs:label>hasModificationHistory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation">
+        <owl:inverseOf rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation"/>
+        <rdfs:label>hasPotentialMitigation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasReference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:label>hasReference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness">
+        <owl:inverseOf rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness"/>
+        <rdfs:label>hasRelatedWeakness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory"/>
+        <rdfs:label>hasSubmissionHistory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>isCommonConsequenceOf </rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>isDetectionMethodOf </rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>isModeOfIntroductionOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>isModificationHistoryOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>isPotentialMitigationOf </rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>isRelatedWeaknessOf </rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#relatedCWE -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#relatedCWE">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#abstraction -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#abstraction">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>abstraction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>applicablePlatformLanguage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>applicablePlatformParadigm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>applicablePlatformTechnology</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>backgroundDetail</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#consequenceImpact -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#consequenceImpact">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>consequenceImpact</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#consequenceNote -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#consequenceNote">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>consequenceNote</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#consequenceScope -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#consequenceScope">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>consequenceScope</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#detectionDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#detectionDescription">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>detectionDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#detectionEffectiveness -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#detectionEffectiveness">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>detectionEffectiveness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>detectionEffectiveness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#detectionMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#detectionMethod">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>detectionMethod</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#extendedDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#extendedDescription">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>extendedDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>likelihoodOfExploit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#mappingUsage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#mappingUsage">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>mappingUsage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>mitigationDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>mitigationEffectiveness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>mitigationEffectivenessNote</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#mitigationPhase -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#mitigationPhase">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>mitigationPhase</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNote -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNote">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modeOfIntroductionNote</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNotePhase -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNotePhase">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modeOfIntroductionNotePhase</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modeOfIntroductionPhase</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#modificationComment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#modificationComment">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modificationComment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#modificationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#modificationDate">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modificationDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#modificationName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#modificationName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modificationName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>modificationName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceAuthor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referenceEdition -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referenceEdition">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>referenceEdition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>referencePublicationDay</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>referencePublicationMonth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>referencePublicationYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referencePublisher -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referencePublisher">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referencePublisher</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referenceTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referenceTitle">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceTitle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#referenceUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#referenceUrl">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceUrl</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#relatedCWE -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#relatedCWE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessNature -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessNature">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>relatedWeaknessNature</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessOrdinal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessOrdinal">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>relatedWeaknessOrdinal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessViewId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessViewId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>relatedWeaknessViewId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#status -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#status">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#structure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#structure">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>structure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#submissionDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#submissionDate">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>submissionDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#submissionName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#submissionName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>submissionName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>submissionOrganization</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#weaknessOrdinality -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cwe#weaknessOrdinality">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>weaknessOrdinality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/capec#CAPEC -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/capec#CAPEC">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>CAPEC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>ApplicablePlatform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#CWE -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#CWE">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>CWE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>CommonConsequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>DetectionMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>ModeOfIntroduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>ModificationHistory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>PotentialMitigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#Reference -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#Reference">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>RelatedWeakness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>SubmissionHistory</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

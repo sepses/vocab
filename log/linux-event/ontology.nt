@@ -1,0 +1,154 @@
+<https://w3id.org/sepses/vocab/log/linux-event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hasEvent
+<https://w3id.org/sepses/vocab/log/linux-event#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> .
+<https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sepses/vocab/log/linux-event#Event> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvent" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hasFile
+<https://w3id.org/sepses/vocab/log/linux-event#hasFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasFile> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasFile> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sepses/vocab/log/linux-event#File> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasFile> <http://www.w3.org/2000/01/rdf-schema#label> "hasFile" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hasHost
+<https://w3id.org/sepses/vocab/log/linux-event#hasHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasHost> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasHost> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sepses/vocab/log/linux-event#Host> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasHost> <http://www.w3.org/2000/01/rdf-schema#label> "hasHost" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hasUser
+<https://w3id.org/sepses/vocab/log/linux-event#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sepses/vocab/log/linux-event#User> .
+<https://w3id.org/sepses/vocab/log/linux-event#hasUser> <http://www.w3.org/2000/01/rdf-schema#label> "hasUser" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#eventAction
+<https://w3id.org/sepses/vocab/log/linux-event#eventAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventAction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Event> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventAction> <http://www.w3.org/2000/01/rdf-schema#label> "eventAction" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#eventCategory
+<https://w3id.org/sepses/vocab/log/linux-event#eventCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Event> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventCategory> <http://www.w3.org/2000/01/rdf-schema#label> "eventCategory" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#eventId
+<https://w3id.org/sepses/vocab/log/linux-event#eventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Event> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventId> <http://www.w3.org/2000/01/rdf-schema#label> "eventId" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#eventType
+<https://w3id.org/sepses/vocab/log/linux-event#eventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Event> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#eventType> <http://www.w3.org/2000/01/rdf-schema#label> "eventType" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#fileName
+<https://w3id.org/sepses/vocab/log/linux-event#fileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#fileName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#File> .
+<https://w3id.org/sepses/vocab/log/linux-event#fileName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#fileName> <http://www.w3.org/2000/01/rdf-schema#label> "fileName" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#filePath
+<https://w3id.org/sepses/vocab/log/linux-event#filePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#filePath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#File> .
+<https://w3id.org/sepses/vocab/log/linux-event#filePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hostArchitecture
+<https://w3id.org/sepses/vocab/log/linux-event#hostArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostArchitecture> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Host> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostArchitecture> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "hostArchitecture" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hostId
+<https://w3id.org/sepses/vocab/log/linux-event#hostId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Host> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostId> <http://www.w3.org/2000/01/rdf-schema#label> "hostId" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hostName
+<https://w3id.org/sepses/vocab/log/linux-event#hostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Host> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostName> <http://www.w3.org/2000/01/rdf-schema#label> "hostName" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#hostOS
+<https://w3id.org/sepses/vocab/log/linux-event#hostOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostOS> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#Host> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostOS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#hostOS> <http://www.w3.org/2000/01/rdf-schema#label> "hostOS" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#userGroup
+<https://w3id.org/sepses/vocab/log/linux-event#userGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#userGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#User> .
+<https://w3id.org/sepses/vocab/log/linux-event#userGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#userGroup> <http://www.w3.org/2000/01/rdf-schema#label> "userGroup" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#userName
+<https://w3id.org/sepses/vocab/log/linux-event#userName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/sepses/vocab/log/linux-event#userName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sepses/vocab/log/linux-event#User> .
+<https://w3id.org/sepses/vocab/log/linux-event#userName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sepses/vocab/log/linux-event#userName> <http://www.w3.org/2000/01/rdf-schema#label> "userName" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/sepses/vocab/log/core#LogEntry
+<https://w3id.org/sepses/vocab/log/core#LogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/sepses/vocab/log/core#logEntry
+<https://w3id.org/sepses/vocab/log/core#logEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sepses/vocab/log/core#logEntry> <http://www.w3.org/2000/01/rdf-schema#label> "logEntry" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#Event
+<https://w3id.org/sepses/vocab/log/linux-event#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sepses/vocab/log/linux-event#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#File
+<https://w3id.org/sepses/vocab/log/linux-event#File> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sepses/vocab/log/linux-event#File> <http://www.w3.org/2000/01/rdf-schema#label> "File" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#Host
+<https://w3id.org/sepses/vocab/log/linux-event#Host> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sepses/vocab/log/linux-event#Host> <http://www.w3.org/2000/01/rdf-schema#label> "Host" .
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry
+# 
+# https://w3id.org/sepses/vocab/log/linux-event#User
+<https://w3id.org/sepses/vocab/log/linux-event#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sepses/vocab/log/linux-event#User> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
+# 
+# ttps://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry
+<ttps://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<ttps://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/sepses/vocab/log/core#LogEntry> .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

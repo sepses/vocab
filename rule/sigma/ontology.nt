@@ -1,0 +1,146 @@
+<http://w3id.org/sepses/vocab/rule/sigma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/sepses/vocab/rule/sigma> <http://purl.org/dc/elements/1.1/creator> "Andreas Ekelhart" .
+<http://w3id.org/sepses/vocab/rule/sigma> <http://purl.org/dc/elements/1.1/creator> "Elmar Kiesling" .
+<http://w3id.org/sepses/vocab/rule/sigma> <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" .
+<http://w3id.org/sepses/vocab/rule/sigma> <http://purl.org/dc/elements/1.1/description> "An ontology to represent Sigma Rule model.\nThis ontology is developed based on the Sigma rule specificaton model (https://github.com/Neo23x0/sigma/wiki/Specification) "@en .
+<http://w3id.org/sepses/vocab/rule/sigma> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/sepses/vocab/rule/sigma> <http://purl.org/dc/elements/1.1/title> "" .
+<http://w3id.org/sepses/vocab/rule/sigma> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sigma" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#hasAttackTechnique
+<http://w3id.org/sepses/vocab/rule/sigma#hasAttackTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#hasAttackTechnique> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#hasAttackTechnique> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/attack#Technique> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/terms/id
+<http://purl.org/dc/terms/id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://purl.org/dc/terms/id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/terms/status
+<http://purl.org/dc/terms/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://purl.org/dc/terms/status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#detectionCondition
+<http://w3id.org/sepses/vocab/rule/sigma#detectionCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#detectionCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#detectionCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#falsePositive
+<http://w3id.org/sepses/vocab/rule/sigma#falsePositive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#falsePositive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#falsePositive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#hasDetection
+<http://w3id.org/sepses/vocab/rule/sigma#hasDetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#hasDetection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#hasDetection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#level
+<http://w3id.org/sepses/vocab/rule/sigma#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#level> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#level> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct
+<http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#logSourceService
+<http://w3id.org/sepses/vocab/rule/sigma#logSourceService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#logSourceService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#logSourceService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#references
+<http://w3id.org/sepses/vocab/rule/sigma#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#references> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#tags
+<http://w3id.org/sepses/vocab/rule/sigma#tags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/rule/sigma#tags> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> .
+<http://w3id.org/sepses/vocab/rule/sigma#tags> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/attack#Technique
+<http://w3id.org/sepses/vocab/ref/attack#Technique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/sepses/vocab/rule/sigma#SigmaRule
+<http://w3id.org/sepses/vocab/rule/sigma#SigmaRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

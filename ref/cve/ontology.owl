@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/ref/cve#"
+     xml:base="http://w3id.org/sepses/vocab/ref/cve"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/ref/cve">
+        <owl:versionIRI rdf:resource="https://w3id.org/sepses/vocab/ref/cve/2.0.0"/>
+        <dc:creator>Andreas Ekelhart</dc:creator>
+        <dc:creator>Elmar Kiesling</dc:creator>
+        <dc:creator>Fajar J. Ekaputra</dc:creator>
+        <dc:creator>Kabul Kurniawan</dc:creator>
+        <dc:description xml:lang="en">An ontology to represent CVE 
+This ontology is developed based on the NVD resources extracted from NVD (https://nvd.nist.gov/vuln/) </dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>CVE Ontology</dc:title>
+        <vann:preferredNamespacePrefix>cve</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#hasCPE -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#hasCPE">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cpe#CPE"/>
+        <rdfs:label>hasCPE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#hasCVSS2BaseMetric -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#hasCVSS2BaseMetric">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric"/>
+        <rdfs:label>hasCVSS2BaseMetric</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#hasCVSS3BaseMetric -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#hasCVSS3BaseMetric">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric"/>
+        <rdfs:label>hasCVSS3BaseMetric</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#hasCWE -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#hasCWE">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>hasCWE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#hasReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#hasReference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cve#Reference"/>
+        <rdfs:label>hasReference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cpe#LogicalTest"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration"/>
+        <rdfs:label>VulnerableConfiguration</rdfs:label>
+        <rdfs:label>hasVulnerableConfiguration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cvss#hasCVSS -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/cvss#hasCVSS">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cvss#CVSS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#reference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#reference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>reference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#referenceSource -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#referenceSource">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceSource</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#referenceType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#referenceType">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#referenceUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/cve#referenceUrl">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/cve#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceUrl</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cpe#CPE -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cpe#CPE"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cpe#LogicalTest -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cpe#LogicalTest"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#CVE -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cve#CVE">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>CVE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#Reference -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cve#Reference">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>VulnerableConfiguration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cvss#CVSS -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cvss#CVSS"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#CWE -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

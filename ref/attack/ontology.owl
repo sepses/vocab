@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/ref/attack#"
+     xml:base="http://w3id.org/sepses/vocab/ref/attack"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/ref/attack">
+        <owl:versionIRI rdf:resource="https://w3id.org/sepses/vocab/ref/attack/2.0.0"/>
+        <dc:creator>Kabul Kurniawan</dc:creator>
+        <dc:description xml:lang="en">An ontology to represent MITRE ATT &amp; CK.
+This ontology is developed based on the MITRE ATT &amp; CK  (https://attack.mitre.org/)</dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>MITRE ATT&amp;CK Ontology</dc:title>
+        <vann:preferredNamespacePrefix>attack</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#accomplishesTactic -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#accomplishesTactic">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Tactic"/>
+        <rdfs:label>accomplishesTactic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#associatedGroup -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#associatedGroup">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup"/>
+        <rdfs:label>associatedGroup</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#hasAdversaryGroup -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#hasAdversaryGroup">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Malware"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup"/>
+        <rdfs:label>hasAdversaryGroup</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#hasCAPEC -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#hasCAPEC">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/capec#CAPEC"/>
+        <rdfs:label>hasCAPEC</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#hasMitigation -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#hasMitigation">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Mitigation"/>
+        <rdfs:label>hasMitigation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#hasReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#hasReference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Reference"/>
+        <rdfs:label>hasReference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#hasSoftware -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#hasSoftware">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Software"/>
+        <rdfs:label>hasSoftware</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#hasTechnique -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#hasTechnique">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Tactic"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:label>hasTechnique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#implementsTechnique -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#implementsTechnique">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Malware"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:label>implementsTechnique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#isSubTechniqueOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#isSubTechniqueOf">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:label>isSubTechniqueOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#preventsTechnique -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#preventsTechnique">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Mitigation"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:label>preventsTechnique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#targetsAsset -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#targetsAsset">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Asset"/>
+        <rdfs:label>targetsAsset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#usesMalware -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#usesMalware">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Malware"/>
+        <rdfs:label>usesMalware</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#usesSoftware -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#usesSoftware">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Software"/>
+        <rdfs:label>usesSoftware</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#usesTechnique -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#usesTechnique">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:label>usesTechnique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#aliases -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#aliases">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>aliases</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#dataSource -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#dataSource">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>dataSource</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#detection -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#detection">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>detection</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#isSubtechnique -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#isSubtechnique">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>isSubtechnique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#permissionRequired -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#permissionRequired">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>permissionRequired</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#platform -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#platform">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>platform</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#referenceDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#referenceDescription">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#referenceId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#referenceId">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#referenceName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#referenceName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#referenceUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/attack#referenceUrl">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>referenceUrl</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>AdversaryGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Asset -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Campaign -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Campaign">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Campaign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#DataComponent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#DataComponent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>DataComponent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#DataSource -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#DataSource">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>DataSource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Malware -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Malware">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Software"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Malware</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Mitigation -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Mitigation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Mitigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Reference -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Reference">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Software -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Software">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#SubTechnique -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#SubTechnique">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>SubTechnique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Tactic -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Tactic">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Tactic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Technique -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Technique">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/capec#CAPEC -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/capec#CAPEC"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

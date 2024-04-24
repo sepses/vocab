@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/ref/icsa#"
+     xml:base="http://w3id.org/sepses/vocab/ref/icsa"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/ref/icsa">
+        <owl:versionIRI rdf:resource="https://w3id.org/sepses/vocab/ref/icsa/1.0.0"/>
+        <dc:creator>Kabul Kurniawan</dc:creator>
+        <dc:description xml:lang="en">An ontology to represent ICS Advisory.
+This ontology is developed based on the ICSA SCAF v.2  (https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html)</dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title>ICS Adversary Ontology</dc:title>
+        <vann:preferredNamespacePrefix>icsa</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#hasCVE -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#hasCVE">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+        <rdfs:label>hasCVE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#hasCWE -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#hasCWE">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+        <rdfs:label>hasCWE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#Product"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter"/>
+        <rdfs:label>hasCompanyHeadquarter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector"/>
+        <rdfs:label>hasCriticalInfrastructureSector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#hasProduct -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#hasProduct">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#Product"/>
+        <rdfs:label>hasProduct</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#Product"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution"/>
+        <rdfs:label>hasProductDistribution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#hasVendor -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#hasVendor">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#Product"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#Vendor"/>
+        <rdfs:label>hasVendor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#CVSSScore -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#CVSSScore">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>CVSSScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>CVSSSeverity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#publisher -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#publisher">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>publisher</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#reference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#reference">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>reference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#remediation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#remediation">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>remediation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#year -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/ref/icsa#year">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/ref/icsa#ICSA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cve#CVE -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cve#CVE"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/cwe#CWE -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cwe#CWE"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>CompanyHeadquarter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>CriticalInfrastructureSector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#ICSA -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/icsa#ICSA">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>ICS Advisory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#Product -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/icsa#Product">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>ProductDistribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/icsa#Vendor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/icsa#Vendor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Vendor</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

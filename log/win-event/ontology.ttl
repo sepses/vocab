@@ -1,0 +1,224 @@
+@prefix : <http://purl.org/sepses/vocab/log/win-event#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/sepses/vocab/log/win-event> .
+
+<http://purl.org/sepses/vocab/log/win-event> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/sepses/vocab/log/win-event#hasAccess
+:hasAccess rdf:type owl:ObjectProperty ;
+           rdfs:domain :WindowsEventLogEntry ;
+           rdfs:range :AccessRequest .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#hasObject
+:hasObject rdf:type owl:ObjectProperty ;
+           rdfs:domain :WindowsEventLogEntry ;
+           rdfs:range :Object .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#hasProcess
+:hasProcess rdf:type owl:ObjectProperty ;
+            rdfs:domain :WindowsEventLogEntry ;
+            rdfs:range :Process .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#hasSubject
+:hasSubject rdf:type owl:ObjectProperty ;
+            rdfs:domain :WindowsEventLogEntry ;
+            rdfs:range :Subject .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/sepses/vocab/log/win-event#accessMask
+:accessMask rdf:type owl:DatatypeProperty ;
+            rdfs:domain :AccessRequest ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#accesses
+:accesses rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AccessRequest ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#accountDomain
+:accountDomain rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Subject ;
+               rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#accountName
+:accountName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Subject ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#computer
+:computer rdf:type owl:DatatypeProperty ;
+          rdfs:domain :WindowsEventLogEntry ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#eventID
+:eventID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :WindowsEventLogEntry ;
+         rdfs:range rdfs:Literal ;
+         rdfs:label "eventID" .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#handleID
+:handleID rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Object ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#hasObject
+:hasObject rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#hasProcess
+:hasProcess rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#keyword
+:keyword rdf:type owl:DatatypeProperty ;
+         rdfs:domain :WindowsEventLogEntry ;
+         rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#level
+:level rdf:type owl:DatatypeProperty ;
+       rdfs:domain :WindowsEventLogEntry ;
+       rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#logName
+:logName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :WindowsEventLogEntry ;
+         rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#logonID
+:logonID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Subject ;
+         rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#objectName
+:objectName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Object ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#objectServer
+:objectServer rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Object ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#objectType
+:objectType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Object ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#processID
+:processID rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Process ;
+           rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#processName
+:processName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Process ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#resourceAttributes
+:resourceAttributes rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Object ;
+                    rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#securityID
+:securityID rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Subject ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#source
+:source rdf:type owl:DatatypeProperty ;
+        rdfs:domain :WindowsEventLogEntry ;
+        rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#taskCategory
+:taskCategory rdf:type owl:DatatypeProperty ;
+              rdfs:domain :WindowsEventLogEntry ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#upCode
+:upCode rdf:type owl:DatatypeProperty ;
+        rdfs:domain :WindowsEventLogEntry ;
+        rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#user
+:user rdf:type owl:DatatypeProperty ;
+      rdfs:domain :WindowsEventLogEntry ;
+      rdfs:range rdfs:Literal ;
+      rdfs:label "user" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/sepses/vocab/log/coreLog#LogEntry
+<http://purl.org/sepses/vocab/log/coreLog#LogEntry> rdf:type owl:Class .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#AccessRequest
+:AccessRequest rdf:type owl:Class .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#Object
+:Object rdf:type owl:Class .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#Process
+:Process rdf:type owl:Class .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#Subject
+:Subject rdf:type owl:Class .
+
+
+###  http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry
+:WindowsEventLogEntry rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.org/sepses/vocab/log/coreLog#LogEntry> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasObject rdfs:label "hasObject" .
+
+
+:hasProcess rdfs:label "hasProcess" .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

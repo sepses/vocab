@@ -1,0 +1,828 @@
+<h2 id="crossreference" class="list">Cross-reference for MITRE ATT&CK Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by MITRE ATT&CK Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#AdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">AdversaryGroup</a></li>
+  <li><a href="#Asset" title="http://w3id.org/sepses/vocab/ref/attack#Asset">Asset</a></li>
+  <li><a href="#Campaign" title="http://w3id.org/sepses/vocab/ref/attack#Campaign">Campaign</a></li>
+  <li><a href="#DataComponent" title="http://w3id.org/sepses/vocab/ref/attack#DataComponent">DataComponent</a></li>
+  <li><a href="#DataSource" title="http://w3id.org/sepses/vocab/ref/attack#DataSource">DataSource</a></li>
+  <li><a href="#Malware" title="http://w3id.org/sepses/vocab/ref/attack#Malware">Malware</a></li>
+  <li><a href="#Mitigation" title="http://w3id.org/sepses/vocab/ref/attack#Mitigation">Mitigation</a></li>
+  <li><a href="#Reference" title="http://w3id.org/sepses/vocab/ref/attack#Reference">Reference</a></li>
+  <li><a href="#Software" title="http://w3id.org/sepses/vocab/ref/attack#Software">Software</a></li>
+  <li><a href="#SubTechnique" title="http://w3id.org/sepses/vocab/ref/attack#SubTechnique">SubTechnique</a></li>
+  <li><a href="#Tactic" title="http://w3id.org/sepses/vocab/ref/attack#Tactic">Tactic</a></li>
+  <li><a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a></li>
+ </ul>
+ <div class="entity" id="AdversaryGroup">
+  <h3>AdversaryGroup<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#aliases" title="http://w3id.org/sepses/vocab/ref/attack#aliases">aliases</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usesMalware" title="http://w3id.org/sepses/vocab/ref/attack#usesMalware">usesMalware</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesSoftware" title="http://w3id.org/sepses/vocab/ref/attack#usesSoftware">usesSoftware</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesTechnique" title="http://w3id.org/sepses/vocab/ref/attack#usesTechnique">usesTechnique</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#associatedGroup" title="http://w3id.org/sepses/vocab/ref/attack#associatedGroup">associatedGroup</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#hasAdversaryGroup">hasAdversaryGroup</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Asset">
+  <h3>Asset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Asset</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#targetsAsset" title="http://w3id.org/sepses/vocab/ref/attack#targetsAsset">targetsAsset</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Campaign">
+  <h3>Campaign<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Campaign</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataComponent">
+  <h3>DataComponent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#DataComponent</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataSource">
+  <h3>DataSource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#DataSource</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Malware">
+  <h3>Malware<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Malware</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Software" title="http://w3id.org/sepses/vocab/ref/attack#Software">Software</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#hasAdversaryGroup">hasAdversaryGroup</a> <sup class="type-op" title="object property">op</sup>, <a href="#implementsTechnique" title="http://w3id.org/sepses/vocab/ref/attack#implementsTechnique">implementsTechnique</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usesMalware" title="http://w3id.org/sepses/vocab/ref/attack#usesMalware">usesMalware</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Mitigation">
+  <h3>Mitigation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Mitigation</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#preventsTechnique" title="http://w3id.org/sepses/vocab/ref/attack#preventsTechnique">preventsTechnique</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMitigation" title="http://w3id.org/sepses/vocab/ref/attack#hasMitigation">hasMitigation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Reference">
+  <h3>Reference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Reference</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#referenceDescription" title="http://w3id.org/sepses/vocab/ref/attack#referenceDescription">referenceDescription</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#referenceId" title="http://w3id.org/sepses/vocab/ref/attack#referenceId">referenceId</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#referenceName" title="http://w3id.org/sepses/vocab/ref/attack#referenceName">referenceName</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#referenceUrl" title="http://w3id.org/sepses/vocab/ref/attack#referenceUrl">referenceUrl</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasReference" title="http://w3id.org/sepses/vocab/ref/attack#hasReference">hasReference</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Software">
+  <h3>Software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Software</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Malware" title="http://w3id.org/sepses/vocab/ref/attack#Malware">Malware</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSoftware" title="http://w3id.org/sepses/vocab/ref/attack#hasSoftware">hasSoftware</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesSoftware" title="http://w3id.org/sepses/vocab/ref/attack#usesSoftware">usesSoftware</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SubTechnique">
+  <h3>SubTechnique<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#SubTechnique</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Tactic">
+  <h3>Tactic<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Tactic</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasTechnique" title="http://w3id.org/sepses/vocab/ref/attack#hasTechnique">hasTechnique</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#accomplishesTactic" title="http://w3id.org/sepses/vocab/ref/attack#accomplishesTactic">accomplishesTactic</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Technique">
+  <h3>Technique<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#Technique</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SubTechnique" title="http://w3id.org/sepses/vocab/ref/attack#SubTechnique">SubTechnique</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#accomplishesTactic" title="http://w3id.org/sepses/vocab/ref/attack#accomplishesTactic">accomplishesTactic</a> <sup class="type-op" title="object property">op</sup>, <a href="#associatedGroup" title="http://w3id.org/sepses/vocab/ref/attack#associatedGroup">associatedGroup</a> <sup class="type-op" title="object property">op</sup>, <a href="#dataSource" title="http://w3id.org/sepses/vocab/ref/attack#dataSource">dataSource</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#detection" title="http://w3id.org/sepses/vocab/ref/attack#detection">detection</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCAPEC" title="http://w3id.org/sepses/vocab/ref/attack#hasCAPEC">hasCAPEC</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasMitigation" title="http://w3id.org/sepses/vocab/ref/attack#hasMitigation">hasMitigation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasReference" title="http://w3id.org/sepses/vocab/ref/attack#hasReference">hasReference</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSoftware" title="http://w3id.org/sepses/vocab/ref/attack#hasSoftware">hasSoftware</a> <sup class="type-op" title="object property">op</sup>, <a href="#isSubTechniqueOf" title="http://w3id.org/sepses/vocab/ref/attack#isSubTechniqueOf">isSubTechniqueOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#isSubtechnique" title="http://w3id.org/sepses/vocab/ref/attack#isSubtechnique">isSubtechnique</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#permissionRequired" title="http://w3id.org/sepses/vocab/ref/attack#permissionRequired">permissionRequired</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#platform" title="http://w3id.org/sepses/vocab/ref/attack#platform">platform</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#targetsAsset" title="http://w3id.org/sepses/vocab/ref/attack#targetsAsset">targetsAsset</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasTechnique" title="http://w3id.org/sepses/vocab/ref/attack#hasTechnique">hasTechnique</a> <sup class="type-op" title="object property">op</sup>, <a href="#implementsTechnique" title="http://w3id.org/sepses/vocab/ref/attack#implementsTechnique">implementsTechnique</a> <sup class="type-op" title="object property">op</sup>, <a href="#isSubTechniqueOf" title="http://w3id.org/sepses/vocab/ref/attack#isSubTechniqueOf">isSubTechniqueOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#preventsTechnique" title="http://w3id.org/sepses/vocab/ref/attack#preventsTechnique">preventsTechnique</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesTechnique" title="http://w3id.org/sepses/vocab/ref/attack#usesTechnique">usesTechnique</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#accomplishesTactic" title="http://w3id.org/sepses/vocab/ref/attack#accomplishesTactic">accomplishesTactic</a></li>
+  <li><a href="#associatedGroup" title="http://w3id.org/sepses/vocab/ref/attack#associatedGroup">associatedGroup</a></li>
+  <li><a href="#hasAdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#hasAdversaryGroup">hasAdversaryGroup</a></li>
+  <li><a href="#hasCAPEC" title="http://w3id.org/sepses/vocab/ref/attack#hasCAPEC">hasCAPEC</a></li>
+  <li><a href="#hasMitigation" title="http://w3id.org/sepses/vocab/ref/attack#hasMitigation">hasMitigation</a></li>
+  <li><a href="#hasReference" title="http://w3id.org/sepses/vocab/ref/attack#hasReference">hasReference</a></li>
+  <li><a href="#hasSoftware" title="http://w3id.org/sepses/vocab/ref/attack#hasSoftware">hasSoftware</a></li>
+  <li><a href="#hasTechnique" title="http://w3id.org/sepses/vocab/ref/attack#hasTechnique">hasTechnique</a></li>
+  <li><a href="#implementsTechnique" title="http://w3id.org/sepses/vocab/ref/attack#implementsTechnique">implementsTechnique</a></li>
+  <li><a href="#isSubTechniqueOf" title="http://w3id.org/sepses/vocab/ref/attack#isSubTechniqueOf">isSubTechniqueOf</a></li>
+  <li><a href="#preventsTechnique" title="http://w3id.org/sepses/vocab/ref/attack#preventsTechnique">preventsTechnique</a></li>
+  <li><a href="#targetsAsset" title="http://w3id.org/sepses/vocab/ref/attack#targetsAsset">targetsAsset</a></li>
+  <li><a href="#usesMalware" title="http://w3id.org/sepses/vocab/ref/attack#usesMalware">usesMalware</a></li>
+  <li><a href="#usesSoftware" title="http://w3id.org/sepses/vocab/ref/attack#usesSoftware">usesSoftware</a></li>
+  <li><a href="#usesTechnique" title="http://w3id.org/sepses/vocab/ref/attack#usesTechnique">usesTechnique</a></li>
+ </ul>
+ <div class="entity" id="accomplishesTactic">
+  <h3>accomplishesTactic<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#accomplishesTactic</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Tactic" title="http://w3id.org/sepses/vocab/ref/attack#Tactic">Tactic</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="associatedGroup">
+  <h3>associatedGroup<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#associatedGroup</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">AdversaryGroup</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAdversaryGroup">
+  <h3>hasAdversaryGroup<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#hasAdversaryGroup</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Malware" title="http://w3id.org/sepses/vocab/ref/attack#Malware">Malware</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">AdversaryGroup</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCAPEC">
+  <h3>hasCAPEC<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#hasCAPEC</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://w3id.org/sepses/vocab/ref/capec#CAPEC" target="_blank" title="http://w3id.org/sepses/vocab/ref/capec#CAPEC">C A P E C</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMitigation">
+  <h3>hasMitigation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#hasMitigation</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Mitigation" title="http://w3id.org/sepses/vocab/ref/attack#Mitigation">Mitigation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasReference">
+  <h3>hasReference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#hasReference</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Reference" title="http://w3id.org/sepses/vocab/ref/attack#Reference">Reference</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSoftware">
+  <h3>hasSoftware<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#hasSoftware</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Software" title="http://w3id.org/sepses/vocab/ref/attack#Software">Software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTechnique">
+  <h3>hasTechnique<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#hasTechnique</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Tactic" title="http://w3id.org/sepses/vocab/ref/attack#Tactic">Tactic</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="implementsTechnique">
+  <h3>implementsTechnique<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#implementsTechnique</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Malware" title="http://w3id.org/sepses/vocab/ref/attack#Malware">Malware</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isSubTechniqueOf">
+  <h3>isSubTechniqueOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#isSubTechniqueOf</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="preventsTechnique">
+  <h3>preventsTechnique<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#preventsTechnique</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Mitigation" title="http://w3id.org/sepses/vocab/ref/attack#Mitigation">Mitigation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="targetsAsset">
+  <h3>targetsAsset<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#targetsAsset</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Asset" title="http://w3id.org/sepses/vocab/ref/attack#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesMalware">
+  <h3>usesMalware<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#usesMalware</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">AdversaryGroup</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Malware" title="http://w3id.org/sepses/vocab/ref/attack#Malware">Malware</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesSoftware">
+  <h3>usesSoftware<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#usesSoftware</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">AdversaryGroup</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Software" title="http://w3id.org/sepses/vocab/ref/attack#Software">Software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesTechnique">
+  <h3>usesTechnique<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#usesTechnique</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">AdversaryGroup</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#aliases" title="http://w3id.org/sepses/vocab/ref/attack#aliases">aliases</a></li>
+  <li><a href="#dataSource" title="http://w3id.org/sepses/vocab/ref/attack#dataSource">dataSource</a></li>
+  <li><a href="#detection" title="http://w3id.org/sepses/vocab/ref/attack#detection">detection</a></li>
+  <li><a href="#isSubtechnique" title="http://w3id.org/sepses/vocab/ref/attack#isSubtechnique">isSubtechnique</a></li>
+  <li><a href="#permissionRequired" title="http://w3id.org/sepses/vocab/ref/attack#permissionRequired">permissionRequired</a></li>
+  <li><a href="#platform" title="http://w3id.org/sepses/vocab/ref/attack#platform">platform</a></li>
+  <li><a href="#referenceDescription" title="http://w3id.org/sepses/vocab/ref/attack#referenceDescription">referenceDescription</a></li>
+  <li><a href="#referenceId" title="http://w3id.org/sepses/vocab/ref/attack#referenceId">referenceId</a></li>
+  <li><a href="#referenceName" title="http://w3id.org/sepses/vocab/ref/attack#referenceName">referenceName</a></li>
+  <li><a href="#referenceUrl" title="http://w3id.org/sepses/vocab/ref/attack#referenceUrl">referenceUrl</a></li>
+ </ul>
+ <div class="entity" id="aliases">
+  <h3>aliases<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#aliases</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AdversaryGroup" title="http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup">AdversaryGroup</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="dataSource">
+  <h3>dataSource<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#dataSource</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="detection">
+  <h3>detection<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#detection</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isSubtechnique">
+  <h3>isSubtechnique<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#isSubtechnique</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="permissionRequired">
+  <h3>permissionRequired<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#permissionRequired</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="platform">
+  <h3>platform<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#platform</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Technique" title="http://w3id.org/sepses/vocab/ref/attack#Technique">Technique</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="referenceDescription">
+  <h3>referenceDescription<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#referenceDescription</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Reference" title="http://w3id.org/sepses/vocab/ref/attack#Reference">Reference</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="referenceId">
+  <h3>referenceId<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#referenceId</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Reference" title="http://w3id.org/sepses/vocab/ref/attack#Reference">Reference</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="referenceName">
+  <h3>referenceName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#referenceName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Reference" title="http://w3id.org/sepses/vocab/ref/attack#Reference">Reference</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="referenceUrl">
+  <h3>referenceUrl<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/sepses/vocab/ref/attack#referenceUrl</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Reference" title="http://w3id.org/sepses/vocab/ref/attack#Reference">Reference</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights"> <span>rights</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/rights">
+  <h3>rights<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/rights</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

@@ -1,0 +1,226 @@
+<http://w3id.org/sepses/vocab/event/log> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/sepses/vocab/event/log> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/sepses/vocab/event/log/1.0.0> .
+<http://w3id.org/sepses/vocab/event/log> <http://purl.org/dc/elements/1.1/creator> "Andreas Ekelhart" .
+<http://w3id.org/sepses/vocab/event/log> <http://purl.org/dc/elements/1.1/creator> "Elmar Kiesling" .
+<http://w3id.org/sepses/vocab/event/log> <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" .
+<http://w3id.org/sepses/vocab/event/log> <http://purl.org/dc/elements/1.1/description> "An ontology to represent security log events."@en .
+<http://w3id.org/sepses/vocab/event/log> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/sepses/vocab/event/log> <http://purl.org/dc/elements/1.1/title> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/event/log#forks
+<http://w3id.org/sepses/vocab/event/log#forks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#forks> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/event/log#provRel> .
+<http://w3id.org/sepses/vocab/event/log#forks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#forks> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#forks> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents fork connection between Processes , e.g. \"sh\" process forks \"sudo\" process." .
+# 
+# http://w3id.org/sepses/vocab/event/log#hasExe
+<http://w3id.org/sepses/vocab/event/log#hasExe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#hasExe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#hasExe> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#Executable> .
+<http://w3id.org/sepses/vocab/event/log#hasExe> <http://www.w3.org/2000/01/rdf-schema#comment> "it represents original executable for a process" .
+# 
+# http://w3id.org/sepses/vocab/event/log#hasHostIP
+<http://w3id.org/sepses/vocab/event/log#hasHostIP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#hasHostIP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Host> .
+<http://w3id.org/sepses/vocab/event/log#hasHostIP> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#IPAddress> .
+<http://w3id.org/sepses/vocab/event/log#hasHostIP> <http://www.w3.org/2000/01/rdf-schema#comment> "This property connects a socket with an IPAddress " .
+# 
+# http://w3id.org/sepses/vocab/event/log#hasPotentialAttackTechnique
+<http://w3id.org/sepses/vocab/event/log#hasPotentialAttackTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#hasPotentialAttackTechnique> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/attack#Technique> .
+<http://w3id.org/sepses/vocab/ref/attack#Technique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#hasPotentialAttackTechnique> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents connection to the attack ontology (external class)" .
+# 
+# http://w3id.org/sepses/vocab/event/log#hasSocketIP
+<http://w3id.org/sepses/vocab/event/log#hasSocketIP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#hasSocketIP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Socket> .
+<http://w3id.org/sepses/vocab/event/log#hasSocketIP> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#IPAddress> .
+<http://w3id.org/sepses/vocab/event/log#hasSocketIP> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represent an IP Address for a certain Host " .
+# 
+# http://w3id.org/sepses/vocab/event/log#hasUser
+<http://w3id.org/sepses/vocab/event/log#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#User> .
+<http://w3id.org/sepses/vocab/event/log#hasUser> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents User behind the running Process " .
+# 
+# http://w3id.org/sepses/vocab/event/log#isExecutedBy
+<http://w3id.org/sepses/vocab/event/log#isExecutedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#isExecutedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/event/log#provRel> .
+<http://w3id.org/sepses/vocab/event/log#isExecutedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#File> .
+<http://w3id.org/sepses/vocab/event/log#isExecutedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#isExecutedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents File execution by a Process" .
+# 
+# http://w3id.org/sepses/vocab/event/log#isReadBy
+<http://w3id.org/sepses/vocab/event/log#isReadBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#isReadBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/event/log#provRel> .
+<http://w3id.org/sepses/vocab/event/log#isReadBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#File> .
+<http://w3id.org/sepses/vocab/event/log#isReadBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#isReadBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents read event of a File by a Process" .
+# 
+# http://w3id.org/sepses/vocab/event/log#isReceivedBy
+<http://w3id.org/sepses/vocab/event/log#isReceivedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#isReceivedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/event/log#provRel> .
+<http://w3id.org/sepses/vocab/event/log#isReceivedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Socket> .
+<http://w3id.org/sepses/vocab/event/log#isReceivedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#isReceivedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents connection received by Process from a Socket" .
+# 
+# http://w3id.org/sepses/vocab/event/log#originatesFrom
+<http://w3id.org/sepses/vocab/event/log#originatesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#Host> .
+<http://w3id.org/sepses/vocab/event/log#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents Host where a Process coming from" .
+# 
+# http://w3id.org/sepses/vocab/event/log#provRel
+<http://w3id.org/sepses/vocab/event/log#provRel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#provRel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#EventEntity> .
+<http://w3id.org/sepses/vocab/event/log#provRel> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#EventEntity> .
+<http://w3id.org/sepses/vocab/event/log#provRel> <http://www.w3.org/2000/01/rdf-schema#comment> "The property to represent general connection between event entities e.g. Process to Process, Process to File, Process to Socket etc." .
+# 
+# http://w3id.org/sepses/vocab/event/log#sends
+<http://w3id.org/sepses/vocab/event/log#sends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#sends> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/event/log#provRel> .
+<http://w3id.org/sepses/vocab/event/log#sends> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#sends> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#Socket> .
+<http://w3id.org/sepses/vocab/event/log#sends> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents connection sent by Process to a Socket" .
+# 
+# http://w3id.org/sepses/vocab/event/log#writes
+<http://w3id.org/sepses/vocab/event/log#writes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/log#writes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/sepses/vocab/event/log#provRel> .
+<http://w3id.org/sepses/vocab/event/log#writes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#writes> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/log#File> .
+<http://w3id.org/sepses/vocab/event/log#writes> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents write event of a File by a Process" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/event/log#cmdLine
+<http://w3id.org/sepses/vocab/event/log#cmdLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/log#cmdLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Process> .
+<http://w3id.org/sepses/vocab/event/log#cmdLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/event/log#cmdLine> <http://www.w3.org/2000/01/rdf-schema#comment> "Command Line" .
+# 
+# http://w3id.org/sepses/vocab/event/log#hostName
+<http://w3id.org/sepses/vocab/event/log#hostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/log#hostName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Host> .
+<http://w3id.org/sepses/vocab/event/log#hostName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/event/log#hostName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a Host" .
+# 
+# http://w3id.org/sepses/vocab/event/log#hostOS
+<http://w3id.org/sepses/vocab/event/log#hostOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/log#hostOS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Host> .
+<http://w3id.org/sepses/vocab/event/log#hostOS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/event/log#hostOS> <http://www.w3.org/2000/01/rdf-schema#comment> "Host operating system" .
+# 
+# http://w3id.org/sepses/vocab/event/log#port
+<http://w3id.org/sepses/vocab/event/log#port> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/log#port> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#Socket> .
+<http://w3id.org/sepses/vocab/event/log#port> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/event/log#port> <http://www.w3.org/2000/01/rdf-schema#comment> "IP port" .
+# 
+# http://w3id.org/sepses/vocab/event/log#userName
+<http://w3id.org/sepses/vocab/event/log#userName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/log#userName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/log#User> .
+<http://w3id.org/sepses/vocab/event/log#userName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/event/log#userName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of user" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/event/log#EventEntity
+<http://w3id.org/sepses/vocab/event/log#EventEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#EventEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The main class of event entity, represents any entity in an event e.g. process, file, socket etc." .
+# 
+# http://w3id.org/sepses/vocab/event/log#Executable
+<http://w3id.org/sepses/vocab/event/log#Executable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#Executable> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent an individual executable of a process" .
+# 
+# http://w3id.org/sepses/vocab/event/log#File
+<http://w3id.org/sepses/vocab/event/log#File> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#File> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/sepses/vocab/event/log#EventEntity> .
+<http://w3id.org/sepses/vocab/event/log#File> <http://www.w3.org/2000/01/rdf-schema#comment> "The class to represent a file" .
+# 
+# http://w3id.org/sepses/vocab/event/log#Host
+<http://w3id.org/sepses/vocab/event/log#Host> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#Host> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a Host e.g. Computer, Server etc." .
+# 
+# http://w3id.org/sepses/vocab/event/log#IPAddress
+<http://w3id.org/sepses/vocab/event/log#IPAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#IPAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an IPAddress " .
+# 
+# http://w3id.org/sepses/vocab/event/log#LocalUser
+<http://w3id.org/sepses/vocab/event/log#LocalUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#LocalUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/sepses/vocab/event/log#User> .
+<http://w3id.org/sepses/vocab/event/log#LocalUser> <http://www.w3.org/2000/01/rdf-schema#comment> "It represent a specific local user" .
+# 
+# http://w3id.org/sepses/vocab/event/log#Process
+<http://w3id.org/sepses/vocab/event/log#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/sepses/vocab/event/log#EventEntity> .
+<http://w3id.org/sepses/vocab/event/log#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent an running process" .
+# 
+# http://w3id.org/sepses/vocab/event/log#RootUser
+<http://w3id.org/sepses/vocab/event/log#RootUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#RootUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/sepses/vocab/event/log#User> .
+<http://w3id.org/sepses/vocab/event/log#RootUser> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents Root User" .
+# 
+# http://w3id.org/sepses/vocab/event/log#Socket
+<http://w3id.org/sepses/vocab/event/log#Socket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#Socket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/sepses/vocab/event/log#EventEntity> .
+<http://w3id.org/sepses/vocab/event/log#Socket> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent network connection (socket), a combination of IPAddress and Port e.g. 127.0.0.1:80" .
+# 
+# http://w3id.org/sepses/vocab/event/log#SystemUser
+<http://w3id.org/sepses/vocab/event/log#SystemUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#SystemUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/sepses/vocab/event/log#User> .
+<http://w3id.org/sepses/vocab/event/log#SystemUser> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a system user" .
+# 
+# http://w3id.org/sepses/vocab/event/log#User
+<http://w3id.org/sepses/vocab/event/log#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/log#User> <http://www.w3.org/2000/01/rdf-schema#comment> "The main class to represent User " .
+# 
+# http://w3id.org/sepses/vocab/ref/attack#Technique
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

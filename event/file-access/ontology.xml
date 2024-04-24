@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#subClassOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#subClassOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#eventID -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#eventID">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Int"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessType"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasProgram -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasProgram">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/file-access#Program"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasSourceFile -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasSourceFile">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/file-access#File"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasSourceHost -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasSourceHost">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/file-access#Host"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasTargetFile -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasTargetFile">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/file-access#File"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasTargetHost -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasTargetHost">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/file-access#Host"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasUser -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasUser">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/file-access#User"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#timestamp -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#timestamp">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Timestamp"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#FileAccessType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#fileName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#fileName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#File"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hostName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#hostName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#programName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#programName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#userName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/file-access#userName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/file-access#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor"/>
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent"/>
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject"/>
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#File -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/file-access#File">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#FileAccessType -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/file-access#FileAccessType"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#Host -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/file-access#Host">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#Program -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/file-access#Program">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#User -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/file-access#User">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Class -->
+
+
+    <Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Property -->
+
+
+    <Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Int -->
+
+
+    <Class rdf:about="http://www.w3.org/2001/XMLSchema#Int"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Timestamp -->
+
+
+    <Class rdf:about="http://www.w3.org/2001/XMLSchema#Timestamp"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#FileAccessType -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#FileAccessType">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#Host -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#Host">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#Program -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#Program">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#User -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#User">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#eventID -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#eventID">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#fileName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#fileName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasProgram -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasProgram">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasSourceFile -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasSourceFile">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasSourceHost -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasSourceHost">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasTargetFile -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasTargetFile">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasTargetHost -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasTargetHost">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hasUser -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hasUser">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#hostName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#hostName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#programName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#programName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#timestamp -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#timestamp">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/file-access#userName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/file-access#userName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://w3id.org/sepses/vocab/event/file-access#FileAccessType">
+        <skos:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventAction"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

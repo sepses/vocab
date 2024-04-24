@@ -1,9 +1,16 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<http://w3id.org/sepses/vocab/ref/capec/1.0.0> a prov:Entity;
-	 dc:title "SEPSES CAPEC Ontology";
+@prefix : <> .
+<https://w3id.org/sepses/vocab/ref/capec/2.0.0> a prov:Entity;
+	 dc:title "CAPEC Ontology";
 	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
-:agent0 a prov:Agent; foaf:name "SEPSES team".
+:agent0 a prov:Agent; foaf:name "Andreas Ekelhart".
+:agent1 a prov:Agent; foaf:name "Elmar Kiesling".
+:agent2 a prov:Agent; foaf:name "Fajar J. Ekaputra".
+:agent3 a prov:Agent; foaf:name "Kabul Kurniawan".

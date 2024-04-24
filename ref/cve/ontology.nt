@@ -1,9 +1,12 @@
 <http://w3id.org/sepses/vocab/ref/cve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/sepses/vocab/ref/cve> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/sepses/vocab/ref/cve/1.0.0> .
-<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/creator> "SEPSES team" .
-<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/description> "An ontology to describe CVE resources extracted from NVD databases."@en .
+<http://w3id.org/sepses/vocab/ref/cve> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/sepses/vocab/ref/cve/2.0.0> .
+<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/creator> "Andreas Ekelhart" .
+<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/creator> "Elmar Kiesling" .
+<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/creator> "Fajar J. Ekaputra" .
+<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" .
+<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/description> "An ontology to represent CVE \nThis ontology is developed based on the NVD resources extracted from NVD (https://nvd.nist.gov/vuln/) "@en .
 <http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
-<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/title> "SEPSES CVE Ontology" .
+<http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/dc/elements/1.1/title> "CVE Ontology" .
 <http://w3id.org/sepses/vocab/ref/cve> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cve" .
 # 
 # 
@@ -45,6 +48,20 @@
 <http://w3id.org/sepses/vocab/ref/cpe#CPE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/sepses/vocab/ref/cve#hasCPE> <http://www.w3.org/2000/01/rdf-schema#label> "hasCPE" .
 # 
+# http://w3id.org/sepses/vocab/ref/cve#hasCVSS2BaseMetric
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS2BaseMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS2BaseMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS2BaseMetric> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric> .
+<http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS2BaseMetric> <http://www.w3.org/2000/01/rdf-schema#label> "hasCVSS2BaseMetric" .
+# 
+# http://w3id.org/sepses/vocab/ref/cve#hasCVSS3BaseMetric
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS3BaseMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS3BaseMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS3BaseMetric> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric> .
+<http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cve#hasCVSS3BaseMetric> <http://www.w3.org/2000/01/rdf-schema#label> "hasCVSS3BaseMetric" .
+# 
 # http://w3id.org/sepses/vocab/ref/cve#hasCWE
 <http://w3id.org/sepses/vocab/ref/cve#hasCWE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://w3id.org/sepses/vocab/ref/cve#hasCWE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
@@ -63,7 +80,15 @@
 <http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
 <http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> .
 <http://w3id.org/sepses/vocab/ref/cpe#LogicalTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration> .
+<http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "VulnerableConfiguration" .
 <http://w3id.org/sepses/vocab/ref/cve#hasVulnerableConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "hasVulnerableConfiguration" .
+# 
+# http://w3id.org/sepses/vocab/ref/cvss#hasCVSS
+<http://w3id.org/sepses/vocab/ref/cvss#hasCVSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cvss#hasCVSS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
+<http://w3id.org/sepses/vocab/ref/cvss#hasCVSS> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cvss#CVSS> .
+<http://w3id.org/sepses/vocab/ref/cvss#CVSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -73,24 +98,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://w3id.org/sepses/vocab/ref/cve#datePublished
-<http://w3id.org/sepses/vocab/ref/cve#datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cve#datePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
-<http://w3id.org/sepses/vocab/ref/cve#datePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://w3id.org/sepses/vocab/ref/cve#datePublished> <http://www.w3.org/2000/01/rdf-schema#label> "datePublished" .
-# 
-# http://w3id.org/sepses/vocab/ref/cve#description
-<http://w3id.org/sepses/vocab/ref/cve#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cve#description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
-<http://w3id.org/sepses/vocab/ref/cve#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://w3id.org/sepses/vocab/ref/cve#description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
-# 
-# http://w3id.org/sepses/vocab/ref/cve#id
-<http://w3id.org/sepses/vocab/ref/cve#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cve#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
-<http://w3id.org/sepses/vocab/ref/cve#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://w3id.org/sepses/vocab/ref/cve#id> <http://www.w3.org/2000/01/rdf-schema#label> "id" .
 # 
 # http://w3id.org/sepses/vocab/ref/cve#reference
 <http://w3id.org/sepses/vocab/ref/cve#reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -131,12 +138,25 @@
 # 
 # http://w3id.org/sepses/vocab/ref/cve#CVE
 <http://w3id.org/sepses/vocab/ref/cve#CVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cve#CVE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cve#CVE> <http://www.w3.org/2000/01/rdf-schema#label> "CVE" .
 # 
 # http://w3id.org/sepses/vocab/ref/cve#Reference
 <http://w3id.org/sepses/vocab/ref/cve#Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cve#Reference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cve#Reference> <http://www.w3.org/2000/01/rdf-schema#label> "Reference" .
+# 
+# http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration
+<http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/cve#VulnerableConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "VulnerableConfiguration" .
+# 
+# http://w3id.org/sepses/vocab/ref/cvss#CVSS
+# 
+# http://w3id.org/sepses/vocab/ref/cvss#CVSS2BaseMetric
+# 
+# http://w3id.org/sepses/vocab/ref/cvss#CVSS3BaseMetric
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#CWE
 # 
-# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

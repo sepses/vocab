@@ -1,0 +1,54 @@
+@prefix : <http://purl.org/sepses/vocab/log/apacheLog#> .
+@prefix cl: <http://kabulkurniawan.com/vocab/coreLog#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix http: <http://www.w3.org/2011/http#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/sepses/vocab/log/apacheLog> a owl:Ontology .
+
+
+:ApacheLogEntry a rdfs:Class ;
+     rdfs:subClassOf cl:LogEntry . 
+
+:hasAgent a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range rdfs:Literal .
+
+:hasResource a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range rdfs:Literal .
+
+:hasResponseType a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range http:StatusCode .
+
+:hasHttpVersion a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range rdfs:Literal .
+
+:hasReferrer a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range rdfs:Literal .
+
+:hasRequestVerb a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range http:Method .
+	
+:hasResourceSize a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range xsd:int .
+
+:hasClient a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range cl:Host .
+    
+:hasAuth a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range rdfs:Literal .
+    
+:hasIdent a rdf:Property ;
+    rdfs:domain :ApacheLogEntry ;
+    rdfs:range rdfs:Literal .

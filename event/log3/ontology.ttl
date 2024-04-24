@@ -1,0 +1,250 @@
+@prefix : <http://w3id.org/sepses/vocab/event/log#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/sepses/vocab/event/log> .
+
+<http://w3id.org/sepses/vocab/event/log> rdf:type owl:Ontology ;
+                                          owl:versionIRI <https://w3id.org/sepses/vocab/event/log/1.0.0> ;
+                                          <http://purl.org/dc/elements/1.1/creator> "Andreas Ekelhart" ,
+                                                                                    "Elmar Kiesling" ,
+                                                                                    "Kabul Kurniawan" ;
+                                          <http://purl.org/dc/elements/1.1/description> "An ontology to represent security log events."@en ;
+                                          <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                          <http://purl.org/dc/elements/1.1/title> "" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/event/log#forks
+:forks rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :provRel ;
+       rdfs:domain :Process ;
+       rdfs:range :Process ;
+       rdfs:comment "This property represents fork connection between Processes , e.g. \"sh\" process forks \"sudo\" process." .
+
+
+###  http://w3id.org/sepses/vocab/event/log#hasExe
+:hasExe rdf:type owl:ObjectProperty ;
+        rdfs:domain :Process ;
+        rdfs:range :Executable ;
+        rdfs:comment "it represents original executable for a process" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#hasHostIP
+:hasHostIP rdf:type owl:ObjectProperty ;
+           rdfs:domain :Host ;
+           rdfs:range :IPAddress ;
+           rdfs:comment "This property connects a socket with an IPAddress " .
+
+
+###  http://w3id.org/sepses/vocab/event/log#hasPotentialAttackTechnique
+:hasPotentialAttackTechnique rdf:type owl:ObjectProperty ;
+                             rdfs:range <http://w3id.org/sepses/vocab/ref/attack#Technique> ;
+                             rdfs:comment "This property represents connection to the attack ontology (external class)" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#hasSocketIP
+:hasSocketIP rdf:type owl:ObjectProperty ;
+             rdfs:domain :Socket ;
+             rdfs:range :IPAddress ;
+             rdfs:comment "This property represent an IP Address for a certain Host " .
+
+
+###  http://w3id.org/sepses/vocab/event/log#hasUser
+:hasUser rdf:type owl:ObjectProperty ;
+         rdfs:domain :Process ;
+         rdfs:range :User ;
+         rdfs:comment "This property represents User behind the running Process " .
+
+
+###  http://w3id.org/sepses/vocab/event/log#isExecutedBy
+:isExecutedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :provRel ;
+              rdfs:domain :File ;
+              rdfs:range :Process ;
+              rdfs:comment "This property represents File execution by a Process" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#isReadBy
+:isReadBy rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :provRel ;
+          rdfs:domain :File ;
+          rdfs:range :Process ;
+          rdfs:comment "This property represents read event of a File by a Process" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#isReceivedBy
+:isReceivedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :provRel ;
+              rdfs:domain :Socket ;
+              rdfs:range :Process ;
+              rdfs:comment "This property represents connection received by Process from a Socket" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#originatesFrom
+:originatesFrom rdf:type owl:ObjectProperty ;
+                rdfs:domain :Process ;
+                rdfs:range :Host ;
+                rdfs:comment "This property represents Host where a Process coming from" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#provRel
+:provRel rdf:type owl:ObjectProperty ;
+         rdfs:domain :EventEntity ;
+         rdfs:range :EventEntity ;
+         rdfs:comment "The property to represent general connection between event entities e.g. Process to Process, Process to File, Process to Socket etc." .
+
+
+###  http://w3id.org/sepses/vocab/event/log#sends
+:sends rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :provRel ;
+       rdfs:domain :Process ;
+       rdfs:range :Socket ;
+       rdfs:comment "This property represents connection sent by Process to a Socket" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#writes
+:writes rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :provRel ;
+        rdfs:domain :Process ;
+        rdfs:range :File ;
+        rdfs:comment "This property represents write event of a File by a Process" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/event/log#cmdLine
+:cmdLine rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Process ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Command Line" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#hostName
+:hostName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Host ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of a Host" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#hostOS
+:hostOS rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Host ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Host operating system" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#port
+:port rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Socket ;
+      rdfs:range xsd:integer ;
+      rdfs:comment "IP port" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#userName
+:userName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :User ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of user" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/sepses/vocab/event/log#EventEntity
+:EventEntity rdf:type owl:Class ;
+             rdfs:comment "The main class of event entity, represents any entity in an event e.g. process, file, socket etc." .
+
+
+###  http://w3id.org/sepses/vocab/event/log#Executable
+:Executable rdf:type owl:Class ;
+            rdfs:comment "This class represent an individual executable of a process" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#File
+:File rdf:type owl:Class ;
+      rdfs:subClassOf :EventEntity ;
+      rdfs:comment "The class to represent a file" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#Host
+:Host rdf:type owl:Class ;
+      rdfs:comment "This class represents a Host e.g. Computer, Server etc." .
+
+
+###  http://w3id.org/sepses/vocab/event/log#IPAddress
+:IPAddress rdf:type owl:Class ;
+           rdfs:comment "This class represents an IPAddress " .
+
+
+###  http://w3id.org/sepses/vocab/event/log#LocalUser
+:LocalUser rdf:type owl:Class ;
+           rdfs:subClassOf :User ;
+           rdfs:comment "It represent a specific local user" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf :EventEntity ;
+         rdfs:comment "This class represent an running process" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#RootUser
+:RootUser rdf:type owl:Class ;
+          rdfs:subClassOf :User ;
+          rdfs:comment "This class represents Root User" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#Socket
+:Socket rdf:type owl:Class ;
+        rdfs:subClassOf :EventEntity ;
+        rdfs:comment "This class represent network connection (socket), a combination of IPAddress and Port e.g. 127.0.0.1:80" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#SystemUser
+:SystemUser rdf:type owl:Class ;
+            rdfs:subClassOf :User ;
+            rdfs:comment "This class represents a system user" .
+
+
+###  http://w3id.org/sepses/vocab/event/log#User
+:User rdf:type owl:Class ;
+      rdfs:comment "The main class to represent User " .
+
+
+###  http://w3id.org/sepses/vocab/ref/attack#Technique
+<http://w3id.org/sepses/vocab/ref/attack#Technique> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

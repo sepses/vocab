@@ -1,0 +1,672 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/ref/attack", "http://w3id.org/sepses/vocab/ref/capec" ],
+    "title" : {
+      "undefined" : "MITRE ATT&CK Ontology"
+    },
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "author" : [ "Kabul Kurniawan" ],
+    "description" : {
+      "en" : "An ontology to represent MITRE ATT & CK.\nThis ontology is developed based on the MITRE ATT & CK  (https://attack.mitre.org/)"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Kabul Kurniawan",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "attack",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "MITRE ATT&CK Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Mitigation",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mitigation",
+      "undefined" : "Mitigation"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#AdversaryGroup",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdversaryGroup",
+      "undefined" : "AdversaryGroup"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Tactic",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tactic",
+      "undefined" : "Tactic"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#DataSource",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataSource",
+      "undefined" : "DataSource"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Reference",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference",
+      "undefined" : "Reference"
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Software",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Software",
+      "undefined" : "Software"
+    },
+    "subClasses" : [ "5" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#DataComponent",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataComponent",
+      "undefined" : "DataComponent"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#SubTechnique",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubTechnique",
+      "undefined" : "SubTechnique"
+    },
+    "id" : "31",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Campaign",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Campaign",
+      "undefined" : "Campaign"
+    },
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Technique",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Technique",
+      "undefined" : "Technique"
+    },
+    "subClasses" : [ "31" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/capec#CAPEC",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/capec",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CAPEC"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Malware",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Malware",
+      "undefined" : "Malware"
+    },
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#Asset",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset",
+      "undefined" : "Asset"
+    },
+    "id" : "49"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#hasSoftware",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasSoftware",
+      "undefined" : "hasSoftware"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#implementsTechnique",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "implementsTechnique",
+      "undefined" : "implementsTechnique"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#accomplishesTactic",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "accomplishesTactic",
+      "undefined" : "accomplishesTactic"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#hasTechnique",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasTechnique",
+      "undefined" : "hasTechnique"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#usesSoftware",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "usesSoftware",
+      "undefined" : "usesSoftware"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#aliases",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "aliases",
+      "undefined" : "aliases"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#dataSource",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "dataSource",
+      "undefined" : "dataSource"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#referenceName",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "referenceName",
+      "undefined" : "referenceName"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#isSubTechniqueOf",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isSubTechniqueOf",
+      "undefined" : "isSubTechniqueOf"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#referenceId",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "referenceId",
+      "undefined" : "referenceId"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#permissionRequired",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "permissionRequired",
+      "undefined" : "permissionRequired"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#associatedGroup",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "associatedGroup",
+      "undefined" : "associatedGroup"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#referenceDescription",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "referenceDescription",
+      "undefined" : "referenceDescription"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#hasAdversaryGroup",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasAdversaryGroup",
+      "undefined" : "hasAdversaryGroup"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#usesTechnique",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "usesTechnique",
+      "undefined" : "usesTechnique"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "range" : "1",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#isSubtechnique",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "isSubtechnique",
+      "undefined" : "isSubtechnique"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#detection",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "detection",
+      "undefined" : "detection"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#platform",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "platform",
+      "undefined" : "platform"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#referenceUrl",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "referenceUrl",
+      "undefined" : "referenceUrl"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#hasReference",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasReference",
+      "undefined" : "hasReference"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#hasCAPEC",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasCAPEC",
+      "undefined" : "hasCAPEC"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#preventsTechnique",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "preventsTechnique",
+      "undefined" : "preventsTechnique"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#hasMitigation",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasMitigation",
+      "undefined" : "hasMitigation"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#usesMalware",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "usesMalware",
+      "undefined" : "usesMalware"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/ref/attack#targetsAsset",
+    "baseIri" : "http://w3id.org/sepses/vocab/ref/attack",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "targetsAsset",
+      "undefined" : "targetsAsset"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  } ]
+}

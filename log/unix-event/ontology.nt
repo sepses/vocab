@@ -1,0 +1,180 @@
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A Ontology for File System Logs for Unix and Windows Systems" .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog> <http://www.w3.org/2000/01/rdf-schema#label> "A File System Log Entry Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasFile
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasFile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasLogType
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasLogType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasLogType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasLogType> <http://www.w3.org/2000/01/rdf-schema#range> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasProcess
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasUser
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#originatesFrom
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#originatesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#originatesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessCall
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessCall> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessCall> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessInfo
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessInfo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessInfo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#domain
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#domain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#domain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#eventID
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#eventID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#eventID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#eventID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#filetype
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#filetype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#filetype> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#filetype> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hostName
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hostName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hostName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#instanceId
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#instanceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#instanceId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#instanceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip4Address
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip4Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip4Address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip4Address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip6Address
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip6Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip6Address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip6Address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ipAddress
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ipAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ipAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ipAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logFilePath
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logFilePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logFilePath> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logFilePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logMessage
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logTypeName
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logTypeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logTypeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logTypeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#pathname
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#pathname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#pathname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#pathname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processID
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processname
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#timestamp
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#username
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#username> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#username> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#username> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

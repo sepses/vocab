@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/rule/sigma#"
+     xml:base="http://w3id.org/sepses/vocab/rule/sigma"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/rule/sigma">
+        <dc:creator>Andreas Ekelhart</dc:creator>
+        <dc:creator>Elmar Kiesling</dc:creator>
+        <dc:creator>Kabul Kurniawan</dc:creator>
+        <dc:description xml:lang="en">An ontology to represent Sigma Rule model.
+This ontology is developed based on the Sigma rule specificaton model (https://github.com/Neo23x0/sigma/wiki/Specification) </dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title></dc:title>
+        <vann:preferredNamespacePrefix>sigma</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#hasAttackTechnique -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#hasAttackTechnique">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/id">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/modified">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/status -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/status">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#detectionCondition -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#detectionCondition">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#falsePositive -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#falsePositive">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#hasDetection -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#hasDetection">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#level -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#level">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#logSourceProduct">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#logSourceService -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#logSourceService">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#references -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#references">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#tags -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/rule/sigma#tags">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/ref/attack#Technique -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/attack#Technique"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/rule/sigma#SigmaRule -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/rule/sigma#SigmaRule"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

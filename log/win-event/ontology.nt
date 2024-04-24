@@ -1,0 +1,199 @@
+<http://purl.org/sepses/vocab/log/win-event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/sepses/vocab/log/win-event#hasAccess
+<http://purl.org/sepses/vocab/log/win-event#hasAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sepses/vocab/log/win-event#hasAccess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#hasAccess> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sepses/vocab/log/win-event#AccessRequest> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#hasObject
+<http://purl.org/sepses/vocab/log/win-event#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sepses/vocab/log/win-event#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sepses/vocab/log/win-event#Object> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#hasProcess
+<http://purl.org/sepses/vocab/log/win-event#hasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sepses/vocab/log/win-event#hasProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#hasProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sepses/vocab/log/win-event#Process> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#hasSubject
+<http://purl.org/sepses/vocab/log/win-event#hasSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sepses/vocab/log/win-event#hasSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#hasSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sepses/vocab/log/win-event#Subject> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/sepses/vocab/log/win-event#accessMask
+<http://purl.org/sepses/vocab/log/win-event#accessMask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#accessMask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#AccessRequest> .
+<http://purl.org/sepses/vocab/log/win-event#accessMask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#accesses
+<http://purl.org/sepses/vocab/log/win-event#accesses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#accesses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#AccessRequest> .
+<http://purl.org/sepses/vocab/log/win-event#accesses> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#accountDomain
+<http://purl.org/sepses/vocab/log/win-event#accountDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#accountDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Subject> .
+<http://purl.org/sepses/vocab/log/win-event#accountDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#accountName
+<http://purl.org/sepses/vocab/log/win-event#accountName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#accountName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Subject> .
+<http://purl.org/sepses/vocab/log/win-event#accountName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#computer
+<http://purl.org/sepses/vocab/log/win-event#computer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#computer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#computer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#eventID
+<http://purl.org/sepses/vocab/log/win-event#eventID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#eventID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#eventID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/sepses/vocab/log/win-event#eventID> <http://www.w3.org/2000/01/rdf-schema#label> "eventID" .
+# 
+# http://purl.org/sepses/vocab/log/win-event#handleID
+<http://purl.org/sepses/vocab/log/win-event#handleID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#handleID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Object> .
+<http://purl.org/sepses/vocab/log/win-event#handleID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#hasObject
+<http://purl.org/sepses/vocab/log/win-event#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#hasProcess
+<http://purl.org/sepses/vocab/log/win-event#hasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#keyword
+<http://purl.org/sepses/vocab/log/win-event#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#keyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#keyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#level
+<http://purl.org/sepses/vocab/log/win-event#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#level> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#level> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#logName
+<http://purl.org/sepses/vocab/log/win-event#logName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#logName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#logName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#logonID
+<http://purl.org/sepses/vocab/log/win-event#logonID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#logonID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Subject> .
+<http://purl.org/sepses/vocab/log/win-event#logonID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#objectName
+<http://purl.org/sepses/vocab/log/win-event#objectName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#objectName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Object> .
+<http://purl.org/sepses/vocab/log/win-event#objectName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#objectServer
+<http://purl.org/sepses/vocab/log/win-event#objectServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#objectServer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Object> .
+<http://purl.org/sepses/vocab/log/win-event#objectServer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#objectType
+<http://purl.org/sepses/vocab/log/win-event#objectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#objectType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Object> .
+<http://purl.org/sepses/vocab/log/win-event#objectType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#processID
+<http://purl.org/sepses/vocab/log/win-event#processID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#processID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Process> .
+<http://purl.org/sepses/vocab/log/win-event#processID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#processName
+<http://purl.org/sepses/vocab/log/win-event#processName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#processName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Process> .
+<http://purl.org/sepses/vocab/log/win-event#processName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#resourceAttributes
+<http://purl.org/sepses/vocab/log/win-event#resourceAttributes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#resourceAttributes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Object> .
+<http://purl.org/sepses/vocab/log/win-event#resourceAttributes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#securityID
+<http://purl.org/sepses/vocab/log/win-event#securityID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#securityID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#Subject> .
+<http://purl.org/sepses/vocab/log/win-event#securityID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#source
+<http://purl.org/sepses/vocab/log/win-event#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#source> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#source> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#taskCategory
+<http://purl.org/sepses/vocab/log/win-event#taskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#taskCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#taskCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#upCode
+<http://purl.org/sepses/vocab/log/win-event#upCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#upCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#upCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#user
+<http://purl.org/sepses/vocab/log/win-event#user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sepses/vocab/log/win-event#user> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> .
+<http://purl.org/sepses/vocab/log/win-event#user> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/sepses/vocab/log/win-event#user> <http://www.w3.org/2000/01/rdf-schema#label> "user" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/sepses/vocab/log/coreLog#LogEntry
+<http://purl.org/sepses/vocab/log/coreLog#LogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#AccessRequest
+<http://purl.org/sepses/vocab/log/win-event#AccessRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#Object
+<http://purl.org/sepses/vocab/log/win-event#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#Process
+<http://purl.org/sepses/vocab/log/win-event#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#Subject
+<http://purl.org/sepses/vocab/log/win-event#Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry
+<http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sepses/vocab/log/coreLog#LogEntry> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/sepses/vocab/log/win-event#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasObject" .
+# 
+<http://purl.org/sepses/vocab/log/win-event#hasProcess> <http://www.w3.org/2000/01/rdf-schema#label> "hasProcess" .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

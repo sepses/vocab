@@ -1,0 +1,254 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#subClassOf
+<http://www.w3.org/2004/02/skos/core#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/event/file-access#eventID
+<http://w3id.org/sepses/vocab/event/file-access#eventID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#eventID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/file-access#eventID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Int> .
+<http://www.w3.org/2001/XMLSchema#Int> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType
+<http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/file-access#FileAccessType> .
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasProgram
+<http://w3id.org/sepses/vocab/event/file-access#hasProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hasProgram> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#hasProgram> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/file-access#Program> .
+<http://w3id.org/sepses/vocab/event/file-access#Program> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasSourceFile
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceFile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/file-access#File> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasSourceHost
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceHost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceHost> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/file-access#Host> .
+<http://w3id.org/sepses/vocab/event/file-access#Host> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasTargetFile
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetFile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/file-access#File> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasTargetHost
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetHost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetHost> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/file-access#Host> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasUser
+<http://w3id.org/sepses/vocab/event/file-access#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/event/file-access#User> .
+<http://w3id.org/sepses/vocab/event/file-access#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#timestamp
+<http://w3id.org/sepses/vocab/event/file-access#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> .
+<http://w3id.org/sepses/vocab/event/file-access#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Timestamp> .
+<http://www.w3.org/2001/XMLSchema#Timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName
+<http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#FileAccessType> .
+<http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#fileName
+<http://w3id.org/sepses/vocab/event/file-access#fileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#fileName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#File> .
+<http://w3id.org/sepses/vocab/event/file-access#fileName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hostName
+<http://w3id.org/sepses/vocab/event/file-access#hostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#hostName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#Host> .
+<http://w3id.org/sepses/vocab/event/file-access#hostName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#programName
+<http://w3id.org/sepses/vocab/event/file-access#programName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#programName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#Program> .
+<http://w3id.org/sepses/vocab/event/file-access#programName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#userName
+<http://w3id.org/sepses/vocab/event/file-access#userName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/event/file-access#userName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/event/file-access#User> .
+<http://w3id.org/sepses/vocab/event/file-access#userName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#File
+<http://w3id.org/sepses/vocab/event/file-access#File> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/event/file-access#File> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#FileAccessType
+# 
+# http://w3id.org/sepses/vocab/event/file-access#Host
+<http://w3id.org/sepses/vocab/event/file-access#Host> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#Program
+<http://w3id.org/sepses/vocab/event/file-access#Program> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#User
+<http://w3id.org/sepses/vocab/event/file-access#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#Class
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Property
+<http://www.w3.org/2000/01/rdf-schema#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#Int
+# 
+# http://www.w3.org/2001/XMLSchema#Timestamp
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#FileAccessType
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#Host
+<http://w3id.org/sepses/vocab/event/file-access#Host> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#Host> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#Program
+<http://w3id.org/sepses/vocab/event/file-access#Program> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#Program> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#User
+<http://w3id.org/sepses/vocab/event/file-access#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Class> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#eventID
+<http://w3id.org/sepses/vocab/event/file-access#eventID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#eventID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName
+<http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#fileName
+<http://w3id.org/sepses/vocab/event/file-access#fileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#fileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType
+<http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasProgram
+<http://w3id.org/sepses/vocab/event/file-access#hasProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hasProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasSourceFile
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasSourceHost
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hasSourceHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasTargetFile
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasTargetHost
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hasTargetHost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hasUser
+<http://w3id.org/sepses/vocab/event/file-access#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#hostName
+<http://w3id.org/sepses/vocab/event/file-access#hostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#hostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#programName
+<http://w3id.org/sepses/vocab/event/file-access#programName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#programName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#timestamp
+<http://w3id.org/sepses/vocab/event/file-access#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# http://w3id.org/sepses/vocab/event/file-access#userName
+<http://w3id.org/sepses/vocab/event/file-access#userName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/sepses/vocab/event/file-access#userName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://w3id.org/sepses/vocab/event/file-access#FileAccessType> <http://www.w3.org/2004/02/skos/core#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventAction> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

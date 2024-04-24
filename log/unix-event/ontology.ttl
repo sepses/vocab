@@ -1,0 +1,207 @@
+@prefix : <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog> .
+
+<http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog> rdf:type owl:Ontology ;
+                                                      rdfs:comment "A Ontology for File System Logs for Unix and Windows Systems" ;
+                                                      rdfs:label "A File System Log Entry Ontology" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasFile
+:hasFile rdf:type owl:ObjectProperty ;
+         rdfs:domain :FileSystemLogEntry ;
+         rdfs:range :File .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasLogType
+:hasLogType rdf:type owl:ObjectProperty ;
+            rdfs:domain :LogEntry ;
+            rdfs:range :LogType .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasProcess
+:hasProcess rdf:type owl:ObjectProperty ;
+            rdfs:domain :FileSystemLogEntry ;
+            rdfs:range :Process .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasUser
+:hasUser rdf:type owl:ObjectProperty ;
+         rdfs:domain :FileSystemLogEntry ;
+         rdfs:range :User .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#originatesFrom
+:originatesFrom rdf:type owl:ObjectProperty ;
+                rdfs:domain :LogEntry ;
+                rdfs:range :Host .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessCall
+:accessCall rdf:type owl:DatatypeProperty ;
+            rdfs:domain :UnixFileSystemLogEntry ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessInfo
+:accessInfo rdf:type owl:DatatypeProperty ;
+            rdfs:domain :WinFileSystemLogEntry ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#domain
+:domain rdf:type owl:DatatypeProperty ;
+        rdfs:domain :User ;
+        rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#eventID
+:eventID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :WinFileSystemLogEntry ;
+         rdfs:range xsd:integer .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#filetype
+:filetype rdf:type owl:DatatypeProperty ;
+          rdfs:domain :File ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hostName
+:hostName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Host ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#instanceId
+:instanceId rdf:type owl:DatatypeProperty ;
+            rdfs:domain :USBDeviceLogEntry ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip4Address
+:ip4Address rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Host ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip6Address
+:ip6Address rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Host ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ipAddress
+:ipAddress rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Host ;
+           rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logFilePath
+:logFilePath rdf:type owl:DatatypeProperty ;
+             rdfs:domain :LogEntry ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logMessage
+:logMessage rdf:type owl:DatatypeProperty ;
+            rdfs:domain :LogEntry ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logTypeName
+:logTypeName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :LogType ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#pathname
+:pathname rdf:type owl:DatatypeProperty ;
+          rdfs:domain :File ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processID
+:processID rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Process ;
+           rdfs:range xsd:integer .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processname
+:processname rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Process ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#timestamp
+:timestamp rdf:type owl:DatatypeProperty ;
+           rdfs:domain :LogEntry ;
+           rdfs:range xsd:dateTime .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#username
+:username rdf:type owl:DatatypeProperty ;
+          rdfs:domain :User ;
+          rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File
+:File rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry
+:FileSystemLogEntry rdf:type owl:Class ;
+                    rdfs:subClassOf :LogEntry .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host
+:Host rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry
+:LogEntry rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType
+:LogType rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process
+:Process rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry
+:USBDeviceLogEntry rdf:type owl:Class ;
+                   rdfs:subClassOf :LogEntry .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry
+:UnixFileSystemLogEntry rdf:type owl:Class ;
+                        rdfs:subClassOf :FileSystemLogEntry .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User
+:User rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry
+:WinFileSystemLogEntry rdf:type owl:Class ;
+                       rdfs:subClassOf :FileSystemLogEntry .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

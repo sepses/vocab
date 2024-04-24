@@ -1,0 +1,614 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://sepses.ifs.tuwien.ac.at/vocab/event", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/event/file-access" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventObject"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventActor"
+    },
+    "subClasses" : [ "3", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Int"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#FileAccessEvent",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FileAccessEvent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Property",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hasFileAccessType"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hostName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hostName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasSourceFile",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hasSourceFile"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#timestamp",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "timestamp"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasProgram",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hasProgram"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasTargetFile",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hasTargetFile"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasTargetHost",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hasTargetHost"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#programName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "programName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "fileAccessTypeName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#eventID",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "eventID"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#fileName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "fileName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#userName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "userName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasSourceHost",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hasSourceHost"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasUser",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+      "labels" : {
+        "IRI-based" : "hasUser"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#User",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Class",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 5,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventEvent"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#Host",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Host"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#FileAccessType",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "instances" : 0,
+    "annotations" : {
+      "subClassOf" : [ {
+        "identifier" : "subClassOf",
+        "language" : "undefined",
+        "value" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventAction",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FileAccessType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Timestamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Timestamp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#File",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "File"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#Program",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Program"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventPlace"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "30"
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "18",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "20",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "21",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hostName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hostName"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "5"
+  }, {
+    "domain" : "11",
+    "range" : "12",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "5",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#timestamp",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "timestamp"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "14"
+  }, {
+    "domain" : "11",
+    "range" : "15",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "6",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "11",
+    "range" : "3",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "7",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "11",
+    "range" : "4",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "8",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "11",
+    "range" : "6",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "9",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#fileAccessTypeName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "fileAccessTypeName"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#fileName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "fileName"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#userName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "userName"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasUser",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasUser"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasFileAccessType",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasFileAccessType"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasSourceFile",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSourceFile"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasProgram",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasProgram"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasTargetFile",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasTargetFile"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasTargetHost",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasTargetHost"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#programName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "programName"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#eventID",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "eventID"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "30",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "19",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/file-access#hasSourceHost",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/file-access",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasSourceHost"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  } ]
+}

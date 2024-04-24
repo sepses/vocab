@@ -1,0 +1,940 @@
+<h2 id="crossreference" class="list">Cross reference for [Ontology Name] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Executable"
+            title="http://w3id.org/sepses/vocab/event/log#Executable">
+            <span>executable</span>
+         </a>
+      </li>
+      <li>
+         <a href="#File" title="http://w3id.org/sepses/vocab/event/log#File">
+            <span>file</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Host" title="http://w3id.org/sepses/vocab/event/log#Host">
+            <span>host</span>
+         </a>
+      </li>
+      <li>
+         <a href="#IPAddress" title="http://w3id.org/sepses/vocab/event/log#IPAddress">
+            <span>i p address</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LocalUser" title="http://w3id.org/sepses/vocab/event/log#LocalUser">
+            <span>local user</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">
+            <span>process</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RootUser" title="http://w3id.org/sepses/vocab/event/log#RootUser">
+            <span>root user</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Socket" title="http://w3id.org/sepses/vocab/event/log#Socket">
+            <span>socket</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SystemObject"
+            title="http://w3id.org/sepses/vocab/event/log#SystemObject">
+            <span>system object</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SystemUser"
+            title="http://w3id.org/sepses/vocab/event/log#SystemUser">
+            <span>system user</span>
+         </a>
+      </li>
+      <li>
+         <a href="#User" title="http://w3id.org/sepses/vocab/event/log#User">
+            <span>user</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Executable">
+      <h3>executable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#Executable</p>
+      <div class="comment">
+         <span class="markdown">This class represent an individual executable of a process</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasExe" title="http://w3id.org/sepses/vocab/event/log#hasExe">has exe</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="File">
+      <h3>file<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#File</p>
+      <div class="comment">
+         <span class="markdown">The class to represent a file</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SystemObject"
+               title="http://w3id.org/sepses/vocab/event/log#SystemObject">system object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isExecutedBy"
+               title="http://w3id.org/sepses/vocab/event/log#isExecutedBy">is executed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isReadBy" title="http://w3id.org/sepses/vocab/event/log#isReadBy">is read by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#writes" title="http://w3id.org/sepses/vocab/event/log#writes">writes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Host">
+      <h3>host<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#Host</p>
+      <div class="comment">
+         <span class="markdown">This class represents a Host e.g. Computer, Server etc.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasHostIP" title="http://w3id.org/sepses/vocab/event/log#hasHostIP">has host i p</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hostName" title="http://w3id.org/sepses/vocab/event/log#hostName">host name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hostOS" title="http://w3id.org/sepses/vocab/event/log#hostOS">host o s</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#originatesFrom"
+               title="http://w3id.org/sepses/vocab/event/log#originatesFrom">originates from</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="IPAddress">
+      <h3>i p address<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#IPAddress</p>
+      <div class="comment">
+         <span class="markdown">This class represents an IPAddress </span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasHostIP" title="http://w3id.org/sepses/vocab/event/log#hasHostIP">has host i p</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSocketIP"
+               title="http://w3id.org/sepses/vocab/event/log#hasSocketIP">has socket i p</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LocalUser">
+      <h3>local user<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#LocalUser</p>
+      <div class="comment">
+         <span class="markdown">It represent a specific local user</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#User" title="http://w3id.org/sepses/vocab/event/log#User">user</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Process">
+      <h3>process<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#Process</p>
+      <div class="comment">
+         <span class="markdown">This class represent an running process</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SystemObject"
+               title="http://w3id.org/sepses/vocab/event/log#SystemObject">system object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#cmdLine" title="http://w3id.org/sepses/vocab/event/log#cmdLine">cmd line</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#forks" title="http://w3id.org/sepses/vocab/event/log#forks">forks</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasExe" title="http://w3id.org/sepses/vocab/event/log#hasExe">has exe</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasUser" title="http://w3id.org/sepses/vocab/event/log#hasUser">has user</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#originatesFrom"
+               title="http://w3id.org/sepses/vocab/event/log#originatesFrom">originates from</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sends" title="http://w3id.org/sepses/vocab/event/log#sends">sends</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#writes" title="http://w3id.org/sepses/vocab/event/log#writes">writes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#forks" title="http://w3id.org/sepses/vocab/event/log#forks">forks</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isExecutedBy"
+               title="http://w3id.org/sepses/vocab/event/log#isExecutedBy">is executed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isReadBy" title="http://w3id.org/sepses/vocab/event/log#isReadBy">is read by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isReceivedBy"
+               title="http://w3id.org/sepses/vocab/event/log#isReceivedBy">is received by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RootUser">
+      <h3>root user<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#RootUser</p>
+      <div class="comment">
+         <span class="markdown">This class represents Root User</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#User" title="http://w3id.org/sepses/vocab/event/log#User">user</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Socket">
+      <h3>socket<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#Socket</p>
+      <div class="comment">
+         <span class="markdown">This class represent network connection (socket), a combination of IPAddress and Port e.g. 127.0.0.1:80</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SystemObject"
+               title="http://w3id.org/sepses/vocab/event/log#SystemObject">system object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSocketIP"
+               title="http://w3id.org/sepses/vocab/event/log#hasSocketIP">has socket i p</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isReceivedBy"
+               title="http://w3id.org/sepses/vocab/event/log#isReceivedBy">is received by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#port" title="http://w3id.org/sepses/vocab/event/log#port">port</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#sends" title="http://w3id.org/sepses/vocab/event/log#sends">sends</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SystemObject">
+      <h3>system object<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#SystemObject</p>
+      <div class="comment">
+         <span class="markdown">The main class of event entity, represents any entity in an event e.g. process, file, socket etc.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#File" title="http://w3id.org/sepses/vocab/event/log#File">file</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Socket" title="http://w3id.org/sepses/vocab/event/log#Socket">socket</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">prov rel</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">prov rel</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SystemUser">
+      <h3>system user<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#SystemUser</p>
+      <div class="comment">
+         <span class="markdown">This class represents a system user</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#User" title="http://w3id.org/sepses/vocab/event/log#User">user</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="User">
+      <h3>user<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#User</p>
+      <div class="comment">
+         <span class="markdown">The main class to represent User </span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LocalUser" title="http://w3id.org/sepses/vocab/event/log#LocalUser">local user</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RootUser" title="http://w3id.org/sepses/vocab/event/log#RootUser">root user</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SystemUser"
+               title="http://w3id.org/sepses/vocab/event/log#SystemUser">system user</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#userName" title="http://w3id.org/sepses/vocab/event/log#userName">user name</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasUser" title="http://w3id.org/sepses/vocab/event/log#hasUser">has user</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#forks" title="http://w3id.org/sepses/vocab/event/log#forks">
+            <span>forks</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasExe" title="http://w3id.org/sepses/vocab/event/log#hasExe">
+            <span>has exe</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasHostIP" title="http://w3id.org/sepses/vocab/event/log#hasHostIP">
+            <span>has host i p</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasPotentialAttackTechnique"
+            title="http://w3id.org/sepses/vocab/event/log#hasPotentialAttackTechnique">
+            <span>has potential attack technique</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasSocketIP"
+            title="http://w3id.org/sepses/vocab/event/log#hasSocketIP">
+            <span>has socket i p</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasUser" title="http://w3id.org/sepses/vocab/event/log#hasUser">
+            <span>has user</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isExecutedBy"
+            title="http://w3id.org/sepses/vocab/event/log#isExecutedBy">
+            <span>is executed by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isReadBy" title="http://w3id.org/sepses/vocab/event/log#isReadBy">
+            <span>is read by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isReceivedBy"
+            title="http://w3id.org/sepses/vocab/event/log#isReceivedBy">
+            <span>is received by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#originatesFrom"
+            title="http://w3id.org/sepses/vocab/event/log#originatesFrom">
+            <span>originates from</span>
+         </a>
+      </li>
+      <li>
+         <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">
+            <span>prov rel</span>
+         </a>
+      </li>
+      <li>
+         <a href="#sends" title="http://w3id.org/sepses/vocab/event/log#sends">
+            <span>sends</span>
+         </a>
+      </li>
+      <li>
+         <a href="#writes" title="http://w3id.org/sepses/vocab/event/log#writes">
+            <span>writes</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="forks">
+      <h3>forks<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#forks</p>
+      <div class="comment">
+         <span class="markdown">This property represents fork connection between Processes , e.g. "sh" process forks "sudo" process.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">prov rel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasExe">
+      <h3>has exe<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#hasExe</p>
+      <div class="comment">
+         <span class="markdown">it represents original executable for a process</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Executable"
+                  title="http://w3id.org/sepses/vocab/event/log#Executable">executable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasHostIP">
+      <h3>has host i p<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#hasHostIP</p>
+      <div class="comment">
+         <span class="markdown">This property connects a socket with an IPAddress </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Host" title="http://w3id.org/sepses/vocab/event/log#Host">host</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#IPAddress" title="http://w3id.org/sepses/vocab/event/log#IPAddress">i p address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPotentialAttackTechnique">
+      <h3>has potential attack technique<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#hasPotentialAttackTechnique</p>
+      <div class="comment">
+         <span class="markdown">This property represents connection to the attack ontology (external class)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://w3id.org/sepses/vocab/ref/attack#Technique">technique</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSocketIP">
+      <h3>has socket i p<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#hasSocketIP</p>
+      <div class="comment">
+         <span class="markdown">This property represent an IP Address for a certain Host </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Socket" title="http://w3id.org/sepses/vocab/event/log#Socket">socket</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#IPAddress" title="http://w3id.org/sepses/vocab/event/log#IPAddress">i p address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasUser">
+      <h3>has user<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#hasUser</p>
+      <div class="comment">
+         <span class="markdown">This property represents User behind the running Process </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#User" title="http://w3id.org/sepses/vocab/event/log#User">user</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isExecutedBy">
+      <h3>is executed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#isExecutedBy</p>
+      <div class="comment">
+         <span class="markdown">This property represents File execution by a Process</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">prov rel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#File" title="http://w3id.org/sepses/vocab/event/log#File">file</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isReadBy">
+      <h3>is read by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#isReadBy</p>
+      <div class="comment">
+         <span class="markdown">This property represents read event of a File by a Process</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#File" title="http://w3id.org/sepses/vocab/event/log#File">file</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isReceivedBy">
+      <h3>is received by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#isReceivedBy</p>
+      <div class="comment">
+         <span class="markdown">This property represents connection received by Process from a Socket</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">prov rel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Socket" title="http://w3id.org/sepses/vocab/event/log#Socket">socket</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="originatesFrom">
+      <h3>originates from<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#originatesFrom</p>
+      <div class="comment">
+         <span class="markdown">This property represents Host where a Process coming from</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Host" title="http://w3id.org/sepses/vocab/event/log#Host">host</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="provRel">
+      <h3>prov rel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#provRel</p>
+      <div class="comment">
+         <span class="markdown">The property to represent general connection between event entities e.g. Process to Process, Process to File, Process to Socket etc.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#forks" title="http://w3id.org/sepses/vocab/event/log#forks">forks</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isExecutedBy"
+                  title="http://w3id.org/sepses/vocab/event/log#isExecutedBy">is executed by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isReceivedBy"
+                  title="http://w3id.org/sepses/vocab/event/log#isReceivedBy">is received by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#sends" title="http://w3id.org/sepses/vocab/event/log#sends">sends</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#writes" title="http://w3id.org/sepses/vocab/event/log#writes">writes</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SystemObject"
+                  title="http://w3id.org/sepses/vocab/event/log#SystemObject">system object</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SystemObject"
+                  title="http://w3id.org/sepses/vocab/event/log#SystemObject">system object</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sends">
+      <h3>sends<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#sends</p>
+      <div class="comment">
+         <span class="markdown">This property represents connection sent by Process to a Socket</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">prov rel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Socket" title="http://w3id.org/sepses/vocab/event/log#Socket">socket</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="writes">
+      <h3>writes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#writes</p>
+      <div class="comment">
+         <span class="markdown">This property represents write event of a File by a Process</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#provRel" title="http://w3id.org/sepses/vocab/event/log#provRel">prov rel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#File" title="http://w3id.org/sepses/vocab/event/log#File">file</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#cmdLine" title="http://w3id.org/sepses/vocab/event/log#cmdLine">
+            <span>cmd line</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hostName" title="http://w3id.org/sepses/vocab/event/log#hostName">
+            <span>host name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hostOS" title="http://w3id.org/sepses/vocab/event/log#hostOS">
+            <span>host o s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#port" title="http://w3id.org/sepses/vocab/event/log#port">
+            <span>port</span>
+         </a>
+      </li>
+      <li>
+         <a href="#userName" title="http://w3id.org/sepses/vocab/event/log#userName">
+            <span>user name</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="cmdLine">
+      <h3>cmd line<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#cmdLine</p>
+      <div class="comment">
+         <span class="markdown">Command Line</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/sepses/vocab/event/log#Process">process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hostName">
+      <h3>host name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#hostName</p>
+      <div class="comment">
+         <span class="markdown">Name of a Host</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Host" title="http://w3id.org/sepses/vocab/event/log#Host">host</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hostOS">
+      <h3>host o s<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#hostOS</p>
+      <div class="comment">
+         <span class="markdown">Host operating system</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Host" title="http://w3id.org/sepses/vocab/event/log#Host">host</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="port">
+      <h3>port<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#port</p>
+      <div class="comment">
+         <span class="markdown">IP port</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Socket" title="http://w3id.org/sepses/vocab/event/log#Socket">socket</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="userName">
+      <h3>user name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/sepses/vocab/event/log#userName</p>
+      <div class="comment">
+         <span class="markdown">Name of user</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#User" title="http://w3id.org/sepses/vocab/event/log#User">user</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

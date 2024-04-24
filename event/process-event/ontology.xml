@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#subClassOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#subClassOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#eventID -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#eventID">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Int"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasProgram -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasProgram">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/process-event#Program"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasSourceHost -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasSourceHost">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/process-event#Host"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEventType"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasTargetHost -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasTargetHost">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/process-event#Host"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasUser -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasUser">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/process-event#User"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#timestamp -->
+
+
+    <ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#timestamp">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Timestamp"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#ProcessEventType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hostName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#hostName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#programName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#programName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#userName -->
+
+
+    <DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/process-event#userName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/process-event#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor"/>
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent"/>
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject"/>
+    
+
+
+    <!-- http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace -->
+
+
+    <Class rdf:about="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#Host -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/process-event#Host">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#ProcessEvent -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#ProcessEventType -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/process-event#ProcessEventType"/>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#Program -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/process-event#Program">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor"/>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#User -->
+
+
+    <Class rdf:about="http://w3id.org/sepses/vocab/event/process-event#User">
+        <rdfs:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Class -->
+
+
+    <Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Property -->
+
+
+    <Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Int -->
+
+
+    <Class rdf:about="http://www.w3.org/2001/XMLSchema#Int"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Timestamp -->
+
+
+    <Class rdf:about="http://www.w3.org/2001/XMLSchema#Timestamp"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#Host -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#Host">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#ProcessEvent -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#ProcessEvent">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#ProcessEventType -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#ProcessEventType">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#Program -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#Program">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#User -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#User">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#eventID -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#eventID">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasProgram -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasProgram">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasSourceHost -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasSourceHost">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasTargetHost -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasTargetHost">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hasUser -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#hasUser">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#hostName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#hostName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#programName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#programName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#timestamp -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#timestamp">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/process-event#userName -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/sepses/vocab/event/process-event#userName">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://w3id.org/sepses/vocab/event/process-event#ProcessEventType">
+        <skos:subClassOf rdf:resource="http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventAction"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

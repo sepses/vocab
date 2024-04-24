@@ -1,0 +1,524 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://sepses.ifs.tuwien.ac.at/vocab/event", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/event/process-event" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventObject"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#User",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventActor"
+    },
+    "subClasses" : [ "11", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Int"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Property",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#timestamp",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "timestamp"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasTargetHost",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "hasTargetHost"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "hasSystemEventType"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#hostName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "hostName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasUser",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "hasUser"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#userName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "userName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasSourceHost",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "hasSourceHost"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#programName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "programName"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasProgram",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "hasProgram"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#eventID",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "eventID"
+      }
+    }, {
+      "iri" : "http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName",
+      "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+      "labels" : {
+        "IRI-based" : "ProcessEventTypeName"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#Host",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Host"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Class",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 5,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#ProcessEventType",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "instances" : 0,
+    "annotations" : {
+      "subClassOf" : [ {
+        "identifier" : "subClassOf",
+        "language" : "undefined",
+        "value" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventAction",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcessEventType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#Program",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Program"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventEvent"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Timestamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Timestamp"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#ProcessEvent",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessEvent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sepsesEventPlace"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "28"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "16",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "18",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "19",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "20",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasTargetHost",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasTargetHost"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasSystemEventType"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#hostName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hostName"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasUser",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasUser"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  }, {
+    "domain" : "15",
+    "range" : "1",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "4",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "15",
+    "range" : "2",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "5",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "15",
+    "range" : "4",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "6",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "15",
+    "range" : "11",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "7",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "15",
+    "range" : "9",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "8",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#timestamp",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "timestamp"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasSourceHost",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasSourceHost"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#programName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "programName"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#eventID",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "eventID"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#userName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "userName"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#hasProgram",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasProgram"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/process-event",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "ProcessEventTypeName"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "33"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "28",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "30",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  } ]
+}

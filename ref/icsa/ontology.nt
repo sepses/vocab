@@ -1,0 +1,173 @@
+<http://w3id.org/sepses/vocab/ref/icsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/sepses/vocab/ref/icsa> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/sepses/vocab/ref/icsa/1.0.0> .
+<http://w3id.org/sepses/vocab/ref/icsa> <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" .
+<http://w3id.org/sepses/vocab/ref/icsa> <http://purl.org/dc/elements/1.1/description> "An ontology to represent ICS Advisory.\nThis ontology is developed based on the ICSA SCAF v.2  (https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html)"@en .
+<http://w3id.org/sepses/vocab/ref/icsa> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/sepses/vocab/ref/icsa> <http://purl.org/dc/elements/1.1/title> "ICS Adversary Ontology" .
+<http://w3id.org/sepses/vocab/ref/icsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "icsa" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#hasCVE
+<http://w3id.org/sepses/vocab/ref/icsa#hasCVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCVE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCVE> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cve#CVE> .
+<http://w3id.org/sepses/vocab/ref/cve#CVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCVE> <http://www.w3.org/2000/01/rdf-schema#label> "hasCVE" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#hasCWE
+<http://w3id.org/sepses/vocab/ref/icsa#hasCWE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCWE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCWE> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#CWE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCWE> <http://www.w3.org/2000/01/rdf-schema#label> "hasCWE" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter
+<http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#Product> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCompanyHeadquarter> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompanyHeadquarter" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector
+<http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasCriticalInfrastructureSector> <http://www.w3.org/2000/01/rdf-schema#label> "hasCriticalInfrastructureSector" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#hasProduct
+<http://w3id.org/sepses/vocab/ref/icsa#hasProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasProduct> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/icsa#Product> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasProduct> <http://www.w3.org/2000/01/rdf-schema#label> "hasProduct" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution
+<http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#Product> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasProductDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "hasProductDistribution" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#hasVendor
+<http://w3id.org/sepses/vocab/ref/icsa#hasVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasVendor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#Product> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasVendor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/icsa#Vendor> .
+<http://w3id.org/sepses/vocab/ref/icsa#hasVendor> <http://www.w3.org/2000/01/rdf-schema#label> "hasVendor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#CVSSScore
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSScore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSScore> <http://www.w3.org/2000/01/rdf-schema#label> "CVSSScore" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/icsa#CVSSSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "CVSSSeverity" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#publisher
+<http://w3id.org/sepses/vocab/ref/icsa#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#publisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#publisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/icsa#publisher> <http://www.w3.org/2000/01/rdf-schema#label> "publisher" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#reference
+<http://w3id.org/sepses/vocab/ref/icsa#reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#reference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#reference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/icsa#reference> <http://www.w3.org/2000/01/rdf-schema#label> "reference" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#remediation
+<http://w3id.org/sepses/vocab/ref/icsa#remediation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#remediation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#remediation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/icsa#remediation> <http://www.w3.org/2000/01/rdf-schema#label> "remediation" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#year
+<http://w3id.org/sepses/vocab/ref/icsa#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/icsa#year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/icsa#ICSA> .
+<http://w3id.org/sepses/vocab/ref/icsa#year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/icsa#year> <http://www.w3.org/2000/01/rdf-schema#label> "year" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/sepses/vocab/ref/cve#CVE
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#CWE
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter
+<http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/icsa#CompanyHeadquarter> <http://www.w3.org/2000/01/rdf-schema#label> "CompanyHeadquarter" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector
+<http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/icsa#CriticalInfrastructureSector> <http://www.w3.org/2000/01/rdf-schema#label> "CriticalInfrastructureSector" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#ICSA
+<http://w3id.org/sepses/vocab/ref/icsa#ICSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#ICSA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/icsa#ICSA> <http://www.w3.org/2000/01/rdf-schema#label> "ICS Advisory" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#Product
+<http://w3id.org/sepses/vocab/ref/icsa#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/icsa#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution
+<http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/icsa#ProductDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "ProductDistribution" .
+# 
+# http://w3id.org/sepses/vocab/ref/icsa#Vendor
+<http://w3id.org/sepses/vocab/ref/icsa#Vendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/icsa#Vendor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/icsa#Vendor> <http://www.w3.org/2000/01/rdf-schema#label> "Vendor" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

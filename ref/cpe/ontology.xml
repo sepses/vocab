@@ -1,21 +1,22 @@
 <?xml version="1.0"?>
-<rdf:RDF
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:owl="http://www.w3.org/2002/07/owl#"
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:xml="http://www.w3.org/XML/1998/namespace"
-        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-        xmlns:vann="http://purl.org/vocab/vann/"
-        xml:base="http://w3id.org/sepses/vocab/ref/cpe">
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/ref/cpe#"
+     xml:base="http://w3id.org/sepses/vocab/ref/cpe"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
     <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/ref/cpe">
         <owl:versionIRI rdf:resource="http://w3id.org/sepses/vocab/ref/cpe/1.0.0"/>
         <dc:creator>SEPSES team</dc:creator>
-        <dc:description xml:lang="en">An ontology to describe CPE resources extracted from NVD databases.
-        </dc:description>
+        <dc:description xml:lang="en">An ontology to describe CPE resources extracted from NVD databases.</dc:description>
         <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
         <dc:title>SEPSES CPE Ontology</dc:title>
         <vann:preferredNamespacePrefix>cpe</vann:preferredNamespacePrefix>
     </owl:Ontology>
+    
 
 
     <!-- 
@@ -27,34 +28,42 @@
      -->
 
 
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
 
 
     <!-- 
@@ -66,6 +75,9 @@
      -->
 
 
+    
+
+
     <!-- http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTest -->
 
 
@@ -74,6 +86,7 @@
         <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cpe#LogicalTest"/>
         <rdfs:label>hasLogicalTest</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#hasLogicalTestFactRef -->
@@ -84,6 +97,7 @@
         <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cpe#Product"/>
         <rdfs:label>hasLogicalTestFactRef</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#hasProduct -->
@@ -94,6 +108,7 @@
         <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cpe#Product"/>
         <rdfs:label>hasProduct</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#hasVendor -->
@@ -104,6 +119,7 @@
         <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/ref/cpe#Vendor"/>
         <rdfs:label>hasVendor</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
     <!-- 
@@ -115,6 +131,9 @@
      -->
 
 
+    
+
+
     <!-- http://w3id.org/sepses/vocab/ref/cpe#CPEVersion -->
 
 
@@ -123,6 +142,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>CPEVersion</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#edition -->
@@ -133,6 +153,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>edition</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#language -->
@@ -143,6 +164,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>language</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#other -->
@@ -153,6 +175,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>other</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#part -->
@@ -163,6 +186,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>part</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#productName -->
@@ -173,6 +197,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>productName</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#softwareEdition -->
@@ -183,6 +208,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>softwareEdition</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#targetHardware -->
@@ -193,6 +219,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>targetHardware</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#targetSoftware -->
@@ -203,6 +230,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>targetSoftware</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#update -->
@@ -213,6 +241,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>update</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#vendorName -->
@@ -223,6 +252,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>vendorName</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#version -->
@@ -233,6 +263,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>version</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- 
@@ -244,12 +275,16 @@
      -->
 
 
+    
+
+
     <!-- http://w3id.org/sepses/vocab/ref/cpe#CPE -->
 
 
     <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cpe#CPE">
         <rdfs:label>CPE</rdfs:label>
     </owl:Class>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#LogicalTest -->
@@ -258,6 +293,7 @@
     <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cpe#LogicalTest">
         <rdfs:label>LogicalTest</rdfs:label>
     </owl:Class>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#Product -->
@@ -266,6 +302,7 @@
     <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cpe#Product">
         <rdfs:label>Product</rdfs:label>
     </owl:Class>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cpe#Vendor -->
@@ -274,6 +311,7 @@
     <owl:Class rdf:about="http://w3id.org/sepses/vocab/ref/cpe#Vendor">
         <rdfs:label>Vendor</rdfs:label>
     </owl:Class>
+    
 
 
     <!-- http://w3id.org/sepses/vocab/ref/cve#CVE -->
@@ -283,6 +321,7 @@
 </rdf:RDF>
 
 
-        <!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
 
 

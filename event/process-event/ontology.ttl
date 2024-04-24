@@ -1,0 +1,244 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#subClassOf
+<http://www.w3.org/2004/02/skos/core#subClassOf> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/event/process-event#eventID
+<http://w3id.org/sepses/vocab/event/process-event#eventID> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> ;
+                                                           rdfs:range xsd:Int .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasProgram
+<http://w3id.org/sepses/vocab/event/process-event#hasProgram> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> ;
+                                                              rdfs:range <http://w3id.org/sepses/vocab/event/process-event#Program> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasSourceHost
+<http://w3id.org/sepses/vocab/event/process-event#hasSourceHost> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> ;
+                                                                 rdfs:range <http://w3id.org/sepses/vocab/event/process-event#Host> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType
+<http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> ;
+                                                                      rdfs:range <http://w3id.org/sepses/vocab/event/process-event#ProcessEventType> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasTargetHost
+<http://w3id.org/sepses/vocab/event/process-event#hasTargetHost> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> ;
+                                                                 rdfs:range <http://w3id.org/sepses/vocab/event/process-event#Host> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasUser
+<http://w3id.org/sepses/vocab/event/process-event#hasUser> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> ;
+                                                           rdfs:range <http://w3id.org/sepses/vocab/event/process-event#User> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#timestamp
+<http://w3id.org/sepses/vocab/event/process-event#timestamp> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> ;
+                                                             rdfs:range xsd:Timestamp .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName
+<http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#ProcessEventType> ;
+                                                                        rdfs:range rdfs:Literal .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hostName
+<http://w3id.org/sepses/vocab/event/process-event#hostName> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#Host> ;
+                                                            rdfs:range rdfs:Literal .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#programName
+<http://w3id.org/sepses/vocab/event/process-event#programName> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#Program> ;
+                                                               rdfs:range rdfs:Literal .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#userName
+<http://w3id.org/sepses/vocab/event/process-event#userName> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://w3id.org/sepses/vocab/event/process-event#User> ;
+                                                            rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor> rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent> rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventObject> rdf:type owl:Class .
+
+
+###  http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace
+<http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace> rdf:type owl:Class .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#Host
+<http://w3id.org/sepses/vocab/event/process-event#Host> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventPlace> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#ProcessEvent
+<http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventEvent> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#ProcessEventType
+<http://w3id.org/sepses/vocab/event/process-event#ProcessEventType> rdf:type owl:Class .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#Program
+<http://w3id.org/sepses/vocab/event/process-event#Program> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor> .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#User
+<http://w3id.org/sepses/vocab/event/process-event#User> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventActor> .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Class
+rdf:Class rdf:type owl:Class .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Property
+rdfs:Property rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Int
+xsd:Int rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Timestamp
+xsd:Timestamp rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/sepses/vocab/event/process-event#Host
+<http://w3id.org/sepses/vocab/event/process-event#Host> rdf:type owl:NamedIndividual ,
+                                                                 rdf:Class .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#ProcessEvent
+<http://w3id.org/sepses/vocab/event/process-event#ProcessEvent> rdf:type owl:NamedIndividual ,
+                                                                         rdf:Class .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#ProcessEventType
+<http://w3id.org/sepses/vocab/event/process-event#ProcessEventType> rdf:type owl:NamedIndividual ,
+                                                                             rdf:Class .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName
+<http://w3id.org/sepses/vocab/event/process-event#ProcessEventTypeName> rdf:type owl:NamedIndividual ,
+                                                                                 rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#Program
+<http://w3id.org/sepses/vocab/event/process-event#Program> rdf:type owl:NamedIndividual ,
+                                                                    rdf:Class .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#User
+<http://w3id.org/sepses/vocab/event/process-event#User> rdf:type owl:NamedIndividual ,
+                                                                 rdf:Class .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#eventID
+<http://w3id.org/sepses/vocab/event/process-event#eventID> rdf:type owl:NamedIndividual ,
+                                                                    rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasProgram
+<http://w3id.org/sepses/vocab/event/process-event#hasProgram> rdf:type owl:NamedIndividual ,
+                                                                       rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasSourceHost
+<http://w3id.org/sepses/vocab/event/process-event#hasSourceHost> rdf:type owl:NamedIndividual ,
+                                                                          rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType
+<http://w3id.org/sepses/vocab/event/process-event#hasSystemEventType> rdf:type owl:NamedIndividual ,
+                                                                               rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasTargetHost
+<http://w3id.org/sepses/vocab/event/process-event#hasTargetHost> rdf:type owl:NamedIndividual ,
+                                                                          rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hasUser
+<http://w3id.org/sepses/vocab/event/process-event#hasUser> rdf:type owl:NamedIndividual ,
+                                                                    rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#hostName
+<http://w3id.org/sepses/vocab/event/process-event#hostName> rdf:type owl:NamedIndividual ,
+                                                                     rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#programName
+<http://w3id.org/sepses/vocab/event/process-event#programName> rdf:type owl:NamedIndividual ,
+                                                                        rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#timestamp
+<http://w3id.org/sepses/vocab/event/process-event#timestamp> rdf:type owl:NamedIndividual ,
+                                                                      rdfs:Property .
+
+
+###  http://w3id.org/sepses/vocab/event/process-event#userName
+<http://w3id.org/sepses/vocab/event/process-event#userName> rdf:type owl:NamedIndividual ,
+                                                                     rdfs:Property .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://w3id.org/sepses/vocab/event/process-event#ProcessEventType> <http://www.w3.org/2004/02/skos/core#subClassOf> <http://sepses.ifs.tuwien.ac.at/vocab/event/sepsesEventAction> .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

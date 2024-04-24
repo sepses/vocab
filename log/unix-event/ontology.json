@@ -1,0 +1,259 @@
+[ {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Ontology for File System Logs for Unix and Windows Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "A File System Log Entry Ontology"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessCall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#eventID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#filetype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasFile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasLogType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hostName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#instanceId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip4Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip6Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ipAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logFilePath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logMessage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logTypeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#originatesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#pathname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#timestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#username",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+} ]

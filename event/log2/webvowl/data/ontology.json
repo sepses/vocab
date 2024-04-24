@@ -1,0 +1,593 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/sepses/vocab/event/log" ],
+    "title" : { },
+    "iri" : "http://w3id.org/sepses/vocab/event/log",
+    "author" : [ "Andreas Ekelhart", "Kabul Kurniawan", "Elmar Kiesling" ],
+    "description" : {
+      "en" : "An ontology to represent security log events."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Elmar Kiesling",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Andreas Ekelhart",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Kabul Kurniawan",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "logev",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#Executable",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Executable"
+    },
+    "comment" : {
+      "undefined" : "This class represent an individual executable of a process"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#EventEntity",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventEntity"
+    },
+    "subClasses" : [ "12", "11", "15" ],
+    "comment" : {
+      "undefined" : "The main class of event entity, represents any entity in an event e.g. process, file, network etc."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#User",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User"
+    },
+    "subClasses" : [ "23", "26", "29" ],
+    "comment" : {
+      "undefined" : "This main class to represent User "
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#IPAddress",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IPAddress"
+    },
+    "comment" : {
+      "undefined" : "This class represents an IPAddress "
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#File",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "File"
+    },
+    "comment" : {
+      "undefined" : "The class to represent a file"
+    },
+    "id" : "12",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#SystemUser",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemUser"
+    },
+    "comment" : {
+      "undefined" : "This class represents System User"
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#Process",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "comment" : {
+      "undefined" : "This class represent an individual running process"
+    },
+    "id" : "11",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#LocalUser",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocalUser"
+    },
+    "comment" : {
+      "undefined" : "It represent a specific local user"
+    },
+    "id" : "26",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#RootUser",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RootUser"
+    },
+    "comment" : {
+      "undefined" : "This class represents Root User"
+    },
+    "id" : "29",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#Host",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Host"
+    },
+    "comment" : {
+      "undefined" : "This class represents a Host e.g. Computer, Server etc."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#Network",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Network"
+    },
+    "comment" : {
+      "undefined" : "This class represent network connection, a combination of IPAddress and Port e.g. 127.0.0.1:80"
+    },
+    "id" : "15",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#hasIPAddress",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasIPAddress"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "This property represent an IP Address for a certain Host "
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#connects",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "connects"
+    },
+    "domain" : "4",
+    "subproperty" : [ "5", "6", "7", "8", "9", "10" ],
+    "comment" : {
+      "undefined" : "The property to represent general connection between event entities e.g. Process to Process, Process to File, Process to Network etc."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#writes",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "writes"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property represents write event of a File by a Process"
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#originatesFrom",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "originatesFrom"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property represents Host where a Process coming from"
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "range" : "4",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "4",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "24",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#cmdLine",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "cmdLine"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Command Line"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#forks",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "forks"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property represents fork connection between Processes , e.g. \"sh\" process forks \"sudo\" process."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#userName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "userName"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Name of user"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#hasUser",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasUser"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property represents User behind the running Process "
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#isReadBy",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isReadBy"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "This property represents read event of a File by a Process"
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#isReceivedBy",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isReceivedBy"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "This property represents connection received by Process from a Network"
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#hasExe",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasExe"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "it represents original executable for a process"
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#port",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "port"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "IP port"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#hostOS",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hostOS"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Host operating system"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#hostName",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hostName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Name of a Host"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#isExecutedBy",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isExecutedBy"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "This property represents File execution by a Process"
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#originalIPAddress",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "originalIPAddress"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "This property represent original IP Address of a Network "
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://w3id.org/sepses/vocab/event/log#sends",
+    "baseIri" : "http://w3id.org/sepses/vocab/event/log",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "sends"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property represents connection sent by Process to a Network"
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "range" : "24",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  } ]
+}

@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/sepses/vocab/event/log#"
+     xml:base="http://w3id.org/sepses/vocab/event/log"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/sepses/vocab/event/log">
+        <owl:versionIRI rdf:resource="https://w3id.org/sepses/vocab/event/log/1.0.0"/>
+        <dc:creator>Andreas Ekelhart</dc:creator>
+        <dc:creator>Elmar Kiesling</dc:creator>
+        <dc:creator>Kabul Kurniawan</dc:creator>
+        <dc:description xml:lang="en">An ontology to represent security log events.</dc:description>
+        <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title></dc:title>
+        <vann:preferredNamespacePrefix>logev</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#connects -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#connects">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#EventEntity"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#EventEntity"/>
+        <rdfs:comment>The property to represent general connection between event entities e.g. Process to Process, Process to File, Process to Network etc.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#forks -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#forks">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/event/log#connects"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:comment>This property represents fork connection between Processes , e.g. &quot;sh&quot; process forks &quot;sudo&quot; process.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#hasExe -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#hasExe">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#Executable"/>
+        <rdfs:comment>it represents original executable for a process</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#hasIPAddress -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#hasIPAddress">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Host"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#IPAddress"/>
+        <rdfs:comment>This property represent an IP Address for a certain Host </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#hasUser -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#hasUser">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#User"/>
+        <rdfs:comment>This property represents User behind the running Process </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#isExecutedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#isExecutedBy">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/event/log#connects"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#File"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:comment>This property represents File execution by a Process</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#isReadBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#isReadBy">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/event/log#connects"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#File"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:comment>This property represents read event of a File by a Process</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#isReceivedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#isReceivedBy">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/event/log#connects"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Network"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:comment>This property represents connection received by Process from a Network</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#originalIPAddress -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#originalIPAddress">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Network"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#IPAddress"/>
+        <rdfs:comment>This property represent original IP Address of a Network </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#originatesFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#originatesFrom">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#Host"/>
+        <rdfs:comment>This property represents Host where a Process coming from</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#sends -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#sends">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/event/log#connects"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#Network"/>
+        <rdfs:comment>This property represents connection sent by Process to a Network</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#writes -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/sepses/vocab/event/log#writes">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/sepses/vocab/event/log#connects"/>
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/sepses/vocab/event/log#File"/>
+        <rdfs:comment>This property represents write event of a File by a Process</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#cmdLine -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/log#cmdLine">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Command Line</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#hostName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/log#hostName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of a Host</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#hostOS -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/log#hostOS">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Host operating system</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#port -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/log#port">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#Network"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>IP port</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#userName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/sepses/vocab/event/log#userName">
+        <rdfs:domain rdf:resource="http://w3id.org/sepses/vocab/event/log#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of user</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#EventEntity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#EventEntity">
+        <rdfs:comment>The main class of event entity, represents any entity in an event e.g. process, file, network etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#Executable -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#Executable">
+        <rdfs:comment>This class represent an individual executable of a process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#File -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#File">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/event/log#EventEntity"/>
+        <rdfs:comment>The class to represent a file</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#Host -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#Host">
+        <rdfs:comment>This class represents a Host e.g. Computer, Server etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#IPAddress -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#IPAddress">
+        <rdfs:comment>This class represents an IPAddress </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#LocalUser -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#LocalUser">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/event/log#User"/>
+        <rdfs:comment>It represent a specific local user</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#Network -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#Network">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/event/log#EventEntity"/>
+        <rdfs:comment>This class represent network connection, a combination of IPAddress and Port e.g. 127.0.0.1:80</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#Process -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#Process">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/event/log#EventEntity"/>
+        <rdfs:comment>This class represent an individual running process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#RootUser -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#RootUser">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/event/log#User"/>
+        <rdfs:comment>This class represents Root User</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#SystemUser -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#SystemUser">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/sepses/vocab/event/log#User"/>
+        <rdfs:comment>This class represents System User</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/sepses/vocab/event/log#User -->
+
+
+    <owl:Class rdf:about="http://w3id.org/sepses/vocab/event/log#User">
+        <rdfs:comment>This main class to represent User </rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

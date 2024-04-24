@@ -1,0 +1,661 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog" ],
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "labels" : {
+      "undefined" : "A File System Log Entry Ontology"
+    },
+    "comments" : {
+      "undefined" : "A Ontology for File System Logs for Unix and Windows Systems"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogType",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogType"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#File",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "File"
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#User",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Process",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#LogEntry",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogEntry"
+    },
+    "subClasses" : [ "28", "11" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#UnixFileSystemLogEntry",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnixFileSystemLogEntry"
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#USBDeviceLogEntry",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "USBDeviceLogEntry"
+    },
+    "id" : "28",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#Host",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Host"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#FileSystemLogEntry",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FileSystemLogEntry"
+    },
+    "subClasses" : [ "13", "10" ],
+    "id" : "11",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#WinFileSystemLogEntry",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WinFileSystemLogEntry"
+    },
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ipAddress",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "ipAddress"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logTypeName",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "logTypeName"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#domain",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "domain"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#eventID",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "eventID"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logFilePath",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "logFilePath"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#logMessage",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "logMessage"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasProcess",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasProcess"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasUser",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasUser"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processID",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "processID"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "range" : "18",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "18",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#processname",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "processname"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessInfo",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "accessInfo"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip4Address",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "ip4Address"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#ip6Address",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "ip6Address"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasLogType",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasLogType"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#originatesFrom",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "originatesFrom"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hasFile",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasFile"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#username",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "username"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#hostName",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hostName"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#accessCall",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "accessCall"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#instanceId",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "instanceId"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#pathname",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "pathname"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#filetype",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "filetype"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog#timestamp",
+    "baseIri" : "http://sepses.ifs.tuwien.ac.at/vocab/fileSystemLog",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "timestamp"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  } ]
+}

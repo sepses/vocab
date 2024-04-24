@@ -1,9 +1,12 @@
 <http://w3id.org/sepses/vocab/ref/cwe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/sepses/vocab/ref/cwe> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/sepses/vocab/ref/cwe/1.0.0> .
-<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/creator> "SEPSES team" .
-<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/description> "An ontology to describe CWE resources extracted from MITRE."@en .
+<http://w3id.org/sepses/vocab/ref/cwe> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/sepses/vocab/ref/cwe/2.0.0> .
+<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/creator> "Andreas Ekelhart" .
+<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/creator> "Elmar Kiesling" .
+<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/creator> "Fajar J. Ekaputra" .
+<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/creator> "Kabul Kurniawan" .
+<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/description> "An ontology to represent CWE \nThis ontology is developed based on the CWE resources extracted from MITRE CWE (https://cwe.mitre.org/) "@en .
 <http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" .
-<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/title> "SEPSES CWE Ontology" .
+<http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/dc/elements/1.1/title> "CWE Ontology" .
 <http://w3id.org/sepses/vocab/ref/cwe> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cwe" .
 # 
 # 
@@ -38,48 +41,111 @@
 # #################################################################
 # 
 # 
-# http://w3id.org/sepses/vocab/ref/cwe#hasAplicablePlatform
-<http://w3id.org/sepses/vocab/ref/cwe#hasAplicablePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/sepses/vocab/ref/cwe#hasAplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
-<http://w3id.org/sepses/vocab/ref/cwe#hasAplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform> .
-<http://w3id.org/sepses/vocab/ref/cwe#hasAplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#label> "hasAplicablePlatform" .
+# http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform
+<http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasApplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#label> "hasApplicablePlatform" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC
 <http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/capec#CAPEC> .
-<http://w3id.org/sepses/vocab/ref/capec#CAPEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasCAPEC> <http://www.w3.org/2000/01/rdf-schema#label> "hasCAPEC" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence
 <http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasCommonConsequence> <http://www.w3.org/2000/01/rdf-schema#label> "hasCommonConsequence" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod
 <http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasDetectionMethod> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectionMethod" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction
 <http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasModeOfIntroduction> <http://www.w3.org/2000/01/rdf-schema#label> "hasModeOfIntroduction" .
 # 
+# http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory
+<http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasModificationHistory> <http://www.w3.org/2000/01/rdf-schema#label> "hasModificationHistory" .
+# 
 # http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation
 <http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasPotentialMitigation> <http://www.w3.org/2000/01/rdf-schema#label> "hasPotentialMitigation" .
 # 
+# http://w3id.org/sepses/vocab/ref/cwe#hasReference
+<http://w3id.org/sepses/vocab/ref/cwe#hasReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasReference> <http://www.w3.org/2000/01/rdf-schema#label> "hasReference" .
+# 
 # http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness
 <http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness> .
 <http://w3id.org/sepses/vocab/ref/cwe#hasRelatedWeakness> <http://www.w3.org/2000/01/rdf-schema#label> "hasRelatedWeakness" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory
+<http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory> .
+<http://w3id.org/sepses/vocab/ref/cwe#hasSubmissionHistory> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubmissionHistory" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf
+<http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence> .
+<http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#isCommonConsequenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCommonConsequenceOf " .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf
+<http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> .
+<http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#isDetectionMethodOf> <http://www.w3.org/2000/01/rdf-schema#label> "isDetectionMethodOf " .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf
+<http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction> .
+<http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#isModeOfIntroductionOf> <http://www.w3.org/2000/01/rdf-schema#label> "isModeOfIntroductionOf" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf
+<http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> .
+<http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#isModificationHistoryOf> <http://www.w3.org/2000/01/rdf-schema#label> "isModificationHistoryOf" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf
+<http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> .
+<http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#isPotentialMitigationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPotentialMitigationOf " .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf
+<http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness> .
+<http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#isRelatedWeaknessOf> <http://www.w3.org/2000/01/rdf-schema#label> "isRelatedWeaknessOf " .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#relatedCWE
+<http://w3id.org/sepses/vocab/ref/cwe#relatedCWE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#relatedCWE> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness> .
+<http://w3id.org/sepses/vocab/ref/cwe#relatedCWE> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 # 
 # 
 # 
@@ -98,21 +164,27 @@
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform> .
+<http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform> .
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "applicablePlatformLanguage" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform> .
+<http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform> .
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformParadigm> <http://www.w3.org/2000/01/rdf-schema#label> "applicablePlatformParadigm" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform> .
+<http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform> .
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#applicablePlatformTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "applicablePlatformTechnology" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail
+<http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#backgroundDetail> <http://www.w3.org/2000/01/rdf-schema#label> "backgroundDetail" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#consequenceImpact
 <http://w3id.org/sepses/vocab/ref/cwe#consequenceImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -132,12 +204,6 @@
 <http://w3id.org/sepses/vocab/ref/cwe#consequenceScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#consequenceScope> <http://www.w3.org/2000/01/rdf-schema#label> "consequenceScope" .
 # 
-# http://w3id.org/sepses/vocab/ref/cwe#description
-<http://w3id.org/sepses/vocab/ref/cwe#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cwe#description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
-<http://w3id.org/sepses/vocab/ref/cwe#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://w3id.org/sepses/vocab/ref/cwe#description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
-# 
 # http://w3id.org/sepses/vocab/ref/cwe#detectionDescription
 <http://w3id.org/sepses/vocab/ref/cwe#detectionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/sepses/vocab/ref/cwe#detectionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> .
@@ -149,6 +215,12 @@
 <http://w3id.org/sepses/vocab/ref/cwe#detectionEffectiveness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> .
 <http://w3id.org/sepses/vocab/ref/cwe#detectionEffectiveness> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#detectionEffectiveness> <http://www.w3.org/2000/01/rdf-schema#label> "detectionEffectiveness" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote
+<http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> .
+<http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#detectionEffectivenessNote> <http://www.w3.org/2000/01/rdf-schema#label> "detectionEffectiveness" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#detectionMethod
 <http://w3id.org/sepses/vocab/ref/cwe#detectionMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -162,23 +234,35 @@
 <http://w3id.org/sepses/vocab/ref/cwe#extendedDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#extendedDescription> <http://www.w3.org/2000/01/rdf-schema#label> "extendedDescription" .
 # 
-# http://w3id.org/sepses/vocab/ref/cwe#id
-<http://w3id.org/sepses/vocab/ref/cwe#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cwe#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
-<http://w3id.org/sepses/vocab/ref/cwe#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://w3id.org/sepses/vocab/ref/cwe#id> <http://www.w3.org/2000/01/rdf-schema#label> "id" .
-# 
 # http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit
 <http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
 <http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#likelihoodOfExploit> <http://www.w3.org/2000/01/rdf-schema#label> "likelihoodOfExploit" .
 # 
+# http://w3id.org/sepses/vocab/ref/cwe#mappingUsage
+<http://w3id.org/sepses/vocab/ref/cwe#mappingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#mappingUsage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#mappingUsage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#mappingUsage> <http://www.w3.org/2000/01/rdf-schema#label> "mappingUsage" .
+# 
 # http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription
 <http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> .
 <http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#mitigationDescription> <http://www.w3.org/2000/01/rdf-schema#label> "mitigationDescription" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> .
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectiveness> <http://www.w3.org/2000/01/rdf-schema#label> "mitigationEffectiveness" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> .
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#mitigationEffectivenessNote> <http://www.w3.org/2000/01/rdf-schema#label> "mitigationEffectivenessNote" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#mitigationPhase
 <http://w3id.org/sepses/vocab/ref/cwe#mitigationPhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -198,11 +282,87 @@
 <http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNotePhase> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionNotePhase> <http://www.w3.org/2000/01/rdf-schema#label> "modeOfIntroductionNotePhase" .
 # 
-# http://w3id.org/sepses/vocab/ref/cwe#name
-<http://w3id.org/sepses/vocab/ref/cwe#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/sepses/vocab/ref/cwe#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
-<http://w3id.org/sepses/vocab/ref/cwe#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://w3id.org/sepses/vocab/ref/cwe#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase
+<http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction> .
+<http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#modeOfIntroductionPhase> <http://www.w3.org/2000/01/rdf-schema#label> "modeOfIntroductionPhase" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#modificationComment
+<http://w3id.org/sepses/vocab/ref/cwe#modificationComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationComment> <http://www.w3.org/2000/01/rdf-schema#label> "modificationComment" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#modificationDate
+<http://w3id.org/sepses/vocab/ref/cwe#modificationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationDate> <http://www.w3.org/2000/01/rdf-schema#label> "modificationDate" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#modificationName
+<http://w3id.org/sepses/vocab/ref/cwe#modificationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationName> <http://www.w3.org/2000/01/rdf-schema#label> "modificationName" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization
+<http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#modificationOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "modificationName" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor
+<http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "referenceAuthor" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referenceEdition
+<http://w3id.org/sepses/vocab/ref/cwe#referenceEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceEdition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceEdition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceEdition> <http://www.w3.org/2000/01/rdf-schema#label> "referenceEdition" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationDay> <http://www.w3.org/2000/01/rdf-schema#label> "referencePublicationDay" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationMonth> <http://www.w3.org/2000/01/rdf-schema#label> "referencePublicationMonth" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublicationYear> <http://www.w3.org/2000/01/rdf-schema#label> "referencePublicationYear" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referencePublisher
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#referencePublisher> <http://www.w3.org/2000/01/rdf-schema#label> "referencePublisher" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referenceTitle
+<http://w3id.org/sepses/vocab/ref/cwe#referenceTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceTitle> <http://www.w3.org/2000/01/rdf-schema#label> "referenceTitle" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#referenceUrl
+<http://w3id.org/sepses/vocab/ref/cwe#referenceUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#Reference> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#referenceUrl> <http://www.w3.org/2000/01/rdf-schema#label> "referenceUrl" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#relatedCWE
+<http://w3id.org/sepses/vocab/ref/cwe#relatedCWE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#relatedCWE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessNature
 <http://w3id.org/sepses/vocab/ref/cwe#relatedWeaknessNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -234,6 +394,24 @@
 <http://w3id.org/sepses/vocab/ref/cwe#structure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/sepses/vocab/ref/cwe#structure> <http://www.w3.org/2000/01/rdf-schema#label> "structure" .
 # 
+# http://w3id.org/sepses/vocab/ref/cwe#submissionDate
+<http://w3id.org/sepses/vocab/ref/cwe#submissionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionDate> <http://www.w3.org/2000/01/rdf-schema#label> "submissionDate" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#submissionName
+<http://w3id.org/sepses/vocab/ref/cwe#submissionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionName> <http://www.w3.org/2000/01/rdf-schema#label> "submissionName" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization
+<http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/sepses/vocab/ref/cwe#submissionOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "submissionOrganization" .
+# 
 # http://w3id.org/sepses/vocab/ref/cwe#weaknessOrdinality
 <http://w3id.org/sepses/vocab/ref/cwe#weaknessOrdinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/sepses/vocab/ref/cwe#weaknessOrdinality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/sepses/vocab/ref/cwe#CWE> .
@@ -250,33 +428,58 @@
 # 
 # 
 # http://w3id.org/sepses/vocab/ref/capec#CAPEC
+<http://w3id.org/sepses/vocab/ref/capec#CAPEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/capec#CAPEC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/capec#CAPEC> <http://www.w3.org/2000/01/rdf-schema#label> "CAPEC" .
 # 
-# http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform
-<http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/sepses/vocab/ref/cwe#AplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#label> "AplicablePlatform" .
+# http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform
+<http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/cwe#ApplicablePlatform> <http://www.w3.org/2000/01/rdf-schema#label> "ApplicablePlatform" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#CWE
 <http://w3id.org/sepses/vocab/ref/cwe#CWE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#CWE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cwe#CWE> <http://www.w3.org/2000/01/rdf-schema#label> "CWE" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence
 <http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cwe#CommonConsequence> <http://www.w3.org/2000/01/rdf-schema#label> "CommonConsequence" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod
 <http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cwe#DetectionMethod> <http://www.w3.org/2000/01/rdf-schema#label> "DetectionMethod" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction
 <http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cwe#ModeOfIntroduction> <http://www.w3.org/2000/01/rdf-schema#label> "ModeOfIntroduction" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory
+<http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/cwe#ModificationHistory> <http://www.w3.org/2000/01/rdf-schema#label> "ModificationHistory" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation
 <http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cwe#PotentialMitigation> <http://www.w3.org/2000/01/rdf-schema#label> "PotentialMitigation" .
+# 
+# http://w3id.org/sepses/vocab/ref/cwe#Reference
+<http://w3id.org/sepses/vocab/ref/cwe#Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#Reference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/cwe#Reference> <http://www.w3.org/2000/01/rdf-schema#label> "Reference" .
 # 
 # http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness
 <http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://w3id.org/sepses/vocab/ref/cwe#RelatedWeakness> <http://www.w3.org/2000/01/rdf-schema#label> "RelatedWeakness" .
 # 
-# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+# http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory
+<http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/sepses/vocab/ref/cwe#SubmissionHistory> <http://www.w3.org/2000/01/rdf-schema#label> "SubmissionHistory" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

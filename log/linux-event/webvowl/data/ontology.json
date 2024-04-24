@@ -1,0 +1,474 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "ttps://w3id.org/sepses/vocab/log/linux-event", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/sepses/vocab/log/linux-event", "https://w3id.org/sepses/vocab/log/core", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/sepses/vocab/log/core#logEntry",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "logEntry",
+      "undefined" : "logEntry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/core#LogEntry",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogEntry"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#Host",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Host",
+      "undefined" : "Host"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinuxEventLogEntry"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#User",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User",
+      "undefined" : "User"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "ttps://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry",
+    "baseIri" : "ttps://w3id.org/sepses/vocab/log/linux-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinuxEventLogEntry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#Event",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#File",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "File",
+      "undefined" : "File"
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#eventId",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "eventId",
+      "undefined" : "eventId"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hasHost",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasHost",
+      "undefined" : "hasHost"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#userName",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "userName",
+      "undefined" : "userName"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hasEvent",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "hasEvent"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hostArchitecture",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hostArchitecture",
+      "undefined" : "hostArchitecture"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hostId",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hostId",
+      "undefined" : "hostId"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#filePath",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "filePath"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#eventAction",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "eventAction",
+      "undefined" : "eventAction"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hostName",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hostName",
+      "undefined" : "hostName"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#fileName",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "fileName",
+      "undefined" : "fileName"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hostOS",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hostOS",
+      "undefined" : "hostOS"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#eventCategory",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "eventCategory",
+      "undefined" : "eventCategory"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#userGroup",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "userGroup",
+      "undefined" : "userGroup"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hasFile",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasFile",
+      "undefined" : "hasFile"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#eventType",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "eventType",
+      "undefined" : "eventType"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/sepses/vocab/log/linux-event#hasUser",
+    "baseIri" : "https://w3id.org/sepses/vocab/log/linux-event",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasUser",
+      "undefined" : "hasUser"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "range" : "15",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  } ]
+}

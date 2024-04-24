@@ -1,0 +1,714 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.org/sepses/vocab/log/coreLog", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/sepses/vocab/log/win-event" ],
+    "iri" : "http://purl.org/sepses/vocab/log/win-event"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#Subject",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subject"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "15",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/coreLog#LogEntry",
+    "baseIri" : "http://purl.org/sepses/vocab/log/coreLog",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogEntry"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#AccessRequest",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccessRequest"
+    },
+    "id" : "32"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#Object",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WindowsEventLogEntry"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#Process",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "id" : "25"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#handleID",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "handleID"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#resourceAttributes",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "resourceAttributes"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#upCode",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "upCode"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#source",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#securityID",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "securityID"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#taskCategory",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "taskCategory"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#logName",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "logName"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#hasProcess",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasProcess",
+      "undefined" : "hasProcess"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#objectServer",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "objectServer"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#eventID",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "eventID",
+      "undefined" : "eventID"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#processName",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "processName"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#objectType",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "objectType"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#hasAccess",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasAccess"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#level",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "level"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#accountDomain",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "accountDomain"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#accesses",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "accesses"
+    },
+    "domain" : "32",
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#accessMask",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "accessMask"
+    },
+    "domain" : "32",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#keyword",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "keyword"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#user",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "user",
+      "undefined" : "user"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#computer",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "computer"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#hasObject",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasObject",
+      "undefined" : "hasObject"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#processID",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "processID"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#logonID",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "logonID"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#accountName",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "accountName"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#hasSubject",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasSubject"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/sepses/vocab/log/win-event#objectName",
+    "baseIri" : "http://purl.org/sepses/vocab/log/win-event",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "objectName"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  } ]
+}

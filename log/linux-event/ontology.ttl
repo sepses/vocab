@@ -1,0 +1,172 @@
+@prefix : <https://w3id.org/sepses/vocab/log/linux-event#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/sepses/vocab/log/linux-event> .
+
+<https://w3id.org/sepses/vocab/log/linux-event> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          rdfs:domain :LinuxEventLogEntry ;
+          rdfs:range :Event ;
+          rdfs:label "hasEvent" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hasFile
+:hasFile rdf:type owl:ObjectProperty ;
+         rdfs:domain :LinuxEventLogEntry ;
+         rdfs:range :File ;
+         rdfs:label "hasFile" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hasHost
+:hasHost rdf:type owl:ObjectProperty ;
+         rdfs:domain :LinuxEventLogEntry ;
+         rdfs:range :Host ;
+         rdfs:label "hasHost" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hasUser
+:hasUser rdf:type owl:ObjectProperty ;
+         rdfs:domain :LinuxEventLogEntry ;
+         rdfs:range :User ;
+         rdfs:label "hasUser" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/sepses/vocab/log/linux-event#eventAction
+:eventAction rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Event ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "eventAction" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#eventCategory
+:eventCategory rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Event ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "eventCategory" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#eventId
+:eventId rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Event ;
+         rdfs:range rdfs:Literal ;
+         rdfs:label "eventId" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#eventType
+:eventType rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Event ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "eventType" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#fileName
+:fileName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :File ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "fileName" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#filePath
+:filePath rdf:type owl:DatatypeProperty ;
+          rdfs:domain :File ;
+          rdfs:range rdfs:Literal .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hostArchitecture
+:hostArchitecture rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Host ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "hostArchitecture" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hostId
+:hostId rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Host ;
+        rdfs:range rdfs:Literal ;
+        rdfs:label "hostId" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hostName
+:hostName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Host ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "hostName" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#hostOS
+:hostOS rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Host ;
+        rdfs:range rdfs:Literal ;
+        rdfs:label "hostOS" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#userGroup
+:userGroup rdf:type owl:DatatypeProperty ;
+           rdfs:domain :User ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "userGroup" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#userName
+:userName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :User ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "userName" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/sepses/vocab/log/core#LogEntry
+<https://w3id.org/sepses/vocab/log/core#LogEntry> rdf:type owl:Class .
+
+
+###  https://w3id.org/sepses/vocab/log/core#logEntry
+<https://w3id.org/sepses/vocab/log/core#logEntry> rdf:type owl:Class ;
+                                                  rdfs:label "logEntry" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#Event
+:Event rdf:type owl:Class ;
+       rdfs:label "Event" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#File
+:File rdf:type owl:Class ;
+      rdfs:label "File" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#Host
+:Host rdf:type owl:Class ;
+      rdfs:label "Host" .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry
+:LinuxEventLogEntry rdf:type owl:Class .
+
+
+###  https://w3id.org/sepses/vocab/log/linux-event#User
+:User rdf:type owl:Class ;
+      rdfs:label "User" .
+
+
+###  ttps://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry
+<ttps://w3id.org/sepses/vocab/log/linux-event#LinuxEventLogEntry> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://w3id.org/sepses/vocab/log/core#LogEntry> .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

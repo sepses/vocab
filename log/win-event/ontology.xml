@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/sepses/vocab/log/win-event#"
+     xml:base="http://purl.org/sepses/vocab/log/win-event"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/sepses/vocab/log/win-event"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#hasAccess -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#hasAccess">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/log/win-event#AccessRequest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#hasObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#hasObject">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/log/win-event#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#hasProcess -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#hasProcess">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/log/win-event#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#hasSubject -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#hasSubject">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://purl.org/sepses/vocab/log/win-event#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#accessMask -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#accessMask">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#AccessRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#accesses -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#accesses">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#AccessRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#accountDomain -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#accountDomain">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#accountName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#accountName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#computer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#computer">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#eventID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#eventID">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>eventID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#handleID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#handleID">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#hasObject -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#hasObject"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#hasProcess -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#hasProcess"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#keyword -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#keyword">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#level -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#level">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#logName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#logName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#logonID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#logonID">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#objectName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#objectName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#objectServer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#objectServer">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#objectType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#objectType">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#processID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#processID">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#processName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#processName">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#resourceAttributes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#resourceAttributes">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#securityID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#securityID">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#source -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#source">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#taskCategory -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#taskCategory">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#upCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#upCode">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#user -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sepses/vocab/log/win-event#user">
+        <rdfs:domain rdf:resource="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>user</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/coreLog#LogEntry -->
+
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/log/coreLog#LogEntry"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#AccessRequest -->
+
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/log/win-event#AccessRequest"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#Object -->
+
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/log/win-event#Object"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#Process -->
+
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/log/win-event#Process"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#Subject -->
+
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/log/win-event#Subject"/>
+    
+
+
+    <!-- http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry -->
+
+
+    <owl:Class rdf:about="http://purl.org/sepses/vocab/log/win-event#WindowsEventLogEntry">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sepses/vocab/log/coreLog#LogEntry"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/sepses/vocab/log/win-event#hasObject">
+        <rdfs:label>hasObject</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/sepses/vocab/log/win-event#hasProcess">
+        <rdfs:label>hasProcess</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
